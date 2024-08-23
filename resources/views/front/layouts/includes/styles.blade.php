@@ -1,8 +1,6 @@
 <link rel="stylesheet" href="{{ asset('admin/css/bootstrap.min.css') }}">
 <link rel="shortcut icon" href="https://gratech.coevs.com/assets/general/images/8JG4xYcXxW3j8ptNE1xD.png" type="image/x-icon"/>
 <link rel="stylesheet" href="{{ asset('frontend/assets/css/meanmenu.css')}}">
-
-
 <link rel="stylesheet" href="{{ asset('frontend/assets/css/all.min.css')}}">
 <link rel="stylesheet" href="{{ asset('frontend/assets/css/swiper-bundle.min.css')}}">
 <link rel="stylesheet" href="{{ asset('frontend/assets/css/magnific-popup.css')}}">

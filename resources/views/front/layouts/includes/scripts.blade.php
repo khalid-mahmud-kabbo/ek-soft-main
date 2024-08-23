@@ -1,18 +1,18 @@
 
-<script src="https://gratech.coevs.com/assets/general/js/jquery-3.7.1.min.js"></script>
-<script src="https://gratech.coevs.com/assets/frontend/js/meanmenu.js"></script>
-<script src="https://gratech.coevs.com/assets/frontend/js/swiper-bundle.min.js"></script>
-<script src="https://gratech.coevs.com/assets/frontend/js/jquery.counterup.min.js"></script>
-<script src="https://gratech.coevs.com/assets/frontend/js/wow.min.js"></script>
-<script  src="https://gratech.coevs.com/assets/frontend/js/pace.min.js"></script>
-<script src="https://gratech.coevs.com/assets/frontend/js/magnific-popup.min.js"></script>
-<script src="https://gratech.coevs.com/assets/frontend/js/nice-select.min.js"></script>
-<script src="https://gratech.coevs.com/assets/frontend/js/isotope.pkgd.min.js"></script>
-<script src="https://gratech.coevs.com/assets/frontend/js/jquery.waypoints.js"></script>
+<script src="{{ asset('frontend/assets/js/jquery-3.7.1.min.js')}}"></script>
+<script src="{{ asset('frontend/assets/js/meanmenu.js')}}"></script>
+<script src="{{ asset('frontend/assets/js/swiper-bundle.min.js')}}"></script>
+<script src="{{ asset('frontend/assets/js/jquery.counterup.min.js')}}"></script>
+<script src="{{ asset('frontend/assets/js/wow.min.js')}}"></script>
+<script  src="{{ asset('frontend/assets/js/pace.min.js')}}"></script>
+<script src="{{ asset('frontend/assets/js/magnific-popup.min.js')}}"></script>
+<script src="{{ asset('frontend/assets/js/nice-select.min.js')}}"></script>
+<script src="{{ asset('frontend/assets/js/isotope.pkgd.min.js')}}"></script>
+<script src="{{ asset('frontend/assets/js/jquery.waypoints.js')}}"></script>
 <script>
         'use strict';
         // WOW Animatin area start here ***
-        
+
         new WOW().init();
         // WOW Animatin area start here ***
 	</script>
@@ -46,6 +46,6 @@
     $(window).on('load', executeCodes);
 
 </script>
-<script src="https://gratech.coevs.com/assets/frontend/js/script.js?v2.01"></script>
-<script src="https://gratech.coevs.com/assets/general/js/simple-notify.min.js?v2.01"></script>
-<script src="https://gratech.coevs.com/assets/general/js/helpers.js?v2.01"></script>
+<script src="{{ asset('frontend/assets/js/script.js?v2.01')}}"></script>
+<script src="{{ asset('frontend/assets/js/simple-notify.min.js?v2.01')}}"></script>
+<script src="{{ asset('frontend/assets/js/helpers.js?v2.01')}}"></script>
