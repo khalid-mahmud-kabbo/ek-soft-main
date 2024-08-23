@@ -1,0 +1,107 @@
+<footer class="footer-two-area secondary-bg">
+	<div class="footer__shape-regular-left wow slideInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
+		<img src="https://gratech.coevs.com/assets/general/images/BAQVgLnU7QvZtTJjG4Jh.png" alt="shape">
+	</div>
+	<div class="footer__shape-solid-left wow slideInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
+		<img class="sway_Y__animation" src="https://gratech.coevs.com/assets/general/images/x8UL5jR65pUMjCNXZayT.png" alt="shape">
+	</div>
+	<div class="footer__shape-solid-right wow slideInRight" data-wow-delay="00ms" data-wow-duration="1500ms">
+		<img class="sway_Y__animation" src="https://gratech.coevs.com/assets/general/images/NM5dHWi3A6tYT1Qwx1wy.png" alt="shape">
+	</div>
+	<div class="footer__shape-regular-right wow slideInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
+		<img src="https://gratech.coevs.com/assets/general/images/UqVx6L4239ct7n3yeXfe.png" alt="shape">
+	</div>
+	<div class="footer__shadow-shape">
+		<img src="https://gratech.coevs.com/assets/general/images/Il3Ju0hJ6BFqI4lRFh62.png" alt="shodow">
+	</div>
+	<div class="container">
+		<div class="footer__wrp pt-100 pb-100">
+			<div class="footer__item item-big wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+				<a href="https://gratech.coevs.com" class="logo mb-30">
+					<img src="https://gratech.coevs.com/assets/general/images/wabOEMUHMOixz8ZLLGKX.png" alt="image">
+				</a>
+				<p>Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, a lacinia curabitur lacinia mollis</p>
+				<div class="social-icon">
+											<a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+											<a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+											<a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+											<a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+									</div>
+			</div>
+
+
+			<div class="footer__item item-sm wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+				<h3 class="footer-title">Our Services</h3>
+				<ul>
+											<li><a href="https://gratech.coevs.com/details/45"><i
+									class="fa-regular fa-angles-right me-1"></i> IT Management</a></li>
+											<li><a href="https://gratech.coevs.com/details/46"><i
+									class="fa-regular fa-angles-right me-1"></i> Database Security</a></li>
+											<li><a href="https://gratech.coevs.com/details/47"><i
+									class="fa-regular fa-angles-right me-1"></i> Cyber Security</a></li>
+											<li><a href="https://gratech.coevs.com/details/64"><i
+									class="fa-regular fa-angles-right me-1"></i> IT Consultancy</a></li>
+											<li><a href="https://gratech.coevs.com/details/65"><i
+									class="fa-regular fa-angles-right me-1"></i> App Development</a></li>
+									</ul>
+			</div>
+
+			<div class="footer__item item-sm wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+				<h3 class="footer-title">Quick Link</h3>
+				<ul>
+											<li><a href="/blog" target="_self"><i class="fa-regular fa-angles-right me-1"></i> Blog</a></li>
+											<li><a href="/about" target="_self"><i class="fa-regular fa-angles-right me-1"></i> About</a></li>
+											<li><a href="/contact" target="_self"><i class="fa-regular fa-angles-right me-1"></i> Contact</a></li>
+											<li><a href="/faq" target="_self"><i class="fa-regular fa-angles-right me-1"></i> FAQ</a></li>
+											<li><a href="https://gratech.coevs.com" target="_self"><i class="fa-regular fa-angles-right me-1"></i> Home</a></li>
+									</ul>
+			</div>
+
+
+			<div class="footer__item item-big wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+				<h3 class="footer-title">Contact Us</h3>
+				<p class="mb-20">4517 Washington ave.</p>
+				<ul class="footer-contact">
+					<li>
+						<i class="fa-regular fa-clock"></i>
+						<div class="info">
+							<h5>
+								Opening Hours:
+							</h5>
+							<p>Mon - Sat: 10.00 AM - 4.00 PM</p>
+						</div>
+					</li>
+					<li>
+						<i class="fa-duotone fa-phone"></i>
+						<div class="info">
+							<h5>
+								Phone Call:
+							</h5>
+							<p>+208-6666-0112, +308-5555-0113</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="footer__copyright">
+		<div class="container">
+			<div
+				class="d-flex gap-1 flex-wrap align-items-center justify-content-md-between justify-content-center">
+				<p class="wow fadeInDown" data-wow-delay="00ms" data-wow-duration="1500ms">&copy; All Copyright 2024 by <a href="https://gratech.coevs.com">gratech</a></p>
+				<ul class="d-flex align-items-center gap-4 wow fadeInDown" data-wow-delay="200ms"
+				    data-wow-duration="1500ms">
+					<li><a href="/terms-condition">Terms &amp; Conditions</a></li>
+					<li><a href="/privacy-policy">Privacy Policy</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- Footer area end here -->
+<!-- Back to top area start here -->
+	<div class="scroll-up">
+		<svg class="scroll-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+    <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+</svg>
+</div>
