@@ -1,13 +1,13 @@
 <header class="header-area header-two-area">
 	<div class="container header__container">
 		<div class="header__main">
-			<a href="https://gratech.coevs.com" class="logo">
+			<a href="https://eksoftwares.com" class="logo">
 				<img src="https://gratech.coevs.com/assets/general/images/wabOEMUHMOixz8ZLLGKX.png" alt="logo">
 			</a>
 			<div class="main-menu">
 				<nav>
 					<ul>
-													<li><a href="https://gratech.coevs.com" target="_self">Home</a></li>
+													<li><a href="https://eksoftwares.com" target="_self">Home</a></li>
 													<li><a href="/about" target="_self">About</a></li>
 													<li><a href="/blog" target="_self">Blog</a></li>
 													<li><a href="/service" target="_self">Service</a></li>

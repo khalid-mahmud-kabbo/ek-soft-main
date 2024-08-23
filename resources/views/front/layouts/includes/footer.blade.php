@@ -17,7 +17,7 @@
 	<div class="container">
 		<div class="footer__wrp pt-100 pb-100">
 			<div class="footer__item item-big wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-				<a href="https://gratech.coevs.com" class="logo mb-30">
+				<a href="https://eksoftwares.com" class="logo mb-30">
 					<img src="https://gratech.coevs.com/assets/general/images/wabOEMUHMOixz8ZLLGKX.png" alt="image">
 				</a>
 				<p>Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, a lacinia curabitur lacinia mollis</p>
@@ -59,7 +59,7 @@
 											<li><a href="/about" target="_self"><i class="fa-regular fa-angles-right me-1"></i> About</a></li>
 											<li><a href="/contact" target="_self"><i class="fa-regular fa-angles-right me-1"></i> Contact</a></li>
 											<li><a href="/faq" target="_self"><i class="fa-regular fa-angles-right me-1"></i> FAQ</a></li>
-											<li><a href="https://gratech.coevs.com" target="_self"><i class="fa-regular fa-angles-right me-1"></i> Home</a></li>
+											<li><a href="https://eksoftwares.com" target="_self"><i class="fa-regular fa-angles-right me-1"></i> Home</a></li>
 									</ul>
 			</div>
 
