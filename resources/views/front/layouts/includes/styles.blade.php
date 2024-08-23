@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="{{ asset('frontend/assets/css/magnific-popup.css')}}">
 <link rel="stylesheet" href="{{ asset('frontend/assets/css/animate.css')}}">
 <link rel="stylesheet" href="{{ asset('frontend/assets/css/nice-select.css')}}">
-<link rel="stylesheet" href="{{ asset('assets/general/css/simple-notify.min.css?v2.01')}}" />
+<link rel="stylesheet" href="{{ asset('frontend/assets/css/simple-notify.min.css?v2.01')}}" />
 <link rel="stylesheet" href="{{ asset('frontend/assets/css/style.css?v2.01')}}">
 <link rel="stylesheet" href="{{ asset('frontend/assets/css/custom.css?v2.01')}}">
 <link rel="stylesheet" href="{{ asset('frontend/assets/css/preloader.css?v2.01')}}">

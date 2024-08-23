@@ -22,10 +22,16 @@
 				</a>
 				<p>Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, a lacinia curabitur lacinia mollis</p>
 				<div class="social-icon">
-											<a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-											<a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-											<a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-											<a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+											<a target="_blank" class="social-media-link" href="{{ getSocialLink()->Facebook }}">
+                                        <i class="fab fa-facebook-f"></i></a>
+
+
+                                        <a target="_blank" class="social-media-link" href="{{ getSocialLink()->Twitter }}">
+                                            <i class="fab fa-twitter"></i></a>
+
+											<a target="_blank" class="social-media-link"
+                                        href="{{ getSocialLink()->Linkedin }}">
+                                        <i class="fab fa-linkedin-in"></i></a>
 									</div>
 			</div>
 
@@ -60,7 +66,9 @@
 
 			<div class="footer__item item-big wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
 				<h3 class="footer-title">Contact Us</h3>
-				<p class="mb-20">4517 Washington ave.</p>
+				<p class="mb-20">{{ $allsettings['address'] }} <br />
+                    {{ $allsettings['state'] }} <br />
+                    {{ $allsettings['country'] }}</p>
 				<ul class="footer-contact">
 					<li>
 						<i class="fa-regular fa-clock"></i>
@@ -77,7 +85,7 @@
 							<h5>
 								Phone Call:
 							</h5>
-							<p>+208-6666-0112, +308-5555-0113</p>
+							<p>{{ $allsettings['call_us'] }}</p>
 						</div>
 					</li>
 				</ul>
@@ -88,7 +96,7 @@
 		<div class="container">
 			<div
 				class="d-flex gap-1 flex-wrap align-items-center justify-content-md-between justify-content-center">
-				<p class="wow fadeInDown" data-wow-delay="00ms" data-wow-duration="1500ms">&copy; All Copyright 2024 by <a href="https://gratech.coevs.com">gratech</a></p>
+				<p class="wow fadeInDown" data-wow-delay="00ms" data-wow-duration="1500ms">{{ $allsettings['footer_title'] }}</a></p>
 				<ul class="d-flex align-items-center gap-4 wow fadeInDown" data-wow-delay="200ms"
 				    data-wow-duration="1500ms">
 					<li><a href="/terms-condition">Terms &amp; Conditions</a></li>

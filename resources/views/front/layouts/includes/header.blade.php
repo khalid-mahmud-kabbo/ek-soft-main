@@ -16,9 +16,6 @@
 				</nav>
 			</div>
 			<div class="d-none d-xl-flex gap-4">
-
-					<a href="#" class="btn-one">Get A Quote <i class="fa-regular fa-arrow-right-long"></i></a>
-
 					<div class="about-three__left-item d-flex flex-wrap gap-2 align-items-center">
 						<div class="about-call-icon">
 							<span><svg width="26" height="26" viewBox="0 0 26 26" fill="none"
@@ -46,7 +43,7 @@
 						</div>
 						<div class="info">
 							<span class="sm-font fw-600 text-white">Call Us</span>
-							<h5 class="text-white">+208-6666-0112</h5>
+							<h5 class="text-white">{{ $allsettings['call_us'] }}</h5>
 						</div>
 					</div>
 
@@ -54,12 +51,6 @@
 
 
 			</div>
-							<div class="about-three__left-item d-flex flex-wrap gap-2 align-items-center light-area d-none d-lg-block">
-					<select name="locale" class="light-area"   onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-													<option class="light-area" value="https://gratech.coevs.com/locale-set/en" selected>English</option>
-													<option class="light-area" value="https://gratech.coevs.com/locale-set/es" >Spanish</option>
-											</select>
-				</div>
 						<div class="bars d-block d-lg-none">
 				<i id="openButton" class="fa-solid fa-bars"></i>
 			</div>
