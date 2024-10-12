@@ -1,4 +1,3 @@
-
 <script src="{{ asset('frontend/assets/js/jquery-3.7.1.min.js')}}"></script>
 <script src="{{ asset('frontend/assets/js/meanmenu.js')}}"></script>
 <script src="{{ asset('frontend/assets/js/swiper-bundle.min.js')}}"></script>

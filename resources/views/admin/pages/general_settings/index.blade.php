@@ -201,7 +201,7 @@
                                                     name="meta_author" value="{{ $allsettings['meta_author'] }}"
                                                     required="">
                                             </div>
-                                            {{-- <div class="input__group mb-25">
+                                            <div class="input__group mb-25">
                                                 <label for="title">{{ __('Meta Description') }}</label>
                                                 <input type="text" class="form-control" id="meta_description"
                                                     name="meta_description"
@@ -212,7 +212,7 @@
                                                 <input type="text" class="form-control" id="meta_keywords"
                                                     name="meta_keywords" value="{{ $allsettings['meta_keywords'] }}"
                                                     required="">
-                                            </div> --}}
+                                            </div>
                                             <div class="input__button">
                                                 <button type="submit" class="btn btn-blue">{{ __('Update') }}</button>
                                             </div>

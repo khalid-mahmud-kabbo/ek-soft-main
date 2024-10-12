@@ -13,8 +13,8 @@
 
 <style>
     :root {
-        --primary-color: #3c72fc;
+        --primary-color: #EB2026;
         --secondary-color: #0f0d1d;
-        --gradient-bg: linear-gradient(90deg, #3c72fc -10.59%, #00060c 300.59%);
+        --gradient-bg: linear-gradient(90deg, #EB2026 -10.59%, #00060c 300.59%);
     }
 </style>

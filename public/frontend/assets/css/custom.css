@@ -7,3 +7,8 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-track {
     background: none;
 }
+
+
+.about-three__left-item button{
+    background-color: #EB2026;
+}

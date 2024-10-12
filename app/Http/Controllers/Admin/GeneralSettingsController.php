@@ -60,12 +60,12 @@ class GeneralSettingsController extends Controller
             if (isset($request->app_title)) {
                 Setting::where('slug', 'app_title')->update(['value' => $request->app_title]);
             }
-            if (isset($request->estimating_delivery)) {
-                Setting::where('slug', 'estimating_delivery')->update(['value' => $request->estimating_delivery]);
-            }
-            if (isset($request->shipping_charge)) {
-                Setting::where('slug', 'shipping_charge')->update(['value' => $request->shipping_charge]);
-            }
+            // if (isset($request->estimating_delivery)) {
+            //     Setting::where('slug', 'estimating_delivery')->update(['value' => $request->estimating_delivery]);
+            // }
+            // if (isset($request->shipping_charge)) {
+            //     Setting::where('slug', 'shipping_charge')->update(['value' => $request->shipping_charge]);
+            // }
             if (isset($request->title)) {
                 Setting::where('slug', 'title')->update(['value' => $request->title]);
             }
@@ -90,15 +90,15 @@ class GeneralSettingsController extends Controller
             if (isset($request->country)) {
                 Setting::where('slug', 'country')->update(['value' => $request->country]);
             }
-            if (isset($request->news_letter)) {
-                Setting::where('slug', 'news_letter')->update(['value' => $request->news_letter]);
-            }
-            if (isset($request->default_currency)) {
+            // if (isset($request->news_letter)) {
+            //     Setting::where('slug', 'news_letter')->update(['value' => $request->news_letter]);
+            // }
+            // if (isset($request->default_currency)) {
 
-                Setting::where('slug', 'default_currency')->update(['value' => $request->default_currency]);
+            //     Setting::where('slug', 'default_currency')->update(['value' => $request->default_currency]);
 
-                Session::put('currency', $request->default_currency);
-            }
+            //     Session::put('currency', $request->default_currency);
+            // }
             if (isset($request->default_language)) {
                 Setting::where('slug', 'default_language')->update(['value' => $request->default_language]);
             }
@@ -111,15 +111,15 @@ class GeneralSettingsController extends Controller
             if (isset($request->footer_title)) {
                 Setting::where('slug', 'footer_title')->update(['value' => $request->footer_title]);
             }
-            if (isset($request->news_letter_title)) {
-                Setting::where('slug', 'news_letter_title')->update(['value' => $request->news_letter_title]);
-            }
-            if (isset($request->popupmessage)){
-                Setting::where('slug', 'popupmessage')->update(['value' => $request->popupmessage]);
-            }
-            if (isset($request->news_letter_status)) {
-                Setting::where('slug', 'news_letter_status')->update(['value' => $request->news_letter_status]);
-            }
+            // if (isset($request->news_letter_title)) {
+            //     Setting::where('slug', 'news_letter_title')->update(['value' => $request->news_letter_title]);
+            // }
+            // if (isset($request->popupmessage)){
+            //     Setting::where('slug', 'popupmessage')->update(['value' => $request->popupmessage]);
+            // }
+            // if (isset($request->news_letter_status)) {
+            //     Setting::where('slug', 'news_letter_status')->update(['value' => $request->news_letter_status]);
+            // }
             if (isset($request->main_logo)) {
                 Setting::where('slug', 'main_logo')->update(['value' => fileUpload($request->main_logo, IMG_LOGO_PATH)]);
             }
@@ -136,18 +136,18 @@ class GeneralSettingsController extends Controller
                 $image->move(IMG_PRELOADER_PATH, $filename);
                 Setting::where('slug', 'preloader')->update(['value' => $filename]);
             }
-            if (isset($request->news_letter_img)) {
-                Setting::where('slug', 'news_letter_img')->update(['value' => fileUpload($request->news_letter_img, IMG_FOOTER_PATH)]);
-            }
-            if (isset($request->popup_image)) {
-                Setting::where('slug', 'popup_image')->update(['value' => fileUpload($request->popup_image, IMG_ADVERTISE_PATH)]);
-            }
-            if (isset($request->popup_link)) {
-                Setting::where('slug', 'popup_link')->update(['value' => $request->popup_link]);
-            }
-            if (isset($request->menu_thumb)) {
-                Setting::where('slug', 'menu_thumb')->update(['value' => fileUpload($request->menu_thumb, IMG_ADVERTISE_PATH)]);
-            }
+            // if (isset($request->news_letter_img)) {
+            //     Setting::where('slug', 'news_letter_img')->update(['value' => fileUpload($request->news_letter_img, IMG_FOOTER_PATH)]);
+            // }
+            // if (isset($request->popup_image)) {
+            //     Setting::where('slug', 'popup_image')->update(['value' => fileUpload($request->popup_image, IMG_ADVERTISE_PATH)]);
+            // }
+            // if (isset($request->popup_link)) {
+            //     Setting::where('slug', 'popup_link')->update(['value' => $request->popup_link]);
+            // }
+            // if (isset($request->menu_thumb)) {
+            //     Setting::where('slug', 'menu_thumb')->update(['value' => fileUpload($request->menu_thumb, IMG_ADVERTISE_PATH)]);
+            // }
             return redirect()->back()->with('success', __('Successfully Updated!'));
         } catch (\Exception $e) {
 
