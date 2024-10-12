@@ -1,24 +1,24 @@
 <footer class="footer-two-area secondary-bg">
 	<div class="footer__shape-regular-left wow slideInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
-		<img src="https://gratech.coevs.com/assets/general/images/BAQVgLnU7QvZtTJjG4Jh.png" alt="shape">
+		<img src="{{ asset('frontend/assets/images/BAQVgLnU7QvZtTJjG4Jh.png') }}" alt="shape">
 	</div>
 	<div class="footer__shape-solid-left wow slideInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
-		<img class="sway_Y__animation" src="https://gratech.coevs.com/assets/general/images/x8UL5jR65pUMjCNXZayT.png" alt="shape">
+		<img class="sway_Y__animation" src="{{ asset('frontend/assets/images/x8UL5jR65pUMjCNXZayT.png') }}" alt="shape">
 	</div>
 	<div class="footer__shape-solid-right wow slideInRight" data-wow-delay="00ms" data-wow-duration="1500ms">
-		<img class="sway_Y__animation" src="https://gratech.coevs.com/assets/general/images/NM5dHWi3A6tYT1Qwx1wy.png" alt="shape">
+		<img class="sway_Y__animation" src="{{ asset('frontend/assets/images/NM5dHWi3A6tYT1Qwx1wy.png') }}" alt="shape">
 	</div>
 	<div class="footer__shape-regular-right wow slideInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
-		<img src="https://gratech.coevs.com/assets/general/images/UqVx6L4239ct7n3yeXfe.png" alt="shape">
+		<img src="{{ asset('frontend/assets/images/UqVx6L4239ct7n3yeXfe.png') }}" alt="shape">
 	</div>
 	<div class="footer__shadow-shape">
-		<img src="https://gratech.coevs.com/assets/general/images/Il3Ju0hJ6BFqI4lRFh62.png" alt="shodow">
+		<img src="{{ asset('frontend/assets/images/Il3Ju0hJ6BFqI4lRFh62.png') }}" alt="shodow">
 	</div>
 	<div class="container">
 		<div class="footer__wrp pt-100 pb-100">
 			<div class="footer__item item-big wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
 				<a href="https://eksoftwares.com" class="logo mb-30">
-					<img src="https://gratech.coevs.com/assets/general/images/wabOEMUHMOixz8ZLLGKX.png" alt="image">
+					<img src="{{ asset('frontend/assets/images/logo.png') }}" alt="image">
 				</a>
 				<p>Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, a lacinia curabitur lacinia mollis</p>
 				<div class="social-icon">
@@ -39,15 +39,15 @@
 			<div class="footer__item item-sm wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
 				<h3 class="footer-title">Our Services</h3>
 				<ul>
-											<li><a href="https://gratech.coevs.com/details/45"><i
+											<li><a href="#"><i
 									class="fa-regular fa-angles-right me-1"></i> IT Management</a></li>
-											<li><a href="https://gratech.coevs.com/details/46"><i
+											<li><a href="#"><i
 									class="fa-regular fa-angles-right me-1"></i> Database Security</a></li>
-											<li><a href="https://gratech.coevs.com/details/47"><i
+											<li><a href="#"><i
 									class="fa-regular fa-angles-right me-1"></i> Cyber Security</a></li>
-											<li><a href="https://gratech.coevs.com/details/64"><i
+											<li><a href="#"><i
 									class="fa-regular fa-angles-right me-1"></i> IT Consultancy</a></li>
-											<li><a href="https://gratech.coevs.com/details/65"><i
+											<li><a href="#"><i
 									class="fa-regular fa-angles-right me-1"></i> App Development</a></li>
 									</ul>
 			</div>
@@ -66,10 +66,16 @@
 
 			<div class="footer__item item-big wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
 				<h3 class="footer-title">Contact Us</h3>
-				<p class="mb-20">{{ $allsettings['address'] }} <br />
-                    {{ $allsettings['state'] }} <br />
-                    {{ $allsettings['country'] }}</p>
 				<ul class="footer-contact">
+					<li>
+						<i class="fa-regular fa-location"></i>
+						<div class="info">
+							<h5>
+								Location:
+							</h5>
+							<p>{{ $allsettings['address'] }}</p>
+						</div>
+					</li>
 					<li>
 						<i class="fa-regular fa-clock"></i>
 						<div class="info">

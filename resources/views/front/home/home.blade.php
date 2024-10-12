@@ -7,37 +7,37 @@
 
 <section class="banner-two-area">
 	<div class="banner-two__line">
-		<img class="sway_Y__animation" src="https://gratech.coevs.com/assets/general/images/H3wcidxsCpOM8SQ274ax.png" alt="shape">
+		<img class="sway_Y__animation" src="{{ asset('frontend/assets/images/H3wcidxsCpOM8SQ274ax.png') }}" alt="shape">
 	</div>
 	<div class="swiper banner__slider">
 		<div class="swiper-wrapper">
 											<div class="swiper-slide">
 					<div class="banner-two__line-left" data-animation="slideInLeft" data-duration="3s"
 					     data-delay=".3s">
-						<img src="https://gratech.coevs.com/assets/general/images/wfHxFfHI2xI62jsg25EB.png" alt="shape">
+						<img src="{{ asset('frontend/assets/images/wfHxFfHI2xI62jsg25EB.png') }}" alt="shape">
 					</div>
 					<div class="banner-two__shape2" data-animation="slideInRight" data-duration="2s"
 					     data-delay=".3s">
-						<img src="https://gratech.coevs.com/assets/general/images/yiFCdKB5ZG4m35GZ0Vg2.png" alt="shape">
+						<img src="{{ asset('frontend/assets/images/yiFCdKB5ZG4m35GZ0Vg2.png') }}" alt="shape">
 					</div>
 					<div class="banner-two__shape1" data-animation="slideInRight" data-duration="2s"
 					     data-delay=".5s">
-						<img src="https://gratech.coevs.com/assets/general/images/Gi5hMdVOGMK903R0o2yl.png" alt="shape">
+						<img src="{{ asset('frontend/assets/images/Gi5hMdVOGMK903R0o2yl.png') }}" alt="shape">
 					</div>
 					<div class="banner-two__right-shape wow slideInRight" data-wow-delay="200ms"
 					     data-wow-duration="1500ms">
-						<img class="sway_Y__animation" src="https://gratech.coevs.com/assets/general/images/bmaBGRE1VRPceZFzP0ub.png"
+						<img class="sway_Y__animation" src="{{ asset('frontend/assets/images/bmaBGRE1VRPceZFzP0ub.png') }}"
 						     alt="shape">
 					</div>
 					<div class="banner-two__circle-solid">
-						<img class="animation__rotate" src="https://gratech.coevs.com/assets/general/images/BngX6ulmrpt2BkKgdNro.png"
+						<img class="animation__rotate" src="{{ asset('frontend/assets/images/BngX6ulmrpt2BkKgdNro.png') }}"
 						     alt="shape">
 					</div>
 					<div class="banner-two__circle-regular">
-						<img class="animation__rotateY" src="https://gratech.coevs.com/assets/general/images/cCUaHj29ZjMF6SpR75iX.png"
+						<img class="animation__rotateY" src="{{ asset('frontend/assets/images/cCUaHj29ZjMF6SpR75iX.png') }}"
 						     alt="shape">
 					</div>
-					<div class="slide-bg" data-background="https://gratech.coevs.com/assets/general/images/oqHE2iP4cXY8TaoRsUfO.jpg"></div>
+					<div class="slide-bg" data-background="{{ asset('frontend/assets/images/oqHE2iP4cXY8TaoRsUfO.jpg') }}"></div>
 					<div class="container">
 						<div class="banner-two__content text-center">
 							<h4 data-animation="fadeInUp" data-delay=".3s" class="text-white mb-20">
@@ -60,30 +60,30 @@
 											<div class="swiper-slide">
 					<div class="banner-two__line-left" data-animation="slideInLeft" data-duration="3s"
 					     data-delay=".3s">
-						<img src="https://gratech.coevs.com/assets/general/images/wfHxFfHI2xI62jsg25EB.png" alt="shape">
+						<img src="{{ asset('frontend/assets/images/wfHxFfHI2xI62jsg25EB.png') }}" alt="shape">
 					</div>
 					<div class="banner-two__shape2" data-animation="slideInRight" data-duration="2s"
 					     data-delay=".3s">
-						<img src="https://gratech.coevs.com/assets/general/images/yiFCdKB5ZG4m35GZ0Vg2.png" alt="shape">
+						<img src="{{ asset('frontend/assets/images/yiFCdKB5ZG4m35GZ0Vg2.png') }}" alt="shape">
 					</div>
 					<div class="banner-two__shape1" data-animation="slideInRight" data-duration="2s"
 					     data-delay=".5s">
-						<img src="https://gratech.coevs.com/assets/general/images/Gi5hMdVOGMK903R0o2yl.png" alt="shape">
+						<img src="{{ asset('frontend/assets/images/Gi5hMdVOGMK903R0o2yl.png') }}" alt="shape">
 					</div>
 					<div class="banner-two__right-shape wow slideInRight" data-wow-delay="200ms"
 					     data-wow-duration="1500ms">
-						<img class="sway_Y__animation" src="https://gratech.coevs.com/assets/general/images/bmaBGRE1VRPceZFzP0ub.png"
+						<img class="sway_Y__animation" src="{{ asset('frontend/assets/images/bmaBGRE1VRPceZFzP0ub.png') }}"
 						     alt="shape">
 					</div>
 					<div class="banner-two__circle-solid">
-						<img class="animation__rotate" src="https://gratech.coevs.com/assets/general/images/BngX6ulmrpt2BkKgdNro.png"
+						<img class="animation__rotate" src="{{ asset('frontend/assets/images/BngX6ulmrpt2BkKgdNro.png') }}"
 						     alt="shape">
 					</div>
 					<div class="banner-two__circle-regular">
-						<img class="animation__rotateY" src="https://gratech.coevs.com/assets/general/images/cCUaHj29ZjMF6SpR75iX.png"
+						<img class="animation__rotateY" src="{{ asset('frontend/assets/images/cCUaHj29ZjMF6SpR75iX.png') }}"
 						     alt="shape">
 					</div>
-					<div class="slide-bg" data-background="https://gratech.coevs.com/assets/general/images/dyrnDg3d6Tm1oDwhJVUe.jpg"></div>
+					<div class="slide-bg" data-background="{{ asset('frontend/assets/images/dyrnDg3d6Tm1oDwhJVUe.jpg') }}"></div>
 					<div class="container">
 						<div class="banner-two__content text-center">
 							<h4 data-animation="fadeInUp" data-delay=".3s" class="text-white mb-20">
@@ -106,30 +106,30 @@
 											<div class="swiper-slide">
 					<div class="banner-two__line-left" data-animation="slideInLeft" data-duration="3s"
 					     data-delay=".3s">
-						<img src="https://gratech.coevs.com/assets/general/images/wfHxFfHI2xI62jsg25EB.png" alt="shape">
+						<img src="{{ asset('frontend/assets/images/wfHxFfHI2xI62jsg25EB.png') }}" alt="shape">
 					</div>
 					<div class="banner-two__shape2" data-animation="slideInRight" data-duration="2s"
 					     data-delay=".3s">
-						<img src="https://gratech.coevs.com/assets/general/images/yiFCdKB5ZG4m35GZ0Vg2.png" alt="shape">
+						<img src="{{ asset('frontend/assets/images/yiFCdKB5ZG4m35GZ0Vg2.png') }}" alt="shape">
 					</div>
 					<div class="banner-two__shape1" data-animation="slideInRight" data-duration="2s"
 					     data-delay=".5s">
-						<img src="https://gratech.coevs.com/assets/general/images/Gi5hMdVOGMK903R0o2yl.png" alt="shape">
+						<img src="{{ asset('frontend/assets/images/Gi5hMdVOGMK903R0o2yl.png') }}" alt="shape">
 					</div>
 					<div class="banner-two__right-shape wow slideInRight" data-wow-delay="200ms"
 					     data-wow-duration="1500ms">
-						<img class="sway_Y__animation" src="https://gratech.coevs.com/assets/general/images/bmaBGRE1VRPceZFzP0ub.png"
+						<img class="sway_Y__animation" src="{{ asset('frontend/assets/images/bmaBGRE1VRPceZFzP0ub.png') }}"
 						     alt="shape">
 					</div>
 					<div class="banner-two__circle-solid">
-						<img class="animation__rotate" src="https://gratech.coevs.com/assets/general/images/BngX6ulmrpt2BkKgdNro.png"
+						<img class="animation__rotate" src="{{ asset('frontend/assets/images/BngX6ulmrpt2BkKgdNro.png') }}"
 						     alt="shape">
 					</div>
 					<div class="banner-two__circle-regular">
-						<img class="animation__rotateY" src="https://gratech.coevs.com/assets/general/images/cCUaHj29ZjMF6SpR75iX.png"
+						<img class="animation__rotateY" src="{{ asset('frontend/assets/images/cCUaHj29ZjMF6SpR75iX.png') }}"
 						     alt="shape">
 					</div>
-					<div class="slide-bg" data-background="https://gratech.coevs.com/assets/general/images/Mp4liZx4rXD73B5mfxoK.jpg"></div>
+					<div class="slide-bg" data-background="{{ asset('frontend/assets/images/Mp4liZx4rXD73B5mfxoK.jpg') }}"></div>
 					<div class="container">
 						<div class="banner-two__content text-center">
 							<h4 data-animation="fadeInUp" data-delay=".3s" class="text-white mb-20">
@@ -158,38 +158,38 @@
 	<div class="container">
 		<div class="brand__wrp">
 			<div class="brand__shape">
-				<img src="https://gratech.coevs.com/assets/general/images/FllACBjyLdGWBdDkApJg.png" alt="">
+				<img src="{{ asset('frontend/assets/images/FllACBjyLdGWBdDkApJg.png') }}" alt="">
 			</div>
 			<div class="swiper brand__slider">
 				<div class="swiper-wrapper">
 
 												<div class="swiper-slide">
 							<div class="brand__image image">
-								<img src="https://gratech.coevs.com/assets/general/images/upoGdntckh8ZtLUlAIN2.png" alt="image">
+								<img src="{{ asset('frontend/assets/images/upoGdntckh8ZtLUlAIN2.png') }}" alt="image">
 							</div>
 						</div>
 
 												<div class="swiper-slide">
 							<div class="brand__image image">
-								<img src="https://gratech.coevs.com/assets/general/images/vidbGI39BBuJVebItW1S.png" alt="image">
+								<img src="{{ asset('frontend/assets/images/vidbGI39BBuJVebItW1S.png') }}" alt="image">
 							</div>
 						</div>
 
 												<div class="swiper-slide">
 							<div class="brand__image image">
-								<img src="https://gratech.coevs.com/assets/general/images/YkDnsQQgjVG4tykjsvar.png" alt="image">
+								<img src="{{ asset('frontend/assets/images/YkDnsQQgjVG4tykjsvar.png') }}" alt="image">
 							</div>
 						</div>
 
 												<div class="swiper-slide">
 							<div class="brand__image image">
-								<img src="https://gratech.coevs.com/assets/general/images/psyzb9ti8Z5EgGm4K4H4.png" alt="image">
+								<img src="{{ asset('frontend/assets/images/psyzb9ti8Z5EgGm4K4H4.png') }}" alt="image">
 							</div>
 						</div>
 
 												<div class="swiper-slide">
 							<div class="brand__image image">
-								<img src="https://gratech.coevs.com/assets/general/images/U2JnNjoxChEpYtBNY4tj.png" alt="image">
+								<img src="{{ asset('frontend/assets/images/U2JnNjoxChEpYtBNY4tj.png') }}" alt="image">
 							</div>
 						</div>
 									</div>
@@ -198,27 +198,27 @@
 	</div>
 </div>			<section class="about-two-area pt-120">
 	<div class="about-two__shape">
-		<img src="https://gratech.coevs.com/assets/general/images/VRUJYT10pzK1Ba6ZAadm.png" alt="shape">
+		<img src="{{ asset('frontend/assets/images/VRUJYT10pzK1Ba6ZAadm.png') }}" alt="shape">
 	</div>
 	<div class="container">
 		<div class="row g-4">
 			<div class="col-xl-6 wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
 				<div class="about-two__left-item">
 					<div class="dots">
-						<img class="sway_Y__animation" src="https://gratech.coevs.com/assets/general/images/vjjksYs3OD22xjgJvSvL.png" alt="shape">
+						<img class="sway_Y__animation" src="{{ asset('frontend/assets/images/vjjksYs3OD22xjgJvSvL.png') }}" alt="shape">
 					</div>
 					<div class="shape-halper">
-						<img class="sway__animation" src="https://gratech.coevs.com/assets/general/images/XSr7XtTUTBWo4XCtgTgv.png"
+						<img class="sway__animation" src="{{ asset('frontend/assets/images/XSr7XtTUTBWo4XCtgTgv.png') }}"
 						     alt="shape">
 					</div>
 					<div class="image big-image">
-						<img src="https://gratech.coevs.com/assets/general/images/NinGN5tMJNryGDGpv1ZM.jpg" alt="image">
+						<img src="{{ asset('frontend/assets/images/NinGN5tMJNryGDGpv1ZM.jpg') }}" alt="image">
 					</div>
 					<div class="image sm-image">
-						<img src="https://gratech.coevs.com/assets/general/images/Ds3WFgHFWx7itimvQHcI.png" alt="image">
+						<img src="{{ asset('frontend/assets/images/Ds3WFgHFWx7itimvQHcI.png') }}" alt="image">
 					</div>
 					<div class="circle-shape">
-						<img class="animation__rotate" src="https://gratech.coevs.com/assets/general/images/KioIYRQSg8I28X9QVomi.png"
+						<img class="animation__rotate" src="{{ asset('frontend/assets/images/KioIYRQSg8I28X9QVomi.png') }}"
 						     alt="shape">
 					</div>
 				</div>
@@ -226,7 +226,7 @@
 			<div class="col-xl-6">
 				<div class="section-header mb-40">
 					<h5 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-						<img class="me-1" src="https://gratech.coevs.com/assets/general/images/6ANlZimaQlmDjBqhVmkA.png" alt="icon">
+						<img class="me-1" src="{{ asset('frontend/assets/images/6ANlZimaQlmDjBqhVmkA.png') }}" alt="icon">
 						WHO WE ARE
 					</h5>
 					<h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Ensuring Your Success Through Reliable IT Solutions </h2>
@@ -245,17 +245,17 @@
 				</div>
 				<div class="about__info mt-50 wow fadeInDown" data-wow-delay="400ms" data-wow-duration="1500ms">
 					<a href="#" class="btn-one">Explore More <i class="fa-regular fa-arrow-right-long"></i></a>
-					<img src="https://gratech.coevs.com/assets/general/images/bxc6ptmmoLSZMeojbANk.png" alt="singature">
+					<img src="{{ asset('frontend/assets/images/bxc6ptmmoLSZMeojbANk.png') }}" alt="singature">
 				</div>
 			</div>
 		</div>
 	</div>
 </section>			<section class="service-two-area secondary-bg pt-120 pb-120">
 	<div class="service-two__shape-left sway_Y__animationY">
-		<img src="https://gratech.coevs.com/assets/general/images/tTSP041jTwBVmzFOZ3CL.png" alt="shape">
+		<img src="{{ asset('frontend/assets/images/tTSP041jTwBVmzFOZ3CL.png') }}" alt="shape">
 	</div>
 	<div class="service-two__shape-right sway_Y__animation">
-		<img src="https://gratech.coevs.com/assets/general/images/qHd9xRHc2pEjSFnWlfWG.png" alt="shape">
+		<img src="{{ asset('frontend/assets/images/qHd9xRHc2pEjSFnWlfWG.png') }}" alt="shape">
 	</div>
 	<div class="container">
 		<div class="d-flex gap-4 flex-wrap align-items-center justify-content-between mb-60">
@@ -292,17 +292,17 @@
 												<div class="swiper-slide">
 							<div class="service-two__item">
 								<div class="image">
-									<img class="component-blog-cover" src="https://gratech.coevs.com/assets/general/images/gKtvpPJwd0AfwXlj2L36.jpg" alt="image">
+									<img class="component-blog-cover" src="{{ asset('frontend/assets/images/gKtvpPJwd0AfwXlj2L36.jpg') }}" alt="image">
 								</div>
 								<div class="service-two__content">
 									<div class="icon">
-										<img src="https://gratech.coevs.com/assets/general/images/AN8W98LoN4ZiRk5MHhvz.png" alt="icon">
+										<img src="{{ asset('frontend/assets/images/AN8W98LoN4ZiRk5MHhvz.png') }}" alt="icon">
 									</div>
-									<div class="shape"><img src="https://gratech.coevs.com/assets/general/images/rtHLHwS47ikrvM8funrY.png"
+									<div class="shape"><img src="{{ asset('frontend/assets/images/rtHLHwS47ikrvM8funrY.png') }}"
 									                        alt="shape"></div>
-									<h4><a href="https://gratech.coevs.com/details/30?section=service_slider" class="primary-hover">IT Management</a></h4>
+									<h4><a href="#" class="primary-hover">IT Management</a></h4>
 									<p>The is ipsum dolor sit amet consectetur adipiscing elit. Fusce is eleifend porta...</p>
-									<a class="read-more-btn" href="https://gratech.coevs.com/details/30?section=service_slider">Read More<i
+									<a class="read-more-btn" href="#">Read More<i
 											class="fa-regular fa-arrow-right-long"></i></a>
 								</div>
 							</div>
@@ -311,17 +311,17 @@
 												<div class="swiper-slide">
 							<div class="service-two__item">
 								<div class="image">
-									<img class="component-blog-cover" src="https://gratech.coevs.com/assets/general/images/swYgg2FwGxyWLuOnILTS.jpg" alt="image">
+									<img class="component-blog-cover" src="{{ asset('frontend/assets/images/swYgg2FwGxyWLuOnILTS.jpg') }}" alt="image">
 								</div>
 								<div class="service-two__content">
 									<div class="icon">
-										<img src="https://gratech.coevs.com/assets/general/images/016SKqrETI3F4FLPDxvf.png" alt="icon">
+										<img src="{{ asset('frontend/assets/images/016SKqrETI3F4FLPDxvf.png') }}" alt="icon">
 									</div>
-									<div class="shape"><img src="https://gratech.coevs.com/assets/general/images/Drjgn3eGwtJfxce78yMO.png"
+									<div class="shape"><img src="{{ asset('frontend/assets/images/Drjgn3eGwtJfxce78yMO.png') }}"
 									                        alt="shape"></div>
-									<h4><a href="https://gratech.coevs.com/details/30?section=service_slider" class="primary-hover">Database Security</a></h4>
+									<h4><a href="#" class="primary-hover">Database Security</a></h4>
 									<p>The is ipsum dolor sit amet consectetur adipiscing elit. Fusce is eleifend porta...</p>
-									<a class="read-more-btn" href="https://gratech.coevs.com/details/30?section=service_slider">Read More<i
+									<a class="read-more-btn" href="#">Read More<i
 											class="fa-regular fa-arrow-right-long"></i></a>
 								</div>
 							</div>
@@ -330,17 +330,17 @@
 												<div class="swiper-slide">
 							<div class="service-two__item">
 								<div class="image">
-									<img class="component-blog-cover" src="https://gratech.coevs.com/assets/general/images/62PTYWmjef8ZLBDNZ9d6.jpg" alt="image">
+									<img class="component-blog-cover" src="{{ asset('frontend/assets/images/62PTYWmjef8ZLBDNZ9d6.jpg') }}" alt="image">
 								</div>
 								<div class="service-two__content">
 									<div class="icon">
-										<img src="https://gratech.coevs.com/assets/general/images/Um9lsh3b52CGi5tCsxA3.png" alt="icon">
+										<img src="{{ asset('frontend/assets/images/Um9lsh3b52CGi5tCsxA3.png') }}" alt="icon">
 									</div>
-									<div class="shape"><img src="https://gratech.coevs.com/assets/general/images/rVNVRkAQ2WXfURSEaLf2.png"
+									<div class="shape"><img src="{{ asset('frontend/assets/images/rVNVRkAQ2WXfURSEaLf2.png') }}"
 									                        alt="shape"></div>
-									<h4><a href="https://gratech.coevs.com/details/30?section=service_slider" class="primary-hover">Cyber Security</a></h4>
+									<h4><a href="#" class="primary-hover">Cyber Security</a></h4>
 									<p>The is ipsum dolor sit amet consectetur adipiscing elit. Fusce is eleifend porta...</p>
-									<a class="read-more-btn" href="https://gratech.coevs.com/details/30?section=service_slider">Read More<i
+									<a class="read-more-btn" href="#">Read More<i
 											class="fa-regular fa-arrow-right-long"></i></a>
 								</div>
 							</div>
@@ -349,17 +349,17 @@
 												<div class="swiper-slide">
 							<div class="service-two__item">
 								<div class="image">
-									<img class="component-blog-cover" src="https://gratech.coevs.com/assets/general/images/zayxMK0VSJGi2Wjiw7d2.jpg" alt="image">
+									<img class="component-blog-cover" src="{{ asset('frontend/assets/images/zayxMK0VSJGi2Wjiw7d2.jpg') }}" alt="image">
 								</div>
 								<div class="service-two__content">
 									<div class="icon">
-										<img src="https://gratech.coevs.com/assets/general/images/paguql8wTgsLmStoAjqQ.png" alt="icon">
+										<img src="{{ asset('frontend/assets/images/paguql8wTgsLmStoAjqQ.png') }}" alt="icon">
 									</div>
-									<div class="shape"><img src="https://gratech.coevs.com/assets/general/images/VqBm9MzwEjJvApbX0I21.png"
+									<div class="shape"><img src="{{ asset('frontend/assets/images/VqBm9MzwEjJvApbX0I21.png') }}"
 									                        alt="shape"></div>
-									<h4><a href="https://gratech.coevs.com/details/30?section=service_slider" class="primary-hover">IT Consultancy</a></h4>
+									<h4><a href="#" class="primary-hover">IT Consultancy</a></h4>
 									<p>The is ipsum dolor sit amet consectetur adipiscing elit. Fusce is eleifend porta...</p>
-									<a class="read-more-btn" href="https://gratech.coevs.com/details/30?section=service_slider">Read More<i
+									<a class="read-more-btn" href="#">Read More<i
 											class="fa-regular fa-arrow-right-long"></i></a>
 								</div>
 							</div>
@@ -368,17 +368,17 @@
 												<div class="swiper-slide">
 							<div class="service-two__item">
 								<div class="image">
-									<img class="component-blog-cover" src="https://gratech.coevs.com/assets/general/images/vxyXXRgUKp3xFIm0O1XS.jpg" alt="image">
+									<img class="component-blog-cover" src="{{ asset('frontend/assets/images/vxyXXRgUKp3xFIm0O1XS.jpg') }}" alt="image">
 								</div>
 								<div class="service-two__content">
 									<div class="icon">
-										<img src="https://gratech.coevs.com/assets/general/images/9uX529WzUqgiu3zMoy8g.png" alt="icon">
+										<img src="{{ asset('frontend/assets/images/9uX529WzUqgiu3zMoy8g.png') }}" alt="icon">
 									</div>
-									<div class="shape"><img src="https://gratech.coevs.com/assets/general/images/tJyZEmY78ysj0HnHujZc.png"
+									<div class="shape"><img src="{{ asset('frontend/assets/images/tJyZEmY78ysj0HnHujZc.png') }}"
 									                        alt="shape"></div>
-									<h4><a href="https://gratech.coevs.com/details/30?section=service_slider" class="primary-hover">App Development</a></h4>
+									<h4><a href="#" class="primary-hover">App Development</a></h4>
 									<p>The is ipsum dolor sit amet consectetur adipiscing elit. Fusce is eleifend porta...</p>
-									<a class="read-more-btn" href="https://gratech.coevs.com/details/30?section=service_slider">Read More<i
+									<a class="read-more-btn" href="#">Read More<i
 											class="fa-regular fa-arrow-right-long"></i></a>
 								</div>
 							</div>
@@ -387,17 +387,17 @@
 												<div class="swiper-slide">
 							<div class="service-two__item">
 								<div class="image">
-									<img class="component-blog-cover" src="https://gratech.coevs.com/assets/general/images/VyBp4msMIw7aYEi7mSRy.jpg" alt="image">
+									<img class="component-blog-cover" src="{{ asset('frontend/assets/images/VyBp4msMIw7aYEi7mSRy.jpg') }}" alt="image">
 								</div>
 								<div class="service-two__content">
 									<div class="icon">
-										<img src="https://gratech.coevs.com/assets/general/images/Bo7ZDRg0PRtVdijzYXyi.png" alt="icon">
+										<img src="{{ asset('frontend/assets/images/Bo7ZDRg0PRtVdijzYXyi.png') }}" alt="icon">
 									</div>
-									<div class="shape"><img src="https://gratech.coevs.com/assets/general/images/krTXHyGfa2EzM6c1m6fH.png"
+									<div class="shape"><img src="{{ asset('frontend/assets/images/krTXHyGfa2EzM6c1m6fH.png') }}"
 									                        alt="shape"></div>
-									<h4><a href="https://gratech.coevs.com/details/30?section=service_slider" class="primary-hover">UI/UX Design</a></h4>
+									<h4><a href="#" class="primary-hover">UI/UX Design</a></h4>
 									<p>The is ipsum dolor sit amet consectetur adipiscing elit. Fusce is eleifend porta...</p>
-									<a class="read-more-btn" href="https://gratech.coevs.com/details/30?section=service_slider">Read More<i
+									<a class="read-more-btn" href="#">Read More<i
 											class="fa-regular fa-arrow-right-long"></i></a>
 								</div>
 							</div>
@@ -414,20 +414,20 @@
 	</div>
 	<div class="choose__shape-right1 wow slideInRight d-none d-lg-block" data-wow-delay="200ms"
 	     data-wow-duration="1500ms">
-		<img src="https://gratech.coevs.com/assets/general/images/xZpa4EJdfVzzCLaBjtie.png" alt="shape">
+		<img src="{{ asset('frontend/assets/images/xZpa4EJdfVzzCLaBjtie.png') }}" alt="shape">
 	</div>
 	<div class="choose__shape-right2 wow slideInRight d-none d-lg-block" data-wow-delay="200ms"
 	     data-wow-duration="1000ms">
-		<img src="https://gratech.coevs.com/assets/general/images/UnbqWjDTj86Dr2v3a56v.png" alt="shape">
+		<img src="{{ asset('frontend/assets/images/UnbqWjDTj86Dr2v3a56v.png') }}" alt="shape">
 	</div>
 	<div class="choose__shape-left sway__animation">
-		<img src="https://gratech.coevs.com/assets/general/images/ENU3RNEYAgc2qUMfmLcQ.png" alt="shape">
+		<img src="{{ asset('frontend/assets/images/ENU3RNEYAgc2qUMfmLcQ.png') }}" alt="shape">
 	</div>
 	<div class="container">
 		<div class="row g-4">
 			<div class="col-lg-6 d-block d-lg-none">
 				<div class="image">
-					<img src="https://gratech.coevs.com/assets/general/images/M8colm1a32dMlohG0wse.png" alt="image">
+					<img src="{{ asset('frontend/assets/images/M8colm1a32dMlohG0wse.png') }}" alt="image">
 				</div>
 			</div>
 			<div class="col-lg-6">
@@ -454,7 +454,7 @@
 					<div class="col-md-6">
 						<div class="about__right-item">
 							<div class="icon">
-								<img src="https://gratech.coevs.com/assets/general/images/EXWrohcQ1zeOelap0sIS.png" alt="icon">
+								<img src="{{ asset('frontend/assets/images/EXWrohcQ1zeOelap0sIS.png') }}" alt="icon">
 							</div>
 							<div class="content">
 								<h4 class="mb-1">Best Services</h4>
@@ -465,7 +465,7 @@
 					<div class="col-md-6">
 						<div class="about__right-item">
 							<div class="icon">
-								<img src="https://gratech.coevs.com/assets/general/images/ttefQx7IVW1YABvz48N8.png" alt="icon">
+								<img src="{{ asset('frontend/assets/images/ttefQx7IVW1YABvz48N8.png') }}" alt="icon">
 							</div>
 							<div class="content">
 								<h4 class="mb-1">24/7 Call Support</h4>
@@ -505,7 +505,7 @@
 			</div>
 			<div class="col-lg-6 d-none d-lg-block">
 				<div class="choose__image image">
-					<img src="https://gratech.coevs.com/assets/general/images/M8colm1a32dMlohG0wse.png" alt="image">
+					<img src="{{ asset('frontend/assets/images/M8colm1a32dMlohG0wse.png') }}" alt="image">
 				</div>
 			</div>
 		</div>
@@ -514,7 +514,7 @@
 	<div class="container">
 		<div class="section-header text-center mb-60">
 			<h5 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-				<img class="me-1" src="https://gratech.coevs.com/assets/general/images/B7TppyyLdxL1l499WBec.png" alt="icon">
+				<img class="me-1" src="{{ asset('frontend/assets/images/B7TppyyLdxL1l499WBec.png') }}" alt="icon">
 				OUR TEAM
 			</h5>
 			<h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Our Leadership Team</h2>
@@ -524,10 +524,10 @@
 			     data-wow-duration="1500ms">
 				<div class="team__item">
 					<div class="image">
-						<img src="https://gratech.coevs.com/assets/general/images/wtNA0K1qztJNNtvnFGaX.jpg" alt="image">
+						<img src="{{ asset('frontend/assets/images/wtNA0K1qztJNNtvnFGaX.jpg') }}" alt="image">
 					</div>
 					<div class="team__content">
-						<h4><a class="text-white" href="https://gratech.coevs.com/details/54?section=our_team">Kawser Ahmed</a></h4>
+						<h4><a class="text-white" href="#">Kawser Ahmed</a></h4>
 						<span class="text-white">Web Designer</span>
 					</div>
 					<div class="team__share">
@@ -546,10 +546,10 @@
 			     data-wow-duration="1500ms">
 				<div class="team__item">
 					<div class="image">
-						<img src="https://gratech.coevs.com/assets/general/images/hWgFNnxMfM4adojAF7XB.jpg" alt="image">
+						<img src="{{ asset('frontend/assets/images/hWgFNnxMfM4adojAF7XB.jpg') }}" alt="image">
 					</div>
 					<div class="team__content">
-						<h4><a class="text-white" href="https://gratech.coevs.com/details/55?section=our_team">Karniz Fatema</a></h4>
+						<h4><a class="text-white" href="#">Karniz Fatema</a></h4>
 						<span class="text-white">Customer Support</span>
 					</div>
 					<div class="team__share">
@@ -568,10 +568,10 @@
 			     data-wow-duration="1500ms">
 				<div class="team__item">
 					<div class="image">
-						<img src="https://gratech.coevs.com/assets/general/images/TuwjB6W2s17gZCJb60MV.jpg" alt="image">
+						<img src="{{ asset('frontend/assets/images/TuwjB6W2s17gZCJb60MV.jpg') }}" alt="image">
 					</div>
 					<div class="team__content">
-						<h4><a class="text-white" href="https://gratech.coevs.com/details/56?section=our_team">Alex Pranto</a></h4>
+						<h4><a class="text-white" href="#">Alex Pranto</a></h4>
 						<span class="text-white">UI/UX Designer</span>
 					</div>
 					<div class="team__share">
@@ -590,10 +590,10 @@
 			     data-wow-duration="1500ms">
 				<div class="team__item">
 					<div class="image">
-						<img src="https://gratech.coevs.com/assets/general/images/3JwXrTbOUTAtOCyhuyPm.jpg" alt="image">
+						<img src="{{ asset('frontend/assets/images/3JwXrTbOUTAtOCyhuyPm.jpg') }}" alt="image">
 					</div>
 					<div class="team__content">
-						<h4><a class="text-white" href="https://gratech.coevs.com/details/57?section=our_team">Anneya Roy</a></h4>
+						<h4><a class="text-white" href="#">Anneya Roy</a></h4>
 						<span class="text-white">Software Engineer</span>
 					</div>
 					<div class="team__share">
@@ -612,10 +612,10 @@
 			     data-wow-duration="1500ms">
 				<div class="team__item">
 					<div class="image">
-						<img src="https://gratech.coevs.com/assets/general/images/VGvQfd85h5quIio2Hxei.jpg" alt="image">
+						<img src="{{ asset('frontend/assets/images/VGvQfd85h5quIio2Hxei.jpg') }}" alt="image">
 					</div>
 					<div class="team__content">
-						<h4><a class="text-white" href="https://gratech.coevs.com/details/58?section=our_team">Mohmmad Arif</a></h4>
+						<h4><a class="text-white" href="#">Mohmmad Arif</a></h4>
 						<span class="text-white">Marketing Manager</span>
 					</div>
 					<div class="team__share">
@@ -634,10 +634,10 @@
 			     data-wow-duration="1500ms">
 				<div class="team__item">
 					<div class="image">
-						<img src="https://gratech.coevs.com/assets/general/images/nz8lORDJmM889CkBYLel.jpg" alt="image">
+						<img src="{{ asset('frontend/assets/images/nz8lORDJmM889CkBYLel.jpg') }}" alt="image">
 					</div>
 					<div class="team__content">
-						<h4><a class="text-white" href="https://gratech.coevs.com/details/59?section=our_team">Prince Sagor</a></h4>
+						<h4><a class="text-white" href="#">Prince Sagor</a></h4>
 						<span class="text-white">Programmer</span>
 					</div>
 					<div class="team__share">
@@ -656,22 +656,22 @@
 	</div>
 </section>			<section class="faq-area sub-bg pt-120 pb-120">
 	<div class="faq__shape">
-		<img class="sway__animationX" src="https://gratech.coevs.com/assets/general/images/cIqaFgCE3M7T5bKSCiIz.png" alt="shape">
+		<img class="sway__animationX" src="{{ asset('frontend/assets/images/cIqaFgCE3M7T5bKSCiIz.png') }}" alt="shape">
 	</div>
 	<div class="container">
 		<div class="row g-4">
 			<div class="col-lg-5 pe-2 pe-lg-5">
 				<div class="faq__image image wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
 					<div class="faq__line sway__animation">
-						<img src="https://gratech.coevs.com/assets/general/images/xuwXnEUQjNnOWTS5JMhq.png" alt="image">
+						<img src="{{ asset('frontend/assets/images/xuwXnEUQjNnOWTS5JMhq.png') }}" alt="image">
 					</div>
-					<img src="https://gratech.coevs.com/assets/general/images/WlxQpHouZMaxujW6w3yP.png" alt="image">
+					<img src="{{ asset('frontend/assets/images/WlxQpHouZMaxujW6w3yP.png') }}" alt="image">
 				</div>
 			</div>
 			<div class="col-lg-7 mt-60">
 				<div class="section-header mb-40">
 					<h5 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-						<img class="me-1" src="https://gratech.coevs.com/assets/general/images/RGT1KFoJs6nlbDkwr2HB.png" alt="icon">
+						<img class="me-1" src="{{ asset('frontend/assets/images/RGT1KFoJs6nlbDkwr2HB.png') }}" alt="icon">
 						FAQ
 					</h5>
 					<h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms"> Most Common  Question?</h2>
@@ -753,7 +753,7 @@
 	</div>
 </section>			<section class="case-two-area secondary-bg pt-120">
 	<div class="case-two__bg">
-		<img src="https://gratech.coevs.com/assets/general/images/wwA6L1gw1J182zm72MCQ.png" alt="image">
+		<img src="{{ asset('frontend/assets/images/wwA6L1gw1J182zm72MCQ.png') }}" alt="image">
 	</div>
 	<div class="container">
 		<div class="d-flex gap-4 flex-wrap align-items-center justify-content-between mb-60">
@@ -791,13 +791,13 @@
 														<div class="swiper-slide">
 						<div class="case-two__item">
 							<div class="image case-two__image">
-								<img src="https://gratech.coevs.com/assets/general/images/oSA8B1Af2KaVxDWOyg2b.jpg" alt="image">
+								<img src="{{ asset('frontend/assets/images/oSA8B1Af2KaVxDWOyg2b.jpg') }}" alt="image">
 							</div>
 							<div class="case-two__content">
 								<span>Technology</span>
-								<h4><a href="https://gratech.coevs.com/details/34?section=project_elegent" class="text-white">Platform Integration</a></h4>
+								<h4><a href="#" class="text-white">Platform Integration</a></h4>
 							</div>
-							<a href="https://gratech.coevs.com/details/34?section=project_elegent" class="case-two__btn">
+							<a href="#" class="case-two__btn">
 								<i class="fa-regular fa-arrow-right"></i>
 							</a>
 						</div>
@@ -805,13 +805,13 @@
 														<div class="swiper-slide">
 						<div class="case-two__item">
 							<div class="image case-two__image">
-								<img src="https://gratech.coevs.com/assets/general/images/qKb99H31py4X7Nwlv2Ot.jpg" alt="image">
+								<img src="{{ asset('frontend/assets/images/qKb99H31py4X7Nwlv2Ot.jpg') }}" alt="image">
 							</div>
 							<div class="case-two__content">
 								<span>Security</span>
-								<h4><a href="https://gratech.coevs.com/details/35?section=project_elegent" class="text-white">Network Security</a></h4>
+								<h4><a href="#" class="text-white">Network Security</a></h4>
 							</div>
-							<a href="https://gratech.coevs.com/details/35?section=project_elegent" class="case-two__btn">
+							<a href="#" class="case-two__btn">
 								<i class="fa-regular fa-arrow-right"></i>
 							</a>
 						</div>
@@ -819,13 +819,13 @@
 														<div class="swiper-slide">
 						<div class="case-two__item">
 							<div class="image case-two__image">
-								<img src="https://gratech.coevs.com/assets/general/images/0VxOqOHrc2sY1CgUQu0U.jpg" alt="image">
+								<img src="{{ asset('frontend/assets/images/0VxOqOHrc2sY1CgUQu0U.jpg') }}" alt="image">
 							</div>
 							<div class="case-two__content">
 								<span>Solution</span>
-								<h4><a href="https://gratech.coevs.com/details/36?section=project_elegent" class="text-white">Web Devolapment</a></h4>
+								<h4><a href="#" class="text-white">Web Devolapment</a></h4>
 							</div>
-							<a href="https://gratech.coevs.com/details/36?section=project_elegent" class="case-two__btn">
+							<a href="#" class="case-two__btn">
 								<i class="fa-regular fa-arrow-right"></i>
 							</a>
 						</div>
@@ -866,7 +866,7 @@
 																								</div>
 							<p class="mb-30">“ Consectetur elit nteger maecenas porta is nunc nul viverra Aenean pulvinar maximus leo nunc viverra laoreet est the isporta adipiscing pretium ”</p>
 							<div class="d-flex align-items-center gap-3">
-								<img src="https://gratech.coevs.com/assets/general/images/jkg0qud77FZnJRY7CjoJ.png" alt="image">
+								<img src="{{ asset('frontend/assets/images/jkg0qud77FZnJRY7CjoJ.png') }}" alt="image">
 								<div class="con">
 									<h4>Alex Pranto</h4>
 									<span>Ethical Hacker</span>
@@ -889,7 +889,7 @@
 																								</div>
 							<p class="mb-30">“ Consectetur elit nteger maecenas porta is nunc nul viverra Aenean pulvinar maximus leo nunc viverra laoreet est the isporta adipiscing pretium ”</p>
 							<div class="d-flex align-items-center gap-3">
-								<img src="https://gratech.coevs.com/assets/general/images/Ciqg7zlVYbUcsvBIsVOI.png" alt="image">
+								<img src="{{ asset('frontend/assets/images/Ciqg7zlVYbUcsvBIsVOI.png') }}" alt="image">
 								<div class="con">
 									<h4>Adity Roy</h4>
 									<span>Web Designer</span>
@@ -912,7 +912,7 @@
 																								</div>
 							<p class="mb-30">“ Consectetur elit nteger maecenas porta is nunc nul viverra Aenean pulvinar maximus leo nunc viverra laoreet est the isporta adipiscing pretium ”</p>
 							<div class="d-flex align-items-center gap-3">
-								<img src="https://gratech.coevs.com/assets/general/images/2pA5yUY1AHC3cFC21O8S.png" alt="image">
+								<img src="{{ asset('frontend/assets/images/2pA5yUY1AHC3cFC21O8S.png') }}" alt="image">
 								<div class="con">
 									<h4>Mohmamd Arif</h4>
 									<span>Software Tester</span>
@@ -958,8 +958,8 @@
 		<div class="row g-4">
 												<div class="col-lg-6 wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
 						<div class="blog-two__grid-item">
-							<a href="https://gratech.coevs.com/blog/keep-your-business-safe-ensure-high-availability" class="blog__image d-block image">
-								<img src="https://gratech.coevs.com/assets/general/images/x9Rjxh5b3w3Z3HhdpJ7a.jpg" alt="image">
+							<a href="#" class="blog__image d-block image">
+								<img src="{{ asset('frontend/assets/images/x9Rjxh5b3w3Z3HhdpJ7a.jpg') }}" alt="image">
 								<div class="blog-tag">
 									<h3 class="text-white">16</h3>
 									<span class="text-white">Mar</span>
@@ -981,20 +981,20 @@
 												</clipPath>
 											</defs>
 										</svg>
-										<a href="https://gratech.coevs.com/blog/filter?category=4">App Development</a>
+										<a href="#">App Development</a>
 									</li>
 								</ul>
-								<h3><a href="https://gratech.coevs.com/blog/keep-your-business-safe-ensure-high-availability" class="primary-hover">Keep Your Business Safe &amp; Ensure High Availability.</a></h3>
+								<h3><a href="#" class="primary-hover">Keep Your Business Safe &amp; Ensure High Availability.</a></h3>
 								<p class="mt-10">Consequat Quisque eget congue velit in OF cursus leo sodales IS the euismod quis...</p>
 								<div class="about__info justify-content-between flex-wrap gap-3 mt-25">
 									<div class="d-flex gap-2 align-items-center">
-										<img class="blog-avatar" src="https://gratech.coevs.com/assets/general/static/profile.png" alt="image">
+										<img class="blog-avatar" src="{{ asset('frontend/assets/images/profile.png') }}" alt="image">
 										<div class="info">
 											<a href="#0" class="primary-color">By Author</a>
 											<h5>Admin User</h5>
 										</div>
 									</div>
-									<a href="https://gratech.coevs.com/blog/keep-your-business-safe-ensure-high-availability" class="btn-one">Read More <i
+									<a href="#" class="btn-one">Read More <i
 											class="fa-regular fa-arrow-right-long"></i></a>
 								</div>
 							</div>
@@ -1003,8 +1003,8 @@
 					<div class="col-lg-6">
 																		<div class="blog-two__list-item  mb-30   wow fadeInUp" data-wow-delay="100ms"
 						     data-wow-duration="1500ms">
-							<a href="https://gratech.coevs.com/blog/powerful-server-and-platform" class="blog__image d-block image">
-								<img class="blog-square" src="https://gratech.coevs.com/assets/general/images/QOfBkZVkbeom5jPBPy6X.jpg" alt="image">
+							<a href="#" class="blog__image d-block image">
+								<img class="blog-square" src="{{ asset('frontend/assets/images/QOfBkZVkbeom5jPBPy6X.jpg') }}" alt="image">
 								<div class="blog-tag">
 									<h3 class="text-white">15</h3>
 									<span class="text-white">Mar</span>
@@ -1026,13 +1026,13 @@
 												</clipPath>
 											</defs>
 										</svg>
-										<a href="https://gratech.coevs.com/blog/filter?category=5">Diseño UI/UX</a>
+										<a href="#">Diseño UI/UX</a>
 									</li>
 								</ul>
-								<h3><a href="https://gratech.coevs.com/blog/powerful-server-and-platform" class="primary-hover">Powerful Server and Platform</a></h3>
+								<h3><a href="#" class="primary-hover">Powerful Server and Platform</a></h3>
 								<div class="about__info mt-30">
 									<div class="d-flex gap-2 align-items-center">
-										<img class="blog-avatar" src="https://gratech.coevs.com/assets/general/static/profile.png" alt="image">
+										<img class="blog-avatar" src="{{ asset('frontend/assets/images/profile.png') }}" alt="image">
 										<div class="info">
 											<a href="#0" class="primary-color">By Author</a>
 											<h5>Admin User</h5>
@@ -1043,8 +1043,8 @@
 						</div>
 																		<div class="blog-two__list-item   wow fadeInUp" data-wow-delay="200ms"
 						     data-wow-duration="1500ms">
-							<a href="https://gratech.coevs.com/blog/whats-the-holding-back-the-it-solution" class="blog__image d-block image">
-								<img class="blog-square" src="https://gratech.coevs.com/assets/general/images/uCN78b9ffAsVVESZOB92.jpg" alt="image">
+							<a href="#" class="blog__image d-block image">
+								<img class="blog-square" src="{{ asset('frontend/assets/images/uCN78b9ffAsVVESZOB92.jpg') }}" alt="image">
 								<div class="blog-tag">
 									<h3 class="text-white">14</h3>
 									<span class="text-white">Mar</span>
@@ -1066,13 +1066,13 @@
 												</clipPath>
 											</defs>
 										</svg>
-										<a href="https://gratech.coevs.com/blog/filter?category=5">Diseño UI/UX</a>
+										<a href="#">Diseño UI/UX</a>
 									</li>
 								</ul>
-								<h3><a href="https://gratech.coevs.com/blog/whats-the-holding-back-the-it-solution" class="primary-hover">What’s the Holding Back the It Solution</a></h3>
+								<h3><a href="#" class="primary-hover">What’s the Holding Back the It Solution</a></h3>
 								<div class="about__info mt-30">
 									<div class="d-flex gap-2 align-items-center">
-										<img class="blog-avatar" src="https://gratech.coevs.com/assets/general/static/profile.png" alt="image">
+										<img class="blog-avatar" src="{{ asset('frontend/assets/images/profile.png') }}" alt="image">
 										<div class="info">
 											<a href="#0" class="primary-color">By Author</a>
 											<h5>Admin User</h5>
@@ -1090,10 +1090,10 @@
 	<div class="container">
 		<div class="quote__wrp gradient-bg">
 			<div class="counter__shape wow slideInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
-				<img src="https://gratech.coevs.com/assets/general/images/dEjySiIQZM6sqvjje7Bo.png" alt="shape">
+				<img src="{{ asset('frontend/assets/images/dEjySiIQZM6sqvjje7Bo.png') }}" alt="shape">
 			</div>
 			<div class="quote__shape bobble__animation">
-				<img src="https://gratech.coevs.com/assets/general/images/3HG2tginvT0bVt1AvtI7.png" alt="shape">
+				<img src="{{ asset('frontend/assets/images/3HG2tginvT0bVt1AvtI7.png')}}" alt="shape">
 			</div>
 			<div class="d-flex flex-wrap gap-4 align-items-center justify-content-between">
 				<div class="section-header">
