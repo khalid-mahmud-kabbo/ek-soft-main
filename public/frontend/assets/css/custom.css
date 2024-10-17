@@ -12,3 +12,12 @@ body::-webkit-scrollbar-track {
 .about-three__left-item button{
     background-color: #EB2026;
 }
+
+
+@media (max-width: 991px) {
+
+    .main-menu {
+        display: none;
+    }
+
+}
