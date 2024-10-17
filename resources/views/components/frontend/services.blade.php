@@ -113,7 +113,13 @@
 							</div>
 						</div>
 
-												<div class="swiper-slide">
+
+
+
+
+
+
+						<div class="swiper-slide">
 							<div class="service-two__item">
 								<div class="image">
 									<img class="component-blog-cover" src="{{ asset('frontend/assets/images/vxyXXRgUKp3xFIm0O1XS.jpg') }}" alt="image">
@@ -131,6 +137,51 @@
 								</div>
 							</div>
 						</div>
+
+
+						<div class="swiper-slide">
+							<div class="service-two__item">
+								<div class="image">
+									<img class="component-blog-cover" src="{{ asset('frontend/assets/images/vxyXXRgUKp3xFIm0O1XS.jpg') }}" alt="image">
+								</div>
+								<div class="service-two__content">
+									<div class="icon">
+										<img src="{{ asset('frontend/assets/images/paguql8wTgsLmStoAjqQ.png') }}" alt="icon">
+									</div>
+									<div class="shape"><img src="{{ asset('frontend/assets/images/tJyZEmY78ysj0HnHujZc.png') }}"
+									                        alt="shape"></div>
+									<h4><a href="#" class="primary-hover">Web Development</a></h4>
+									<p>The is ipsum dolor sit amet consectetur adipiscing elit. Fusce is eleifend porta...</p>
+									<a class="read-more-btn" href="#">Read More<i
+											class="fa-regular fa-arrow-right-long"></i></a>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="swiper-slide">
+							<div class="service-two__item">
+								<div class="image">
+									<img class="component-blog-cover" src="{{ asset('frontend/assets/images/vxyXXRgUKp3xFIm0O1XS.jpg') }}" alt="image">
+								</div>
+								<div class="service-two__content">
+									<div class="icon">
+										<img src="{{ asset('frontend/assets/images/9uX529WzUqgiu3zMoy8g.png') }}" alt="icon">
+									</div>
+									<div class="shape"><img src="{{ asset('frontend/assets/images/tJyZEmY78ysj0HnHujZc.png') }}"
+									                        alt="shape"></div>
+									<h4><a href="#" class="primary-hover">Software Development</a></h4>
+									<p>The is ipsum dolor sit amet consectetur adipiscing elit. Fusce is eleifend porta...</p>
+									<a class="read-more-btn" href="#">Read More<i
+											class="fa-regular fa-arrow-right-long"></i></a>
+								</div>
+							</div>
+						</div>
+
+
+
+
+
 
 												<div class="swiper-slide">
 							<div class="service-two__item">
