@@ -21,13 +21,6 @@ use App\Http\Controllers\Admin\SitemapController;
 Route::get('/admin/login', [AuthController::class, 'login'])->name('admin.login')->middleware('guest');
 Route::post('/admin/login', [AuthController::class, 'LoginDashboard'])->name('login.post');
 
-Route::group(['prefix' => 'subscribe'], function () {
-    Route::post('/store', [SubscribeController::class, 'subscribeStore'])->name('admin.subscribe.store');
-    Route::get('/delete/{id}', [SubscribeController::class, 'subscribeDelete'])->name('admin.subscribe.delete');
-    Route::get('/list', [SubscribeController::class, 'index'])->name('admin.subscribe.index');
-    Route::post('promote', [SubscribeController::class, 'promote'])->name('admin.subscribe.promote')->middleware(['isDemo']);;
-});
-
 Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'is_admin', 'en.locale'], 'as' => 'admin.'], function () {
 
     Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
@@ -53,7 +46,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'is_admin', 'en.loca
     });
 
     Route::group(['prefix' => 'category'], function () {
-        Route::get('', [CategoryController::class, 'category'])->name('category')->middleware(['permission:category-list|category-create|category-edit|category-delete']);
+        Route::get('', [CategoryController::class, 'category'])->name('category')->middleware(['permission:category-list-create|category-edit|category-delete']);
         Route::get('/create', [CategoryController::class, 'categoryCreate'])->name('category.create')->middleware(['permission:category-create']);
         Route::post('/create', [CategoryController::class, 'categoryStore'])->name('category.store')->middleware(['permission:category-create', 'isDemo']);
         Route::get('/edit/{id}', [CategoryController::class, 'categoryEdit'])->name('category.edit')->middleware(['permission:category-edit']);
@@ -65,22 +58,29 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'is_admin', 'en.loca
 
 
 
-    Route::group(['prefix' => 'sliders'], function () {
-
-        Route::get('/sliders', [SliderController::class, 'index'])->name('sliders.index')->middleware(['permission:slider-list']);
-
-        Route::post('/sliders', [SliderController::class, 'store'])->name('sliders.store')->middleware(['permission:slider-create']);
-
-        Route::get('/sliders/{slider}/edit', [SliderController::class, 'edit'])->name('sliders.edit')->middleware(['permission:slider-edit']);
-
-        Route::put('/sliders/{slider}', [SliderController::class, 'update'])->name('sliders.update')->middleware(['permission:slider-edit']);
-
-        Route::delete('/sliders/{slider}', [SliderController::class, 'destroy'])->name('sliders.destroy')->middleware(['permission:slider-delete']);
+    Route::group(['prefix' => 'slider'], function () {
+        Route::get('', [SliderController::class, 'slider'])->name('slider');
+        Route::get('/create', [SliderController::class, 'sliderCreate'])->name('slider.create');
+        Route::post('/create', [SliderController::class, 'sliderStore'])->name('slider.store')->middleware('isDemo');
+        Route::get('/edit/{id}', [SliderController::class, 'sliderEdit'])->name('slider.edit');
+        Route::post('/update', [SliderController::class, 'sliderUpdate'])->name('slider.update')->middleware('isDemo');
+        Route::get('/active/{id}', [SliderController::class, 'sliderActive'])->name('slider.active')->middleware('isDemo');
+        Route::get('/inactive/{id}', [SliderController::class, 'sliderInactive'])->name('slider.inactive')->middleware('isDemo');
+        Route::get('/delete/{id}', [SliderController::class, 'sliderDelete'])->name('slider.delete')->middleware('isDemo');
     });
 
 
 
-
+    // Route::group(['prefix' => 'slider'], function () {
+    //     Route::get('', [SliderController::class, 'slider'])->name('slider')->middleware(['permission:slider-list|slider-create|slider-edit|slider-delete']);
+    //     Route::get('/create', [SliderController::class, 'sliderCreate'])->name('slider.create')->middleware(['permission:slider-create']);
+    //     Route::post('/create', [SliderController::class, 'sliderStore'])->name('slider.store')->middleware(['permission:slider-create', 'isDemo']);
+    //     Route::get('/edit/{id}', [SliderController::class, 'sliderEdit'])->name('slider.edit')->middleware(['permission:slider-edit']);
+    //     Route::post('/update', [SliderController::class, 'sliderUpdate'])->name('slider.update')->middleware(['permission:slider-edit', 'isDemo']);
+    //     Route::get('/active/{id}', [SliderController::class, 'sliderActive'])->name('slider.active')->middleware(['permission:slider-edit', 'isDemo']);
+    //     Route::get('/inactive/{d}', [SliderController::class, 'sliderInactive'])->name('slider.inactive')->middleware(['permission:slider-edit', 'isDemo']);
+    //     Route::get('/delete/{id}', [SliderController::class, 'sliderDelete'])->name('slider.delete')->middleware(['permission:slider-delete', 'isDemo']);
+    // });
 
 
     Route::group(['prefix' => 'brand'], function () {

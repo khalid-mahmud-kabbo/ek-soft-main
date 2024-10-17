@@ -6,13 +6,18 @@
             serverSide: true,
                 ajax: $('#table-url').data("url"),
             columns: [
+
                 {
-                    data: 'Background_Image',
-                    name: 'Background_Image'
+                    data: 'title',
+                    name: 'title'
                 },
                 {
-                    data: 'Title',
-                    name: 'Title'
+                    data: 'SliderImage',
+                    name: 'SliderImage'
+                },
+                {
+                    data: 'Status',
+                    name: 'Status'
                 },
                 {
                     data: 'action',

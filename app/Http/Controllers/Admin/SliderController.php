@@ -1,95 +1,141 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\SliderRequest;
+use App\Models\Admin\Slider;
 use Illuminate\Http\Request;
+use Yajra\DataTables\Facades\DataTables;
 
 class SliderController extends Controller
 {
-
-
-
-
-
-    
-    public function store(Request $request)
+    public function slider(Request $request)
     {
-        $request->validate([
-            'slider_image' => 'required|image',
-            'title' => 'required|string|max:255',
-            'short_description' => 'nullable|string',
-            'button_text' => 'nullable|string|max:255',
-            'button_link' => 'nullable|url',
-        ]);
+        if ($request->ajax()) {
+            $data = Slider::latest()->get();
+            return DataTables::of($data)
+                ->addIndexColumn()
+                ->addColumn('action', function ($data) {
+                    $btn = '<div class="action__buttons">';
+                    $btn = $btn . '<a href="' . route('admin.slider.edit', $data->id) . '" class="btn-action" title="Edit"><i class="fas fa-pen-to-square"></i></a>';
 
+                    if ($data->Status == 1) {
+                        $btn = $btn . '<a href="' . route('admin.slider.inactive', $data->id) . '" class="btn-action" title="Inactive"><i class="fas fa-toggle-on"></i></a>';
+                    } else {
+                        $btn = $btn . '<a href="' . route('admin.slider.active', $data->id) . '" class="btn-action" title="Active"><i class="fas fa-toggle-off"></i></a>';
+                    }
+                    $btn = $btn . '<a href="' . route('admin.slider.delete', $data->id) . '" class="btn-action delete" title="Delete"><i class="fas fa-trash-alt"></i></a>';
+                    $btn = $btn . '</div>';
+                    return $btn;
+                })
+                ->editColumn('title', function ($data) {
+                    return $data->title;
+                })
+                ->editColumn('Status', function ($data) {
+                    if ($data->Status == 1) {
+                        $active = "Active";
+                        return '<span class="status active">' . $active . '</span>';
+                    } else {
+                        $active = "Inactive";
+                        return '<span class="status blocked">' . $active . '</span>';
+                    }
+                })
+                ->editColumn('SliderImage', function ($data) {
+                    $url = asset(SliderImage() . $data->SliderImage);
+                    return '<img src=' . $url . ' border="0" width="70" class="img-rounded" align="center" />';
+                })
+                ->rawColumns(['action', 'title', 'Status', 'SliderImage', 'SliderImage'])
+                ->make(true);
+        }
+        $data['title'] = __('Slider List');
+        return view('admin.pages.slider.index', $data);
+    }
+
+    public function sliderCreate()
+    {
+        $data['title'] = __('Slider Create');
+        return view('admin.pages.slider.create', $data);
+    }
+    public function sliderStore(SliderRequest $request)
+    {
         if (!empty($request->slider_image)) {
-            $imagePath = fileUpload($request['slider_image'], SliderImage());
+            $image = fileUpload($request['slider_image'], SliderImage());
         } else {
             return redirect()->back()->with('error', __('Image is  required'));
         }
 
-        Slider::create([
-            'slider_image' => $imagePath,
-            'sub_title' => $request->sub_title,
+
+        $slider = Slider::create([
             'title' => $request->title,
+            'subtitle' => $request->subtitle,
             'short_description' => $request->short_description,
             'button_text' => $request->button_text,
             'button_link' => $request->button_link,
+            'SliderImage' => $image
         ]);
-
-        return redirect()->back()->with('success', 'Slider created successfully!');
+        if ($slider) {
+            return redirect()->route('admin.slider')->with('success', __('Successfully Stored !'));
+        }
+        return redirect()->back()->with('error', __('Does not insert  !'));
     }
 
-    // Fetch and return all sliders
-    public function index()
+    public function sliderDelete($id)
     {
-        $sliders = Slider::all();
-        return view('sliders.index', compact('sliders'));
+
+        $delete = Slider::Where('id', $id);
+        if ($delete) {
+            $delete->delete();
+            return redirect()->route('admin.slider')->with('success', __('Successfully Deleted !'));
+        }
+        return redirect()->route('admin.slider')->with('error', __('Does Not Delete!'));
     }
 
-    // Show the form for editing a specific slider
-    public function edit(Slider $slider)
+    public function sliderActive($id)
     {
-        $data['edit'] = Brand::where('id', $id)->first();
+        $inactive = Slider::find($id)->update(['Status' => 1]);
+        if ($inactive) {
+            return redirect()->route('admin.slider')->with('success', __('Successfully Active !'));
+        }
+        return redirect()->route('admin.slider')->with('success', __('Does not Updated !'));
+    }
+    public function sliderInactive($id)
+    {
+        $inactive = Slider::find($id)->update(['Status' => 0]);
+        if ($inactive) {
+            return redirect()->route('admin.slider')->with('success', __('Successfully Inactive !'));
+        }
+        return redirect()->route('admin.slider')->with('success', __('Does not Updated !'));
+    }
+
+    public function sliderEdit($id)
+    {
+        $data['title'] = __('Slider Edit');
+        $data['edit'] = Slider::where('id', $id)->first();
         return view('admin.pages.slider.edit', $data);
     }
-
-    // Update a specific slider
-    public function update(Request $request, Slider $slider)
+    public function sliderUpdate(Request $request)
     {
-        $request->validate([
-            'slider_image' => 'nullable|image',
-            'title' => 'required|string|max:255',
-            'short_description' => 'nullable|string',
-            'button_text' => 'nullable|string|max:255',
-            'button_link' => 'nullable|url',
-        ]);
+        $id = $request->id;
 
-
-        $sliders = Slider::whereId($id)->first();
-
+        $slider = Slider::whereId($id)->first();
         if (!empty($request->slider_image)) {
             $image = fileUpload($request['slider_image'], SliderImage());
         } else {
-            $image = $sliders->SliderImage;
+            $image = $slider->SliderImage;
         }
+        $update = $slider->update([
 
-        $slider->update([
-            'sub_title' => $request->sub_title,
-            'title' => $request->title,
-            'short_description' => $request->short_description,
-            'button_text' => $request->button_text,
-            'button_link' => $request->button_link,
+            'title' => is_null($request->title) ? $slider->title : $request->title,
+            'subtitle' => is_null($request->subtitle) ? $slider->subtitle : $request->subtitle,
+            'short_description' => is_null($request->short_description) ? $slider->short_description : $request->short_description,
+            'button_text' => is_null($request->button_text) ? $slider->button_text : $request->button_text,
+            'button_link' => is_null($request->button_link) ? $slider->button_link : $request->button_link,
+            'SliderImage' => $image
         ]);
-
-        return redirect()->back()->with('success', 'Slider updated successfully!');
-    }
-
-    // Delete a specific slider
-    public function destroy(Slider $slider)
-    {
-        $slider->delete();
-        return redirect()->back()->with('success', 'Slider deleted successfully!');
+        if ($update) {
+            return redirect()->route('admin.slider')->with('success', __('Successfully Updated !'));
+        }
+        return redirect()->back()->with('error', __('Does not Update  !'));
     }
 }
