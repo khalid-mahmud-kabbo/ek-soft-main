@@ -123,6 +123,17 @@ if (!function_exists('BrandImage')) {
         return 'uploaded_files/brand/';
     }
 }
+
+
+if (!function_exists('SliderImage')) {
+    function SliderImage()
+    {
+        return 'uploaded_files/sliders/';
+    }
+}
+
+
+
 if (!function_exists('Brnad')) {
     function Brnad()
     {

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AuthController;
+use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\Admin\BlogController;
 use App\Http\Controllers\Admin\BrandController;
 use App\Http\Controllers\Admin\CategoryController;
@@ -61,6 +62,27 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'is_admin', 'en.loca
         Route::get('/inactive/{d}', [CategoryController::class, 'categoryInactive'])->name('category.inactive')->middleware(['permission:category-edit', 'isDemo']);
         Route::get('/delete/{id}', [CategoryController::class, 'categoryDelete'])->name('category.delete')->middleware(['permission:category-delete', 'isDemo']);
     });
+
+
+
+    Route::group(['prefix' => 'sliders'], function () {
+
+        Route::get('/sliders', [SliderController::class, 'index'])->name('sliders.index')->middleware(['permission:slider-list']);
+
+        Route::post('/sliders', [SliderController::class, 'store'])->name('sliders.store')->middleware(['permission:slider-create']);
+
+        Route::get('/sliders/{slider}/edit', [SliderController::class, 'edit'])->name('sliders.edit')->middleware(['permission:slider-edit']);
+
+        Route::put('/sliders/{slider}', [SliderController::class, 'update'])->name('sliders.update')->middleware(['permission:slider-edit']);
+
+        Route::delete('/sliders/{slider}', [SliderController::class, 'destroy'])->name('sliders.destroy')->middleware(['permission:slider-delete']);
+    });
+
+
+
+
+
+
     Route::group(['prefix' => 'brand'], function () {
         Route::get('', [BrandController::class, 'brand'])->name('brand')->middleware(['permission:brand-list|brand-create|brand-edit|brand-delete']);
         Route::get('/create', [BrandController::class, 'brandCreate'])->name('brand.create')->middleware(['permission:brand-create']);

@@ -45,6 +45,9 @@
                 </ul>
             </li>
         @endcanany
+
+
+
         @canany(['category-list', 'brand-list'])
             <li class="{{ isset($menu) && $menu == 'catbad' ? 'mm-active' : '' }}">
                 <a class="has-arrow" href="#">
@@ -72,6 +75,40 @@
                 </ul>
             </li>
         @endcanany
+
+
+
+        @canany(['slider-list', 'slider-create'])
+        <li class="{{ isset($menu) && $menu == 'slider' ? 'mm-active' : '' }}">
+            <a class="has-arrow" href="#">
+                <i class="fas fa-list"></i>
+                <span>{{ __('Slider Control') }}</span>
+            </a>
+            <ul>
+                @can('slider-create')
+                    <li class="{{ isset($submenu) && $submenu == 'add-slider' ? 'mm-active' : '' }}">
+                        <a href="{{ route('sliders.create') }}">
+                            <i class="fa fa-circle"></i>
+                            <span>{{ __('Add Slider') }}</span>
+                        </a>
+                    </li>
+                @endcan
+                @can('slider-list')
+                    <li class="{{ isset($submenu) && $submenu == 'view-sliders' ? 'mm-active' : '' }}">
+                        <a href="{{ route('sliders.index') }}">
+                            <i class="fa fa-circle"></i>
+                            <span>{{ __('View Sliders') }}</span>
+                        </a>
+                    </li>
+                @endcan
+            </ul>
+        </li>
+    @endcanany
+
+
+
+
+
 
 
         @canany(['blog-list'])

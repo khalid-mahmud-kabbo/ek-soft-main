@@ -17,6 +17,10 @@ class RolesTableSeeder extends Seeder
     public function run()
     {
         $permissions = [
+            'slider-list',
+            'slider-create',
+            'slider-edit',
+            'slider-delete',
             'category-list',
             'category-create',
             'category-edit',
