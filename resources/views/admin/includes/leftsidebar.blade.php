@@ -82,38 +82,6 @@
 
 
 
-
-
-        {{-- @canany(['slider-list']) --}}
-            <li class="{{ isset($menu) && $menu == 'slider' ? 'mm-active' : '' }}">
-                <a class="has-arrow" href="#">
-                    <i class="fas fa-list"></i>
-                    <span>{{ __('Sliders') }}</span>
-                </a>
-                <ul>
-
-                    {{-- @can('slider-list') --}}
-                        <li class="{{ isset($submenu) && $submenu == 'slider' ? 'mm-active' : '' }}">
-                            <a href="{{ route('admin.slider') }}">
-                                <i class="fa fa-circle"></i>
-                                <span>{{ __('Sliders') }}</span>
-                            </a>
-                        </li>
-                    {{-- @endcan --}}
-
-                </ul>
-            </li>
-        {{-- @endcanany --}}
-
-
-
-
-
-
-
-
-
-
         @canany(['blog-list'])
             <li class="{{ isset($menu) && $menu == 'blog' ? 'mm-active' : '' }}">
                 <a href="{{ route('admin.blog') }}">
@@ -137,12 +105,21 @@
                             <span>{{ __('General Settings') }}</span>
                         </a>
                     </li>
-                    <li class="{{ isset($submenu) && $submenu == 'content_home' ? 'mm-active' : '' }}">
-                        <a href="{{ route('admin.home.page.site.content') }}">
+
+                    <li class="{{ isset($submenu) && $submenu == 'slider' ? 'mm-active' : '' }}">
+                        <a href="{{ route('admin.slider') }}">
                             <i class="fa fa-circle"></i>
-                            <span>{{ __('Home Page') }}</span>
+                            <span>{{ __('Hero Sliders') }}</span>
                         </a>
                     </li>
+
+                    <li class="{{ isset($submenu) && $submenu == 'about' ? 'mm-active' : '' }}">
+                        <a href="{{ route('admin.about.edit', 1) }}">
+                            <i class="fa fa-circle"></i>
+                            <span>{{ __('Who we are') }}</span>
+                        </a>
+                    </li>
+
 
                 </ul>
             </li>

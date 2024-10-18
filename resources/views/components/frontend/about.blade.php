@@ -1,3 +1,4 @@
+@if($about)
 <section class="about-two-area pt-120">
 	<div class="about-two__shape">
 		<img src="{{ asset('frontend/assets/images/VRUJYT10pzK1Ba6ZAadm.png') }}" alt="shape">
@@ -14,10 +15,10 @@
 						     alt="shape">
 					</div>
 					<div class="image big-image">
-						<img src="{{ asset('frontend/assets/images/NinGN5tMJNryGDGpv1ZM.jpg') }}" alt="image">
+						<img src="{{ asset(AboutImage() . $about->AboutImage) }}" alt="image">
 					</div>
 					<div class="image sm-image">
-						<img src="{{ asset('frontend/assets/images/Ds3WFgHFWx7itimvQHcI.png') }}" alt="image">
+						<img src="{{ asset(AboutImage2() . $about->AboutSubImage) }}" alt="image">
 					</div>
 					<div class="circle-shape">
 						<img class="animation__rotate" src="{{ asset('frontend/assets/images/KioIYRQSg8I28X9QVomi.png') }}"
@@ -31,18 +32,18 @@
 						<img class="me-1" src="{{ asset('frontend/assets/images/6ANlZimaQlmDjBqhVmkA.png') }}" alt="icon">
 						WHO WE ARE
 					</h5>
-					<h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Ensuring Your Success Through Reliable IT Solutions </h2>
-					<p class="wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">Aonsectetur adipiscing elit aenean scelerisque augue vitae consequat aisque eget congue velit in cursus sodales the turpis euismod quis sapien euismod is sapien the condimentum nec lorem nulla augue.</p>
+					<h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">{{ $about->title }}</h2>
+					<p class="wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">{{ $about->description }}</p>
 				</div>
 				<div class="about-two__right-item wow fadeInDown" data-wow-delay="200ms"
 				     data-wow-duration="1500ms">
 					<ul>
-						<li><i class="fa-solid fa-check"></i>Technology Consultancy</li>
-						<li><i class="fa-solid fa-check"></i>We Provide best services</li>
+						<li><i class="fa-solid fa-check"></i>{{ $about->point_1 }}</li>
+						<li><i class="fa-solid fa-check"></i>{{ $about->point_2 }}</li>
 					</ul>
 					<ul>
-						<li><i class="fa-solid fa-check"></i>Maintenance And Support</li>
-						<li><i class="fa-solid fa-check"></i>Requirements Gathering</li>
+						<li><i class="fa-solid fa-check"></i>{{ $about->point_3 }}</li>
+						<li><i class="fa-solid fa-check"></i>{{ $about->point_4 }}</li>
 					</ul>
 				</div>
 				<div class="about__info mt-50 wow fadeInDown" data-wow-delay="400ms" data-wow-duration="1500ms">
@@ -53,3 +54,4 @@
 		</div>
 	</div>
 </section>
+@endif

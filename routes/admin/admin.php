@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\SliderController;
+use App\Http\Controllers\Admin\WhoweareController;
 use App\Http\Controllers\Admin\BlogController;
 use App\Http\Controllers\Admin\BrandController;
 use App\Http\Controllers\Admin\CategoryController;
@@ -70,17 +71,13 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'is_admin', 'en.loca
     });
 
 
-
-    // Route::group(['prefix' => 'slider'], function () {
-    //     Route::get('', [SliderController::class, 'slider'])->name('slider')->middleware(['permission:slider-list|slider-create|slider-edit|slider-delete']);
-    //     Route::get('/create', [SliderController::class, 'sliderCreate'])->name('slider.create')->middleware(['permission:slider-create']);
-    //     Route::post('/create', [SliderController::class, 'sliderStore'])->name('slider.store')->middleware(['permission:slider-create', 'isDemo']);
-    //     Route::get('/edit/{id}', [SliderController::class, 'sliderEdit'])->name('slider.edit')->middleware(['permission:slider-edit']);
-    //     Route::post('/update', [SliderController::class, 'sliderUpdate'])->name('slider.update')->middleware(['permission:slider-edit', 'isDemo']);
-    //     Route::get('/active/{id}', [SliderController::class, 'sliderActive'])->name('slider.active')->middleware(['permission:slider-edit', 'isDemo']);
-    //     Route::get('/inactive/{d}', [SliderController::class, 'sliderInactive'])->name('slider.inactive')->middleware(['permission:slider-edit', 'isDemo']);
-    //     Route::get('/delete/{id}', [SliderController::class, 'sliderDelete'])->name('slider.delete')->middleware(['permission:slider-delete', 'isDemo']);
-    // });
+    Route::group(['prefix' => 'about'], function () {
+        Route::get('', [WhoweareController::class, 'about'])->name('about');
+        Route::get('/create', [WhoweareController::class, 'aboutCreate'])->name('about.create');
+        Route::post('/create', [WhoweareController::class, 'aboutStore'])->name('about.store')->middleware('isDemo');
+        Route::get('/edit/{id}', [WhoweareController::class, 'aboutEdit'])->name('about.edit');
+        Route::post('/update', [WhoweareController::class, 'aboutUpdate'])->name('about.update')->middleware('isDemo');
+    });
 
 
     Route::group(['prefix' => 'brand'], function () {

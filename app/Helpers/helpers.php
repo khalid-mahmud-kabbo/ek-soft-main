@@ -132,6 +132,20 @@ if (!function_exists('SliderImage')) {
     }
 }
 
+if (!function_exists('AboutImage')) {
+    function AboutImage()
+    {
+        return 'uploaded_files/aboutimage/';
+    }
+}
+
+if (!function_exists('AboutImage2')) {
+    function AboutImage2()
+    {
+        return 'uploaded_files/aboutimage/';
+    }
+}
+
 
 
 if (!function_exists('Brnad')) {
