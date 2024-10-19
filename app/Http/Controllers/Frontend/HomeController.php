@@ -7,6 +7,7 @@ use App\Models\Admin\Blog;
 use App\Models\Admin\Brand;
 use App\Models\Admin\Service;
 use App\Models\Admin\Team;
+use App\Models\Admin\WhychooseUs;
 use App\Models\Admin\Whoweare;
 use App\Models\Admin\Slider;
 use App\Models\SeoSetting;
@@ -37,7 +38,10 @@ class HomeController extends Controller
                 'point_3',
                 'point_4'
             ])->latest()->first();
-
+            $data['whychooseus'] = WhychooseUs::select([
+                'title',
+                'video_link'
+            ])->latest()->first();
             $data['description'] = $seo->description;
             $data['keywords'] = $seo->keywords;
             return view('front.home.home', $data);

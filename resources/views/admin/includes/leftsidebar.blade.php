@@ -96,6 +96,13 @@
                         </a>
                     </li>
 
+                    <li class="{{ isset($submenu) && $submenu == 'whychooseus' ? 'mm-active' : '' }}">
+                        <a href="{{ route('admin.whychooseus.edit', 1) }}">
+                            <i class="fa fa-circle"></i>
+                            <span>{{ __('Why Choose Us') }}</span>
+                        </a>
+                    </li>
+
 
                 </ul>
             </li>

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\Admin\WhoweareController;
+use App\Http\Controllers\Admin\WhychooseUsController;
 use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\TeamController;
 use App\Http\Controllers\Admin\BlogController;
@@ -96,6 +97,11 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'is_admin', 'en.loca
         Route::get('/delete/{id}', [TeamController::class, 'teamDelete'])->name('team.delete')->middleware('isDemo');
     });
 
+
+    Route::group(['prefix' => 'whychooseus'], function () {
+        Route::get('/edit/{id}', [WhychooseUsController::class, 'whychooseusEdit'])->name('whychooseus.edit');
+        Route::post('/update', [WhychooseUsController::class, 'whychooseusUpdate'])->name('whychooseus.update')->middleware('isDemo');
+    });
 
     Route::group(['prefix' => 'about'], function () {
         Route::get('', [WhoweareController::class, 'about'])->name('about');

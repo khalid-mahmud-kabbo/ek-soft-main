@@ -1,8 +1,9 @@
 
+@if ($whychooseus)
 <section class="choose-area sub-bg pt-120 pb-120">
 	<div class="choose__video-btn">
 		<div class="video-btn video-pulse wow fadeIn" data-wow-delay="200ms" data-wow-duration="1500ms">
-			<a class="video-popup" href="https://www.youtube.com/watch?v=iVqz_4M5mA0"><i
+			<a class="video-popup" href="{{ $whychooseus->video_link }}"><i
 					class="fa-solid fa-play"></i></a>
 		</div>
 	</div>
@@ -42,7 +43,7 @@
 
 						WHY Choose US
 					</h5>
-					<h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms"> Elevate Your  Achievements Using Premier IT Solutions</h2>
+					<h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">{{ $whychooseus->title }}</h2>
 				</div>
 				<div class="row g-4 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
 					<div class="col-md-6">
@@ -52,7 +53,7 @@
 							</div>
 							<div class="content">
 								<h4 class="mb-1">Best Services</h4>
-								<p>Scelerisque augue the consequat sodales</p>
+								<p>Scalable & Reliable IT Solutions</p>
 							</div>
 						</div>
 					</div>
@@ -63,7 +64,7 @@
 							</div>
 							<div class="content">
 								<h4 class="mb-1">24/7 Call Support</h4>
-								<p>Scelerisque augue the consequat sodales</p>
+								<p>Service with Fantastic Support</p>
 							</div>
 						</div>
 					</div>
@@ -105,3 +106,5 @@
 		</div>
 	</div>
 </section>
+
+@endif
