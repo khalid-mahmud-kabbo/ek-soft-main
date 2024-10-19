@@ -37,171 +37,30 @@
 				<div class="swiper-wrapper">
 
 
+                    @foreach ($services as $item)
+
 												<div class="swiper-slide">
 							<div class="service-two__item">
 								<div class="image">
-									<img class="component-blog-cover" src="{{ asset('frontend/assets/images/gKtvpPJwd0AfwXlj2L36.jpg') }}" alt="image">
+									<img class="component-blog-cover" src="{{ asset(ServiceImage() . $item->ServiceImage) }}" alt="image">
 								</div>
 								<div class="service-two__content">
 									<div class="icon">
-										<img src="{{ asset('frontend/assets/images/AN8W98LoN4ZiRk5MHhvz.png') }}" alt="icon">
+										<img src="{{ asset(IconImage() . $item->IconImage) }}" alt="icon">
 									</div>
 									<div class="shape"><img src="{{ asset('frontend/assets/images/rtHLHwS47ikrvM8funrY.png') }}"
 									                        alt="shape"></div>
-									<h4><a href="#" class="primary-hover">IT Management</a></h4>
-									<p>The is ipsum dolor sit amet consectetur adipiscing elit. Fusce is eleifend porta...</p>
+									<h4><a href="#" class="primary-hover">{{ $item->title }}</a></h4>
+									<p class="service-description">{{ $item->description }}</p>
 									<a class="read-more-btn" href="#">Read More<i
 											class="fa-regular fa-arrow-right-long"></i></a>
 								</div>
 							</div>
 						</div>
 
-												<div class="swiper-slide">
-							<div class="service-two__item">
-								<div class="image">
-									<img class="component-blog-cover" src="{{ asset('frontend/assets/images/swYgg2FwGxyWLuOnILTS.jpg') }}" alt="image">
-								</div>
-								<div class="service-two__content">
-									<div class="icon">
-										<img src="{{ asset('frontend/assets/images/016SKqrETI3F4FLPDxvf.png') }}" alt="icon">
-									</div>
-									<div class="shape"><img src="{{ asset('frontend/assets/images/Drjgn3eGwtJfxce78yMO.png') }}"
-									                        alt="shape"></div>
-									<h4><a href="#" class="primary-hover">Database Security</a></h4>
-									<p>The is ipsum dolor sit amet consectetur adipiscing elit. Fusce is eleifend porta...</p>
-									<a class="read-more-btn" href="#">Read More<i
-											class="fa-regular fa-arrow-right-long"></i></a>
-								</div>
-							</div>
-						</div>
+                        @endforeach
 
-												<div class="swiper-slide">
-							<div class="service-two__item">
-								<div class="image">
-									<img class="component-blog-cover" src="{{ asset('frontend/assets/images/62PTYWmjef8ZLBDNZ9d6.jpg') }}" alt="image">
-								</div>
-								<div class="service-two__content">
-									<div class="icon">
-										<img src="{{ asset('frontend/assets/images/Um9lsh3b52CGi5tCsxA3.png') }}" alt="icon">
-									</div>
-									<div class="shape"><img src="{{ asset('frontend/assets/images/rVNVRkAQ2WXfURSEaLf2.png') }}"
-									                        alt="shape"></div>
-									<h4><a href="#" class="primary-hover">Cyber Security</a></h4>
-									<p>The is ipsum dolor sit amet consectetur adipiscing elit. Fusce is eleifend porta...</p>
-									<a class="read-more-btn" href="#">Read More<i
-											class="fa-regular fa-arrow-right-long"></i></a>
-								</div>
-							</div>
-						</div>
-
-												<div class="swiper-slide">
-							<div class="service-two__item">
-								<div class="image">
-									<img class="component-blog-cover" src="{{ asset('frontend/assets/images/zayxMK0VSJGi2Wjiw7d2.jpg') }}" alt="image">
-								</div>
-								<div class="service-two__content">
-									<div class="icon">
-										<img src="{{ asset('frontend/assets/images/paguql8wTgsLmStoAjqQ.png') }}" alt="icon">
-									</div>
-									<div class="shape"><img src="{{ asset('frontend/assets/images/VqBm9MzwEjJvApbX0I21.png') }}"
-									                        alt="shape"></div>
-									<h4><a href="#" class="primary-hover">IT Consultancy</a></h4>
-									<p>The is ipsum dolor sit amet consectetur adipiscing elit. Fusce is eleifend porta...</p>
-									<a class="read-more-btn" href="#">Read More<i
-											class="fa-regular fa-arrow-right-long"></i></a>
-								</div>
-							</div>
-						</div>
-
-
-
-
-
-
-
-						<div class="swiper-slide">
-							<div class="service-two__item">
-								<div class="image">
-									<img class="component-blog-cover" src="{{ asset('frontend/assets/images/vxyXXRgUKp3xFIm0O1XS.jpg') }}" alt="image">
-								</div>
-								<div class="service-two__content">
-									<div class="icon">
-										<img src="{{ asset('frontend/assets/images/9uX529WzUqgiu3zMoy8g.png') }}" alt="icon">
-									</div>
-									<div class="shape"><img src="{{ asset('frontend/assets/images/tJyZEmY78ysj0HnHujZc.png') }}"
-									                        alt="shape"></div>
-									<h4><a href="#" class="primary-hover">App Development</a></h4>
-									<p>The is ipsum dolor sit amet consectetur adipiscing elit. Fusce is eleifend porta...</p>
-									<a class="read-more-btn" href="#">Read More<i
-											class="fa-regular fa-arrow-right-long"></i></a>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="swiper-slide">
-							<div class="service-two__item">
-								<div class="image">
-									<img class="component-blog-cover" src="{{ asset('frontend/assets/images/vxyXXRgUKp3xFIm0O1XS.jpg') }}" alt="image">
-								</div>
-								<div class="service-two__content">
-									<div class="icon">
-										<img src="{{ asset('frontend/assets/images/paguql8wTgsLmStoAjqQ.png') }}" alt="icon">
-									</div>
-									<div class="shape"><img src="{{ asset('frontend/assets/images/tJyZEmY78ysj0HnHujZc.png') }}"
-									                        alt="shape"></div>
-									<h4><a href="#" class="primary-hover">Web Development</a></h4>
-									<p>The is ipsum dolor sit amet consectetur adipiscing elit. Fusce is eleifend porta...</p>
-									<a class="read-more-btn" href="#">Read More<i
-											class="fa-regular fa-arrow-right-long"></i></a>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="swiper-slide">
-							<div class="service-two__item">
-								<div class="image">
-									<img class="component-blog-cover" src="{{ asset('frontend/assets/images/vxyXXRgUKp3xFIm0O1XS.jpg') }}" alt="image">
-								</div>
-								<div class="service-two__content">
-									<div class="icon">
-										<img src="{{ asset('frontend/assets/images/9uX529WzUqgiu3zMoy8g.png') }}" alt="icon">
-									</div>
-									<div class="shape"><img src="{{ asset('frontend/assets/images/tJyZEmY78ysj0HnHujZc.png') }}"
-									                        alt="shape"></div>
-									<h4><a href="#" class="primary-hover">Software Development</a></h4>
-									<p>The is ipsum dolor sit amet consectetur adipiscing elit. Fusce is eleifend porta...</p>
-									<a class="read-more-btn" href="#">Read More<i
-											class="fa-regular fa-arrow-right-long"></i></a>
-								</div>
-							</div>
-						</div>
-
-
-
-
-
-
-												<div class="swiper-slide">
-							<div class="service-two__item">
-								<div class="image">
-									<img class="component-blog-cover" src="{{ asset('frontend/assets/images/VyBp4msMIw7aYEi7mSRy.jpg') }}" alt="image">
-								</div>
-								<div class="service-two__content">
-									<div class="icon">
-										<img src="{{ asset('frontend/assets/images/Bo7ZDRg0PRtVdijzYXyi.png') }}" alt="icon">
-									</div>
-									<div class="shape"><img src="{{ asset('frontend/assets/images/krTXHyGfa2EzM6c1m6fH.png') }}"
-									                        alt="shape"></div>
-									<h4><a href="#" class="primary-hover">UI/UX Design</a></h4>
-									<p>The is ipsum dolor sit amet consectetur adipiscing elit. Fusce is eleifend porta...</p>
-									<a class="read-more-btn" href="#">Read More<i
-											class="fa-regular fa-arrow-right-long"></i></a>
-								</div>
-							</div>
-						</div>
-									</div>
 			</div>
+		</div>
 	</div>
 </section>

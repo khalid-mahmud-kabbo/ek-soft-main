@@ -120,6 +120,13 @@
                         </a>
                     </li>
 
+                    <li class="{{ isset($submenu) && $submenu == 'service' ? 'mm-active' : '' }}">
+                        <a href="{{ route('admin.service', 1) }}">
+                            <i class="fa fa-circle"></i>
+                            <span>{{ __('Services') }}</span>
+                        </a>
+                    </li>
+
 
                 </ul>
             </li>

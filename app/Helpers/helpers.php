@@ -146,6 +146,20 @@ if (!function_exists('AboutImage2')) {
     }
 }
 
+if (!function_exists('IconImage')) {
+    function IconImage()
+    {
+        return 'uploaded_files/iconimage/';
+    }
+}
+
+if (!function_exists('ServiceImage')) {
+    function ServiceImage()
+    {
+        return 'uploaded_files/serviceimage/';
+    }
+}
+
 
 
 if (!function_exists('Brnad')) {

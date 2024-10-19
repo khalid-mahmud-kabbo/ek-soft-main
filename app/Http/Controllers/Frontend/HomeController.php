@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use App\Models\Admin\Blog;
 use App\Models\Admin\Brand;
+use App\Models\Admin\Service;
 use App\Models\Admin\Whoweare;
 use App\Models\Admin\Slider;
 use App\Models\SeoSetting;
@@ -23,6 +24,7 @@ class HomeController extends Controller
             $data['title'] = $seo->title;
             $data['sliders'] = Slider::latest()->get();
             $data['brands'] = Brand::latest()->get();
+            $data['services'] = Service::latest()->get();
             $data['about'] = Whoweare::select([
                 'AboutImage',
                 'AboutSubImage',

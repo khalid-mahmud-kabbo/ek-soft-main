@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\Admin\WhoweareController;
+use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\BlogController;
 use App\Http\Controllers\Admin\BrandController;
 use App\Http\Controllers\Admin\CategoryController;
@@ -68,6 +69,18 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'is_admin', 'en.loca
         Route::get('/active/{id}', [SliderController::class, 'sliderActive'])->name('slider.active')->middleware('isDemo');
         Route::get('/inactive/{id}', [SliderController::class, 'sliderInactive'])->name('slider.inactive')->middleware('isDemo');
         Route::get('/delete/{id}', [SliderController::class, 'sliderDelete'])->name('slider.delete')->middleware('isDemo');
+    });
+
+
+    Route::group(['prefix' => 'service'], function () {
+        Route::get('', [ServiceController::class, 'service'])->name('service');
+        Route::get('/create', [ServiceController::class, 'serviceCreate'])->name('service.create');
+        Route::post('/create', [ServiceController::class, 'serviceStore'])->name('service.store')->middleware('isDemo');
+        Route::get('/edit/{id}', [ServiceController::class, 'serviceEdit'])->name('service.edit');
+        Route::post('/update', [ServiceController::class, 'serviceUpdate'])->name('service.update')->middleware('isDemo');
+        Route::get('/active/{id}', [ServiceController::class, 'serviceActive'])->name('service.active')->middleware('isDemo');
+        Route::get('/inactive/{id}', [ServiceController::class, 'serviceInactive'])->name('service.inactive')->middleware('isDemo');
+        Route::get('/delete/{id}', [ServiceController::class, 'serviceDelete'])->name('service.delete')->middleware('isDemo');
     });
 
 
