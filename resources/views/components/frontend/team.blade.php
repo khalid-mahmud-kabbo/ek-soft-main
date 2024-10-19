@@ -23,74 +23,43 @@
 			<div class="swiper service-two__slider">
 				<div class="swiper-wrapper">
 
+
+                    @foreach ($teams as $item)
                         <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp swiper-slide" data-wow-delay="100ms"
 			     data-wow-duration="1500ms">
 				<div class="team__item">
 					<div class="image">
-						<img src="{{ asset('frontend/assets/images/wtNA0K1qztJNNtvnFGaX.jpg') }}" alt="image">
+						<img src="{{ asset(TeamMemberImage() . $item->TeamMemberImage) }}" alt="image">
 					</div>
 					<div class="team__content">
-						<h4><a class="text-white" href="#">Khalid Mahmud</a></h4>
-						<span class="text-white">Founder & CEO</span>
+						<h4><a class="text-white" href="#">{{ $item->Name }}</a></h4>
+						<span class="text-white">{{ $item->Designation }}</span>
 					</div>
 					<div class="team__share">
 						<ul>
 							<li>
-								<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+								<a href="{{ $item->Facebook_id }}"><i class="fa-brands fa-facebook-f"></i></a>
 							</li>
-							<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-							<li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+							<li><a href="{{ $item->Instagram_id }}"><i class="fa-brands fa-instagram"></i></a></li>
+							<li><a href="{{ $item->LinkedIn_id }}"><i class="fa-brands fa-linkedin-in"></i></a></li>
 						</ul>
 						<button><i class="fa-sharp fa-light fa-share-nodes"></i></button>
 					</div>
 				</div>
 			</div>
+            @endforeach
 
-                        <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp swiper-slide" data-wow-delay="100ms"
-			     data-wow-duration="1500ms">
-				<div class="team__item">
-					<div class="image">
-						<img src="{{ asset('frontend/assets/images/3JwXrTbOUTAtOCyhuyPm.jpg') }}" alt="image">
-					</div>
-					<div class="team__content">
-						<h4><a class="text-white" href="#">Kawser Ahmed</a></h4>
-						<span class="text-white">Web Designer</span>
-					</div>
-					<div class="team__share">
-						<ul>
-							<li>
-								<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-							</li>
-							<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-							<li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-						</ul>
-						<button><i class="fa-sharp fa-light fa-share-nodes"></i></button>
-					</div>
-				</div>
-			</div>
 
-                        <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp swiper-slide" data-wow-delay="100ms"
-			     data-wow-duration="1500ms">
-				<div class="team__item">
-                    <div class="image">
-						<img src="{{ asset('frontend/assets/images/nz8lORDJmM889CkBYLel.jpg') }}" alt="image">
-					</div>
-					<div class="team__content">
-						<h4><a class="text-white" href="#">Kawser Ahmed</a></h4>
-						<span class="text-white">Web Designer</span>
-					</div>
-					<div class="team__share">
-						<ul>
-							<li>
-								<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-							</li>
-							<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-							<li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-						</ul>
-						<button><i class="fa-sharp fa-light fa-share-nodes"></i></button>
-					</div>
-				</div>
-			</div>
+
+
+
+
+
+
+
+
+
+
 			</div>
 		</div>
 	</div>

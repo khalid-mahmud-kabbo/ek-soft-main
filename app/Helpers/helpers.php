@@ -153,6 +153,13 @@ if (!function_exists('IconImage')) {
     }
 }
 
+if (!function_exists('TeamMemberImage')) {
+    function TeamMemberImage()
+    {
+        return 'uploaded_files/team/';
+    }
+}
+
 if (!function_exists('ServiceImage')) {
     function ServiceImage()
     {

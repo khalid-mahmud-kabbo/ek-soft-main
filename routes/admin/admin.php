@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\Admin\WhoweareController;
 use App\Http\Controllers\Admin\ServiceController;
+use App\Http\Controllers\Admin\TeamController;
 use App\Http\Controllers\Admin\BlogController;
 use App\Http\Controllers\Admin\BrandController;
 use App\Http\Controllers\Admin\CategoryController;
@@ -81,6 +82,18 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'is_admin', 'en.loca
         Route::get('/active/{id}', [ServiceController::class, 'serviceActive'])->name('service.active')->middleware('isDemo');
         Route::get('/inactive/{id}', [ServiceController::class, 'serviceInactive'])->name('service.inactive')->middleware('isDemo');
         Route::get('/delete/{id}', [ServiceController::class, 'serviceDelete'])->name('service.delete')->middleware('isDemo');
+    });
+
+
+    Route::group(['prefix' => 'team'], function () {
+        Route::get('', [TeamController::class, 'team'])->name('team');
+        Route::get('/create', [TeamController::class, 'teamCreate'])->name('team.create');
+        Route::post('/create', [TeamController::class, 'teamStore'])->name('team.store')->middleware('isDemo');
+        Route::get('/edit/{id}', [TeamController::class, 'teamEdit'])->name('team.edit');
+        Route::post('/update', [TeamController::class, 'teamUpdate'])->name('team.update')->middleware('isDemo');
+        Route::get('/active/{id}', [TeamController::class, 'teamActive'])->name('team.active')->middleware('isDemo');
+        Route::get('/inactive/{id}', [TeamController::class, 'teamInactive'])->name('team.inactive')->middleware('isDemo');
+        Route::get('/delete/{id}', [TeamController::class, 'teamDelete'])->name('team.delete')->middleware('isDemo');
     });
 
 

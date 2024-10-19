@@ -168,7 +168,7 @@ img {
 }
 
 .main-content {
-  margin-left: 250px;
+  margin-left: 260px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -726,7 +726,7 @@ img {
   z-index: 9999;
   top: 0;
   left: 0;
-  width: 250px;
+  width: 260px;
   height: 100vh;
   background-color: #151327;
   -webkit-transition: 0.4s;
@@ -853,7 +853,8 @@ img {
 }
 
 .sidebar__menu li a span {
-  margin-left: 13px;
+    margin-left: 13px;
+    font-size: larger;
 }
 
 .sidebar__menu li a.active, .sidebar__menu li a:hover {
