@@ -74,8 +74,6 @@ class ServiceController extends Controller
             return redirect()->back()->with('error', __('Image is  required'));
         }
 
-
-
         $service = Service::create([
             'title' => $request->title,
             'icon' => $request->icon,

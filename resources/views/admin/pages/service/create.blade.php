@@ -56,7 +56,9 @@
 
                                             <div class="input__group mb-25">
                                                 <label>{{ __('Description') }}</label>
-                                                <textarea name="description" id="description" placeholder="Description">{{ old('description') }}</textarea>
+
+                                                <textarea name="description" id="summernote_service" class="description" required="" value="{{ old('description') }}"></textarea>
+
                                             </div>
 
                                             <!-- Button Text -->
@@ -88,3 +90,16 @@
         </div>
     </div>
 @endsection
+
+@push('post_scripts')
+    <script>
+        "use strict";
+        $(document).ready(function() {
+            $("#summernote_service").summernote({
+                placeholder: 'Description',
+                height: 300
+            });
+            $('.dropdown-toggle').dropdown();
+        });
+    </script>
+@endpush

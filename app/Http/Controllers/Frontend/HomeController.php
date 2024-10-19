@@ -7,6 +7,7 @@ use App\Models\Admin\Blog;
 use App\Models\Admin\Brand;
 use App\Models\Admin\Service;
 use App\Models\Admin\Team;
+use App\Models\Admin\CaseStudy;
 use App\Models\Admin\WhychooseUs;
 use App\Models\Admin\Whoweare;
 use App\Models\Admin\Slider;
@@ -43,6 +44,7 @@ class HomeController extends Controller
                 'video_link'
             ])->latest()->first();
             $data['description'] = $seo->description;
+            $data['cases'] = CaseStudy::latest()->get();
             $data['keywords'] = $seo->keywords;
             return view('front.home.home', $data);
         } else {

@@ -103,6 +103,13 @@
                         </a>
                     </li>
 
+                    <li class="{{ isset($submenu) && $submenu == 'casestudy' ? 'mm-active' : '' }}">
+                        <a href="{{ route('admin.casestudy') }}">
+                            <i class="fa fa-circle"></i>
+                            <span>{{ __('Case Study') }}</span>
+                        </a>
+                    </li>
+
 
                 </ul>
             </li>

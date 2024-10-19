@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\Admin\WhoweareController;
 use App\Http\Controllers\Admin\WhychooseUsController;
 use App\Http\Controllers\Admin\ServiceController;
+use App\Http\Controllers\Admin\CaseStudyController;
 use App\Http\Controllers\Admin\TeamController;
 use App\Http\Controllers\Admin\BlogController;
 use App\Http\Controllers\Admin\BrandController;
@@ -95,6 +96,18 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'is_admin', 'en.loca
         Route::get('/active/{id}', [TeamController::class, 'teamActive'])->name('team.active')->middleware('isDemo');
         Route::get('/inactive/{id}', [TeamController::class, 'teamInactive'])->name('team.inactive')->middleware('isDemo');
         Route::get('/delete/{id}', [TeamController::class, 'teamDelete'])->name('team.delete')->middleware('isDemo');
+    });
+
+
+    Route::group(['prefix' => 'casestudy'], function () {
+        Route::get('', [CaseStudyController::class, 'casestudy'])->name('casestudy');
+        Route::get('/create', [CaseStudyController::class, 'casestudyCreate'])->name('casestudy.create');
+        Route::post('/create', [CaseStudyController::class, 'casestudyStore'])->name('casestudy.store')->middleware('isDemo');
+        Route::get('/edit/{id}', [CaseStudyController::class, 'casestudyEdit'])->name('casestudy.edit');
+        Route::post('/update', [CaseStudyController::class, 'casestudyUpdate'])->name('casestudy.update')->middleware('isDemo');
+        Route::get('/active/{id}', [CaseStudyController::class, 'casestudyActive'])->name('casestudy.active')->middleware('isDemo');
+        Route::get('/inactive/{id}', [CaseStudyController::class, 'casestudyInactive'])->name('casestudy.inactive')->middleware('isDemo');
+        Route::get('/delete/{id}', [CaseStudyController::class, 'casestudyDelete'])->name('casestudy.delete')->middleware('isDemo');
     });
 
 

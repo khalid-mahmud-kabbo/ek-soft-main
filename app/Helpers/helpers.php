@@ -160,6 +160,13 @@ if (!function_exists('TeamMemberImage')) {
     }
 }
 
+if (!function_exists('CaseImage')) {
+    function CaseImage()
+    {
+        return 'uploaded_files/case/';
+    }
+}   
+
 if (!function_exists('ServiceImage')) {
     function ServiceImage()
     {

@@ -51,7 +51,13 @@
 									<div class="shape"><img src="{{ asset('frontend/assets/images/rtHLHwS47ikrvM8funrY.png') }}"
 									                        alt="shape"></div>
 									<h4><a href="#" class="primary-hover">{{ $item->title }}</a></h4>
-									<p class="service-description">{{ $item->description }}</p>
+									<p class="service-description">
+                                        {!! clean(Str::limit(($item->description), 205)) !!}
+                                    </p>
+
+
+
+
 									<a class="read-more-btn" href="#">Read More<i
 											class="fa-regular fa-arrow-right-long"></i></a>
 								</div>

@@ -35,48 +35,27 @@
 	<div class="case-two__container">
 		<div class="swiper case-two__slider">
 			<div class="swiper-wrapper">
+
+                @foreach ($cases as $item)
+
+
 														<div class="swiper-slide">
 						<div class="case-two__item">
 							<div class="image case-two__image">
-								<img src="{{ asset('frontend/assets/images/oSA8B1Af2KaVxDWOyg2b.jpg') }}" alt="image">
+								<img src="{{ asset(CaseImage() . $item->CaseImage) }}" alt="image">
 							</div>
 							<div class="case-two__content">
-								<span>Technology</span>
-								<h4><a href="#" class="text-white">Platform Integration</a></h4>
+								<span>{{ $item->group }}</span>
+								<h4><a href="#" class="text-white">{{ $item->title }}</a></h4>
 							</div>
 							<a href="#" class="case-two__btn">
 								<i class="fa-regular fa-arrow-right"></i>
 							</a>
 						</div>
 					</div>
-														<div class="swiper-slide">
-						<div class="case-two__item">
-							<div class="image case-two__image">
-								<img src="{{ asset('frontend/assets/images/qKb99H31py4X7Nwlv2Ot.jpg') }}" alt="image">
-							</div>
-							<div class="case-two__content">
-								<span>Security</span>
-								<h4><a href="#" class="text-white">Network Security</a></h4>
-							</div>
-							<a href="#" class="case-two__btn">
-								<i class="fa-regular fa-arrow-right"></i>
-							</a>
-						</div>
-					</div>
-														<div class="swiper-slide">
-						<div class="case-two__item">
-							<div class="image case-two__image">
-								<img src="{{ asset('frontend/assets/images/0VxOqOHrc2sY1CgUQu0U.jpg') }}" alt="image">
-							</div>
-							<div class="case-two__content">
-								<span>Solution</span>
-								<h4><a href="#" class="text-white">Web Devolapment</a></h4>
-							</div>
-							<a href="#" class="case-two__btn">
-								<i class="fa-regular fa-arrow-right"></i>
-							</a>
-						</div>
-					</div>
+
+@endforeach
+
 							</div>
 		</div>
 	</div>
