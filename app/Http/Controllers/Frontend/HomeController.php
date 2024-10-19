@@ -8,6 +8,7 @@ use App\Models\Admin\Brand;
 use App\Models\Admin\Service;
 use App\Models\Admin\Team;
 use App\Models\Admin\CaseStudy;
+use App\Models\Admin\Testimonial;
 use App\Models\Admin\WhychooseUs;
 use App\Models\Admin\Whoweare;
 use App\Models\Admin\Slider;
@@ -45,6 +46,7 @@ class HomeController extends Controller
             ])->latest()->first();
             $data['description'] = $seo->description;
             $data['cases'] = CaseStudy::latest()->get();
+            $data['testimonial'] = Testimonial::latest()->get();
             $data['keywords'] = $seo->keywords;
             return view('front.home.home', $data);
         } else {

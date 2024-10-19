@@ -7,24 +7,16 @@
             ajax: $('#table-url').data("url"),
             columns: [
                 {
-                    data: 'Image',
-                    name: 'Image'
+                    data: 'client_name',
+                    name: 'client_name'
                 },
                 {
-                    data: 'Name',
-                    name: 'Name'
+                    data: 'ClientImage',
+                    name: 'ClientImage'
                 },
                 {
-                    data: 'en_Description',
-                    name: 'en_Description'
-                },
-                {
-                    data: 'fr_Description',
-                    name: 'fr_Description'
-                },
-                {
-                    data: 'star',
-                    name: 'star'
+                    data: 'Status',
+                    name: 'Status'
                 },
                 {
                     data: 'action',

@@ -20,30 +20,13 @@
 		</div>
 		<div class="swiper testimonial-two__slider">
 			<div class="swiper-wrapper">
-														<div class="swiper-slide">
-						<div class="testimonial-two__item  dark-mode ">
-							<div class="star mb-10">
-																											<i class="fa-sharp fa-solid fa-star"></i>
-																																				<i class="fa-sharp fa-solid fa-star"></i>
-																																				<i class="fa-sharp fa-solid fa-star"></i>
-																																				<i class="fa-sharp fa-solid fa-star"></i>
-																																				<i class="fa-sharp fa-solid fa-star disable"></i>
-																								</div>
-							<p class="mb-30">“ Consectetur elit nteger maecenas porta is nunc nul viverra Aenean pulvinar maximus leo nunc viverra laoreet est the isporta adipiscing pretium ”</p>
-							<div class="d-flex align-items-center gap-3">
-								<img src="{{ asset('frontend/assets/images/jkg0qud77FZnJRY7CjoJ.png') }}" alt="image">
-								<div class="con">
-									<h4>Alex Pranto</h4>
-									<span>Ethical Hacker</span>
-								</div>
-							</div>
-							<svg class="coma" width="50" height="37" viewBox="0 0 50 37" fill="none"
-							     xmlns="http://www.w3.org/2000/svg">
-								<path d="M0 0V37L18.75 18.5V0H0ZM31.25 0V37L50 18.5V0H31.25Z" fill="#EB2026"/>
-							</svg>
-						</div>
-					</div>
-														<div class="swiper-slide">
+
+
+
+
+
+@foreach ($testimonial as $item)
+                <div class="swiper-slide">
 						<div class="testimonial-two__item  dark-mode ">
 							<div class="star mb-10">
 																											<i class="fa-sharp fa-solid fa-star"></i>
@@ -52,12 +35,12 @@
 																																				<i class="fa-sharp fa-solid fa-star"></i>
 																																				<i class="fa-sharp fa-solid fa-star"></i>
 																								</div>
-							<p class="mb-30">“ Consectetur elit nteger maecenas porta is nunc nul viverra Aenean pulvinar maximus leo nunc viverra laoreet est the isporta adipiscing pretium ”</p>
+							<p class="mb-30">{{ $item->description }}</p>
 							<div class="d-flex align-items-center gap-3">
-								<img src="{{ asset('frontend/assets/images/Ciqg7zlVYbUcsvBIsVOI.png') }}" alt="image">
+								<img src="{{ asset(ClientImage() . $item->ClientImage) }}" style="width: 70px; height: 70px;" alt="image">
 								<div class="con">
-									<h4>Adity Roy</h4>
-									<span>Web Designer</span>
+									<h4>{{ $item->client_name }}</h4>
+									<span>{{ $item->designation }}</span>
 								</div>
 							</div>
 							<svg class="coma" width="50" height="37" viewBox="0 0 50 37" fill="none"
@@ -66,29 +49,26 @@
 							</svg>
 						</div>
 					</div>
-														<div class="swiper-slide">
-						<div class="testimonial-two__item  dark-mode ">
-							<div class="star mb-10">
-																											<i class="fa-sharp fa-solid fa-star"></i>
-																																				<i class="fa-sharp fa-solid fa-star"></i>
-																																				<i class="fa-sharp fa-solid fa-star"></i>
-																																				<i class="fa-sharp fa-solid fa-star disable"></i>
-																																				<i class="fa-sharp fa-solid fa-star disable"></i>
-																								</div>
-							<p class="mb-30">“ Consectetur elit nteger maecenas porta is nunc nul viverra Aenean pulvinar maximus leo nunc viverra laoreet est the isporta adipiscing pretium ”</p>
-							<div class="d-flex align-items-center gap-3">
-								<img src="{{ asset('frontend/assets/images/2pA5yUY1AHC3cFC21O8S.png') }}" alt="image">
-								<div class="con">
-									<h4>Mohmamd Arif</h4>
-									<span>Software Tester</span>
-								</div>
-							</div>
-							<svg class="coma" width="50" height="37" viewBox="0 0 50 37" fill="none"
-							     xmlns="http://www.w3.org/2000/svg">
-								<path d="M0 0V37L18.75 18.5V0H0ZM31.25 0V37L50 18.5V0H31.25Z" fill="#EB2026"/>
-							</svg>
-						</div>
-					</div>
+                    @endforeach
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 							</div>
 		</div>
 		<div class="text-center mt-40">

@@ -110,6 +110,13 @@
                         </a>
                     </li>
 
+                    <li class="{{ isset($submenu) && $submenu == 'testimonial' ? 'mm-active' : '' }}">
+                        <a href="{{ route('admin.testimonial') }}">
+                            <i class="fa fa-circle"></i>
+                            <span>{{ __('Testimonials') }}</span>
+                        </a>
+                    </li>
+
 
                 </ul>
             </li>

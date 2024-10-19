@@ -165,12 +165,19 @@ if (!function_exists('CaseImage')) {
     {
         return 'uploaded_files/case/';
     }
-}   
+}
 
 if (!function_exists('ServiceImage')) {
     function ServiceImage()
     {
         return 'uploaded_files/serviceimage/';
+    }
+}
+
+if (!function_exists('ClientImage')) {
+    function ClientImage()
+    {
+        return 'uploaded_files/clients/';
     }
 }
 

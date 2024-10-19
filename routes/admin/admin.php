@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\WhoweareController;
 use App\Http\Controllers\Admin\WhychooseUsController;
 use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\CaseStudyController;
+use App\Http\Controllers\Admin\TestimonialController;
 use App\Http\Controllers\Admin\TeamController;
 use App\Http\Controllers\Admin\BlogController;
 use App\Http\Controllers\Admin\BrandController;
@@ -108,6 +109,18 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'is_admin', 'en.loca
         Route::get('/active/{id}', [CaseStudyController::class, 'casestudyActive'])->name('casestudy.active')->middleware('isDemo');
         Route::get('/inactive/{id}', [CaseStudyController::class, 'casestudyInactive'])->name('casestudy.inactive')->middleware('isDemo');
         Route::get('/delete/{id}', [CaseStudyController::class, 'casestudyDelete'])->name('casestudy.delete')->middleware('isDemo');
+    });
+
+
+    Route::group(['prefix' => 'testimonial'], function () {
+        Route::get('', [TestimonialController::class, 'testimonial'])->name('testimonial');
+        Route::get('/create', [TestimonialController::class, 'testimonialCreate'])->name('testimonial.create');
+        Route::post('/create', [TestimonialController::class, 'testimonialStore'])->name('testimonial.store')->middleware('isDemo');
+        Route::get('/edit/{id}', [TestimonialController::class, 'testimonialEdit'])->name('testimonial.edit');
+        Route::post('/update', [TestimonialController::class, 'testimonialUpdate'])->name('testimonial.update')->middleware('isDemo');
+        Route::get('/active/{id}', [TestimonialController::class, 'testimonialActive'])->name('testimonial.active')->middleware('isDemo');
+        Route::get('/inactive/{id}', [TestimonialController::class, 'testimonialInactive'])->name('testimonial.inactive')->middleware('isDemo');
+        Route::get('/delete/{id}', [TestimonialController::class, 'testimonialDelete'])->name('testimonial.delete')->middleware('isDemo');
     });
 
 
