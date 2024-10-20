@@ -27,6 +27,7 @@ class HomeController extends Controller
             $seo = SeoSetting::where('slug', 'home')->first();
             $data['title'] = $seo->title;
             $data['sliders'] = Slider::latest()->get();
+            $data['blogs'] = Blog::with('tags')->latest()->get();
             $data['brands'] = Brand::latest()->get();
             $data['services'] = Service::latest()->get();
             $data['teams'] = Team::latest()->get();

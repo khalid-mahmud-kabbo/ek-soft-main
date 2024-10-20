@@ -6,14 +6,15 @@
 			</a>
 			<div class="main-menu">
 				<nav>
-					<ul>
-													<li><a href="/" target="_self">Home</a></li>
-													<li><a href="{{ route('services') }}" target="_self">Service</a></li>
-													<li><a href="{{ route('about') }}" target="_self">About</a></li>
-													<li><a href="{{ route('blogs') }}" target="_self">Blog</a></li>
-													<li><a href="{{ route('career') }}" target="_self">Career</a></li>
-											</ul>
-				</nav>
+                    <ul>
+                        <li><a href="/" target="_self" class="{{ Request::is('/') ? 'active' : '' }}">Home</a></li>
+                        <li><a href="{{ route('services') }}" target="_self" class="{{ Request::routeIs('services') ? 'active' : '' }}">Service</a></li>
+                        <li><a href="{{ route('about') }}" target="_self" class="{{ Request::routeIs('about') ? 'active' : '' }}">About</a></li>
+                        <li><a href="{{ route('blogs') }}" target="_self" class="{{ Request::routeIs('blogs') ? 'active' : '' }}">Blog</a></li>
+                        <li><a href="{{ route('career') }}" target="_self" class="{{ Request::routeIs('career') ? 'active' : '' }}">Career</a></li>
+                    </ul>
+                </nav>
+
 			</div>
 			<div class="d-none d-xl-flex gap-4">
 					<div class="about-three__left-item d-flex flex-wrap gap-2 align-items-center">
@@ -22,10 +23,6 @@
                             <a href="{{ route('contact') }}" class="btn-one">Contact with Us</a>
 						</div>
 					</div>
-
-
-
-
 			</div>
 						<div class="bars d-block d-lg-none">
 				<i id="openButton" class="fa-solid fa-bars"></i>

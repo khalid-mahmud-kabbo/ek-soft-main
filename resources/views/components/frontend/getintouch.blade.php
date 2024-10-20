@@ -21,7 +21,7 @@
 					</h5>
 					<h2 class="wow fadeInLeft text-white" data-wow-delay="200ms" data-wow-duration="1500ms">We Take Care Of Your <br/> Technology</h2>
 				</div>
-				<a href="/contact" class="btn-one wow fadeInUp" data-wow-delay="200ms"
+				<a href="{{ route('contact') }}" class="btn-one wow fadeInUp" data-wow-delay="200ms"
 				   data-wow-duration="1500ms">get A Quote <i class="fa-regular fa-arrow-right-long"></i></a>
 			</div>
 		</div>

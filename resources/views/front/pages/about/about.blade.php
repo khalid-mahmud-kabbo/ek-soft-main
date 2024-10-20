@@ -4,38 +4,38 @@
 @section('keywords', isset($keywords) ? $keywords : '')
 @section('content')
 
-<section class="banner__inner-page bg-image pt-180 pb-180 bg-image" data-background="https://gratech.coevs.com/assets/general/images/QCm3zzbme5hta1zbNLJs.jpg" style="background-image: url(https://gratech.coevs.com/assets/general/images/QCm3zzbme5hta1zbNLJs.jpg);">
+<section class="banner__inner-page bg-image pt-180 pb-180 bg-image" data-background="{{ asset('frontend/assets/images/QCm3zzbme5hta1zbNLJs.jpg') }}" style="background-image: url({{ asset('frontend/assets/images/QCm3zzbme5hta1zbNLJs.jpg') }});">
 <div class="shape2 wow slideInLeft" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: slideInLeft;">
-<img src="https://gratech.coevs.com/assets/general/images/pxzAm9rA4BuWjccbttrU.png" alt="shape">
+<img src="{{ asset('frontend/assets/images/pxzAm9rA4BuWjccbttrU.png') }}" alt="shape">
 </div>
 <div class="shape1 wow slideInLeft" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: slideInLeft;">
-<img src="https://gratech.coevs.com/assets/general/images/lvmLc2mZ9vhkwUGBVeBM.png" alt="shape">
+<img src="{{ asset('frontend/assets/images/lvmLc2mZ9vhkwUGBVeBM.png') }}" alt="shape">
 </div>
 <div class="shape3 wow slideInRight" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: slideInRight;">
-<img class="sway__animationX" src="https://gratech.coevs.com/assets/general/images/6vSu4fkkvCyLfBNRNH1T.png" alt="shape">
+<img class="sway__animationX" src="{{ asset('frontend/assets/images/6vSu4fkkvCyLfBNRNH1T.png') }}" alt="shape">
 </div>
 <div class="container">
 <h2 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">	About
 </h2>
 <div class="breadcrumb-list wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInUp;">
-    <a href="https://gratech.coevs.com">Home</a><span><i class="fa-regular fa-angles-right mx-2"></i>	About
+    <a href="/">Home</a><span><i class="fa-regular fa-angles-right mx-2"></i>	About
 </span>
 </div>
 </div>
 </section>
         <section class="about-two-area pt-120">
 <div class="about-two__shape">
-<img src="https://gratech.coevs.com/assets/general/images/VRUJYT10pzK1Ba6ZAadm.png" alt="shape">
+<img src="{{ asset('frontend/assets/images/VRUJYT10pzK1Ba6ZAadm.png') }}" alt="shape">
 </div>
 <div class="container">
 <div class="row g-4">
     <div class="col-xl-6 wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInRight;">
         <div class="about-two__left-item">
             <div class="dots">
-                <img class="sway_Y__animation" src="https://gratech.coevs.com/assets/general/images/vjjksYs3OD22xjgJvSvL.png" alt="shape">
+                <img class="sway_Y__animation" src="{{ asset('frontend/assets/images/vjjksYs3OD22xjgJvSvL.png') }}" alt="shape">
             </div>
             <div class="shape-halper">
-                <img class="sway__animation" src="https://gratech.coevs.com/assets/general/images/XSr7XtTUTBWo4XCtgTgv.png" alt="shape">
+                <img class="sway__animation" src="{{ asset('frontend/assets/images/XSr7XtTUTBWo4XCtgTgv.png') }}" alt="shape">
             </div>
             <div class="image big-image">
                 <img src="https://gratech.coevs.com/assets/general/images/NinGN5tMJNryGDGpv1ZM.jpg" alt="image">

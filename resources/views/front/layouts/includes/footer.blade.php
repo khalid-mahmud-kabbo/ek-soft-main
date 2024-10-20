@@ -17,7 +17,7 @@
 	<div class="container">
 		<div class="footer__wrp pt-100 pb-100">
 			<div class="footer__item item-big wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-				<a href="https://eksoftwares.com" class="logo mb-30">
+				<a href="/" class="logo mb-30">
 					<img src="{{ asset('frontend/assets/images/logo.png') }}" alt="image">
 				</a>
 				<p>Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, a lacinia curabitur lacinia mollis</p>
@@ -55,11 +55,11 @@
 			<div class="footer__item item-sm wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
 				<h3 class="footer-title">Quick Link</h3>
 				<ul>
-											<li><a href="/blog" target="_self"><i class="fa-regular fa-angles-right me-1"></i> Blog</a></li>
-											<li><a href="/about" target="_self"><i class="fa-regular fa-angles-right me-1"></i> About</a></li>
-											<li><a href="/contact" target="_self"><i class="fa-regular fa-angles-right me-1"></i> Contact</a></li>
-											<li><a href="/faq" target="_self"><i class="fa-regular fa-angles-right me-1"></i> FAQ</a></li>
-											<li><a href="https://eksoftwares.com" target="_self"><i class="fa-regular fa-angles-right me-1"></i> Home</a></li>
+											<li><a href="/blog" target="_self"><i class="fa-regular fa-angles-right me-1"></i> Home</a></li>
+											<li><a href="{{ route('services') }}" target="_self"><i class="fa-regular fa-angles-right me-1"></i> Service</a></li>
+											<li><a href="{{ route('about') }}" target="_self"><i class="fa-regular fa-angles-right me-1"></i> About</a></li>
+											<li><a href="{{ route('blogs') }}" target="_self"><i class="fa-regular fa-angles-right me-1"></i> Blog</a></li>
+											<li><a href="{{ route('career') }}" target="_self"><i class="fa-regular fa-angles-right me-1"></i> Career</a></li>
 									</ul>
 			</div>
 

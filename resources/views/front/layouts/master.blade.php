@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr" data-theme="dark_mode">
 <head>
@@ -13,6 +12,12 @@
     @include('front.layouts.includes.styles')
 </head>
 <body>
+
+    <div id="preloader">
+        <div id="status">
+            <img src="{{asset(IMG_PRELOADER_PATH.$allsettings['preloader'])}}" alt="img"/>
+        </div>
+    </div>
 
     @include('front.layouts.includes.header')
     @include('front.layouts.includes.cookies')

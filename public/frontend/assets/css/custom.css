@@ -34,4 +34,14 @@ text-overflow: ellipsis;
 
 }
 
+.header-two-area .header__main .main-menu ul li .active {
+    color: var(--primary-color);
+}
 
+
+.extra_for_new{
+    width: 180px !important;
+    height: 62px !important;
+}
+
+.extra_for_new_desc

@@ -30,11 +30,8 @@
                             <form enctype="multipart/form-data" method="POST" action="{{ route('admin.blog.update') }}">
                                 @csrf
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-12">
                                         <div class="form-vertical__item bg-style">
-                                            <div class="item-top mb-30">
-                                                <h2>{{ langString('en', false) . ':' }}</h2>
-                                            </div>
                                             <input type="hidden" name="id" value="{{ $edit->id }}">
                                             <div class="input__group mb-25">
                                                 <label for="exampleInputEmail1">{{ __('Blog Title') }}</label>
@@ -81,27 +78,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="form-vertical__item bg-style">
-                                            <div class="item-top mb-30">
-                                                <h2>{{ langString('bn', false) . ':' }}</h2>
-                                            </div>
-                                            <div class="input__group mb-25">
-                                                <label for="fr_blog_title">{{ __('Blog Title') }}</label>
-                                                <input type="text" id="fr_blog_title" name="fr_blog_title" required=""
-                                                    value="{{ $edit->fr_Title }}" placeholder="{{ __('Title') }}">
-                                            </div>
-                                            <div class="input__group mb-25">
-                                                <label for="fr_description_one">{{ __('Description One') }}</label>
-                                                <textarea name="fr_description_one" id="summernote3" class="" required="">{{ $edit->fr_Description_One }}</textarea>
-                                            </div>
-                                            <div class="input__group mb-25">
-                                                <label for="fr_description_two">{{ __('Description Two') }}</label>
-                                                <textarea name="fr_description_two" id="summernote4" class="">{{ $edit->fr_Description_Two }}</textarea>
-                                            </div>
 
-                                        </div>
-                                    </div>
                                 </div>
                             </form>
                         </div>
