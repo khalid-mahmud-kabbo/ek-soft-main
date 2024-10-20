@@ -18,9 +18,9 @@
 		<div class="footer__wrp pt-100 pb-100">
 			<div class="footer__item item-big wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
 				<a href="/" class="logo mb-30">
-					<img src="{{ asset('frontend/assets/images/logo.png') }}" alt="image">
+					<img src="{{ asset(IMG_LOGO_PATH . $allsettings['main_logo']) }}" alt="image">
 				</a>
-				<p>Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, a lacinia curabitur lacinia mollis</p>
+				<p>{{ $allsettings['footer_about'] }}</p>
 				<div class="social-icon">
 											<a target="_blank" class="social-media-link" href="{{ getSocialLink()->Facebook }}">
                                         <i class="fab fa-facebook-f"></i></a>
@@ -39,16 +39,15 @@
 			<div class="footer__item item-sm wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
 				<h3 class="footer-title">Our Services</h3>
 				<ul>
-											<li><a href="#"><i
-									class="fa-regular fa-angles-right me-1"></i> IT Management</a></li>
-											<li><a href="#"><i
-									class="fa-regular fa-angles-right me-1"></i> Database Security</a></li>
-											<li><a href="#"><i
-									class="fa-regular fa-angles-right me-1"></i> Cyber Security</a></li>
-											<li><a href="#"><i
-									class="fa-regular fa-angles-right me-1"></i> IT Consultancy</a></li>
-											<li><a href="#"><i
-									class="fa-regular fa-angles-right me-1"></i> App Development</a></li>
+					<li><a href="{{ $allsettings['footer_link_service_1'] }}"><i class="fa-regular fa-angles-right me-1"></i> {{ $allsettings['footer_link_title_service_1'] }}</a></li>
+											<li><a href="{{ $allsettings['footer_link_service_2'] }}"><i
+									class="fa-regular fa-angles-right me-1"></i> {{ $allsettings['footer_link_title_service_2'] }}</a></li>
+											<li><a href="{{ $allsettings['footer_link_service_3'] }}"><i
+									class="fa-regular fa-angles-right me-1"></i> {{ $allsettings['footer_link_title_service_3'] }}</a></li>
+											<li><a href="{{ $allsettings['footer_link_service_4'] }}"><i
+									class="fa-regular fa-angles-right me-1"></i> {{ $allsettings['footer_link_title_service_4'] }}</a></li>
+											<li><a href="{{ $allsettings['footer_link_service_5'] }}"><i
+									class="fa-regular fa-angles-right me-1"></i> {{ $allsettings['footer_link_title_service_5'] }}</a></li>
 									</ul>
 			</div>
 

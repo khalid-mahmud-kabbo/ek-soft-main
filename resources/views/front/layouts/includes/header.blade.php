@@ -2,7 +2,7 @@
 	<div class="container header__container">
 		<div class="header__main">
 			<a href="/" class="logo">
-				<img src="{{ asset('frontend/assets/images/logo.png') }}" alt="logo">
+				<img src="{{ asset(IMG_LOGO_PATH . $allsettings['main_logo']) }}" alt="logo">
 			</a>
 			<div class="main-menu">
 				<nav>

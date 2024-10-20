@@ -1,28 +1,28 @@
 @extends('front.layouts.master')
-@section('title', isset($title) ? $title : 'Contact Us')
+@section('title', 'Contact Us | The Future is Right Here')
 @section('description', isset($description) ? $description : '')
 @section('keywords', isset($keywords) ? $keywords : '')
 @section('content')
 
-    <section class="banner__inner-page bg-image pt-180 pb-180 bg-image" data-background="https://gratech.coevs.com/assets/general/images/QCm3zzbme5hta1zbNLJs.jpg" style="background-image: url(https://gratech.coevs.com/assets/general/images/QCm3zzbme5hta1zbNLJs.jpg);">
-<div class="shape2 wow slideInLeft" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: slideInLeft;">
-<img src="https://gratech.coevs.com/assets/general/images/pxzAm9rA4BuWjccbttrU.png" alt="shape">
-</div>
-<div class="shape1 wow slideInLeft" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: slideInLeft;">
-<img src="https://gratech.coevs.com/assets/general/images/lvmLc2mZ9vhkwUGBVeBM.png" alt="shape">
-</div>
-<div class="shape3 wow slideInRight" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: slideInRight;">
-<img class="sway__animationX" src="https://gratech.coevs.com/assets/general/images/6vSu4fkkvCyLfBNRNH1T.png" alt="shape">
-</div>
-<div class="container">
-<h2 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">	Contact
-</h2>
-<div class="breadcrumb-list wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInUp;">
-    <a href="https://gratech.coevs.com">Home</a><span><i class="fa-regular fa-angles-right mx-2"></i>	Contact
-</span>
-</div>
-</div>
-</section>
+<section class="banner__inner-page bg-image pt-180 pb-180 bg-image" data-background="{{ asset('frontend/assets/images/QCm3zzbme5hta1zbNLJs.jpg') }}" style="background-image: url({{ asset('frontend/assets/images/QCm3zzbme5hta1zbNLJs.jpg') }});">
+    <div class="shape2 wow slideInLeft" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: slideInLeft;">
+    <img src="{{ asset('frontend/assets/images/pxzAm9rA4BuWjccbttrU.png') }}" alt="shape">
+    </div>
+    <div class="shape1 wow slideInLeft" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: slideInLeft;">
+    <img src="{{ asset('frontend/assets/images/lvmLc2mZ9vhkwUGBVeBM.png') }}" alt="shape">
+    </div>
+    <div class="shape3 wow slideInRight" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: slideInRight;">
+    <img class="sway__animationX" src="{{ asset('frontend/assets/images/6vSu4fkkvCyLfBNRNH1T.png') }}" alt="shape">
+    </div>
+    <div class="container">
+    <h2 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">	Contact Us
+    </h2>
+    <div class="breadcrumb-list wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInUp;">
+        <a href="/">Home</a><span><i class="fa-regular fa-angles-right mx-2"></i>	Contact Us
+    </span>
+    </div>
+    </div>
+    </section>
         <section class="contact-area pt-120 pb-120">
 <div class="container">
 <div class="row g-4">

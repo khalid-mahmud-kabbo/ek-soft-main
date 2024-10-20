@@ -77,10 +77,76 @@
                                                 <input type="text" class="form-control" id="state" name="state"
                                                     value="{{ $allsettings['state'] }}" required="">
                                             </div>
-                                            <div class="input__group mb-25">
+                                            <div class="input__group mb-25 d-none">
                                                 <label for="title">{{ __('Country') }}</label>
                                                 <input type="text" class="form-control" id="country" name="country"
                                                     value="{{ $allsettings['country'] }}" required="">
+                                            </div>
+
+                                            <div class="input__group mb-25">
+                                                <label for="title">{{ __('Footer About') }}</label>
+                                                <input type="text" class="form-control" id="footer_about" name="footer_about"
+                                                    value="{{ $allsettings['footer_about'] }}" required="">
+                                            </div>
+
+                                            <div class="input__group mb-25">
+                                                <label for="title">{{ __('Service Name One (Footer)') }}</label>
+                                                <input type="text" class="form-control" id="footer_link_title_service_1" name="footer_link_title_service_1"
+                                                    value="{{ $allsettings['footer_link_title_service_1'] }}" required="">
+                                            </div>
+
+                                            <div class="input__group mb-25">
+                                                <label for="title">{{ __('Link For Service Name One (Footer)') }}</label>
+                                                <input type="text" class="form-control" id="footer_link_service_1" name="footer_link_service_1"
+                                                    value="{{ $allsettings['footer_link_service_1'] }}" required="">
+                                            </div>
+
+                                            <div class="input__group mb-25">
+                                                <label for="title">{{ __('Service Name Two (Footer)') }}</label>
+                                                <input type="text" class="form-control" id="footer_link_title_service_2" name="footer_link_title_service_2"
+                                                    value="{{ $allsettings['footer_link_title_service_2'] }}" required="">
+                                            </div>
+
+                                            <div class="input__group mb-25">
+                                                <label for="title">{{ __('Link For Service Name Two (Footer)') }}</label>
+                                                <input type="text" class="form-control" id="footer_link_service_2" name="footer_link_service_2"
+                                                    value="{{ $allsettings['footer_link_service_2'] }}" required="">
+                                            </div>
+
+                                            <div class="input__group mb-25">
+                                                <label for="title">{{ __('Service Name Three (Footer)') }}</label>
+                                                <input type="text" class="form-control" id="footer_link_title_service_3" name="footer_link_title_service_3"
+                                                    value="{{ $allsettings['footer_link_title_service_3'] }}" required="">
+                                            </div>
+
+                                            <div class="input__group mb-25">
+                                                <label for="title">{{ __('Link For Service Name Three (Footer)') }}</label>
+                                                <input type="text" class="form-control" id="footer_link_service_3" name="footer_link_service_3"
+                                                    value="{{ $allsettings['footer_link_service_3'] }}" required="">
+                                            </div>
+
+                                            <div class="input__group mb-25">
+                                                <label for="title">{{ __('Service Name Four (Footer)') }}</label>
+                                                <input type="text" class="form-control" id="footer_link_title_service_4" name="footer_link_title_service_4"
+                                                    value="{{ $allsettings['footer_link_title_service_4'] }}" required="">
+                                            </div>
+
+                                            <div class="input__group mb-25">
+                                                <label for="title">{{ __('Link For Service Name Four (Footer)') }}</label>
+                                                <input type="text" class="form-control" id="footer_link_service_4" name="footer_link_service_4"
+                                                    value="{{ $allsettings['footer_link_service_4'] }}" required="">
+                                            </div>
+
+                                            <div class="input__group mb-25">
+                                                <label for="title">{{ __('Service Name Five (Footer)') }}</label>
+                                                <input type="text" class="form-control" id="footer_link_title_service_5" name="footer_link_title_service_5"
+                                                    value="{{ $allsettings['footer_link_title_service_5'] }}" required="">
+                                            </div>
+
+                                            <div class="input__group mb-25">
+                                                <label for="title">{{ __('Link For Service Name Five (Footer)') }}</label>
+                                                <input type="text" class="form-control" id="footer_link_service_5" name="footer_link_service_5"
+                                                    value="{{ $allsettings['footer_link_service_5'] }}" required="">
                                             </div>
 
 

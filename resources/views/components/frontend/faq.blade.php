@@ -28,13 +28,13 @@
 								<button class="accordion-button " type="button" data-bs-toggle="collapse"
 								        data-bs-target="#collapseOne60" aria-expanded=" true "
 								        aria-controls="collapseOne60">
-									Where should I incorporate my business?
+                                        What services does your company offer?
 								</button>
 							</h2>
 							<div id="collapseOne60" class="accordion-collapse collapse  show  "
 							     aria-labelledby="headingOne60" data-bs-parent="#accordionExample">
 								<div class="accordion-body">
-									<p> It is a long established fact that a reader be distracted by the readable content of a page when looking a its layout. Many desktop publishing packages and web page editors now use Lorem Ipsum</p>
+									<p>Our company specializes in web development, software development, and digital solutions. We create custom websites, applications, and provide tailored strategies to help businesses succeed online.</p>
 								</div>
 							</div>
 						</div>
@@ -45,13 +45,13 @@
 								<button class="accordion-button  collapsed " type="button" data-bs-toggle="collapse"
 								        data-bs-target="#collapseOne61" aria-expanded=" false "
 								        aria-controls="collapseOne61">
-									What happens my free trial?
+                                        Why should I choose your company for my project?
 								</button>
 							</h2>
 							<div id="collapseOne61" class="accordion-collapse collapse  "
 							     aria-labelledby="headingOne61" data-bs-parent="#accordionExample">
 								<div class="accordion-body">
-									<p> It is a long established fact that a reader be distracted by the readable content of a page when looking a its layout. Many desktop publishing packages and web page editors now use Lorem Ipsum</p>
+									<p>We focus on delivering high-quality, innovative solutions that meet your unique business needs. With our expertise in the latest technologies, we ensure that your project is future-ready and built to perform.</p>
 								</div>
 							</div>
 						</div>
@@ -62,13 +62,13 @@
 								<button class="accordion-button  collapsed " type="button" data-bs-toggle="collapse"
 								        data-bs-target="#collapseOne62" aria-expanded=" false "
 								        aria-controls="collapseOne62">
-									What is included in your services?
+                                        How does your company ensure project success?
 								</button>
 							</h2>
 							<div id="collapseOne62" class="accordion-collapse collapse  "
 							     aria-labelledby="headingOne62" data-bs-parent="#accordionExample">
 								<div class="accordion-body">
-									<p> It is a long established fact that a reader be distracted by the readable content of a page when looking a its layout. Many desktop publishing packages and web page editors now use Lorem Ipsum</p>
+									<p>We work closely with our clients to understand their goals and provide tailored solutions. Our dedicated team ensures timely delivery, clear communication, and post-launch support to guarantee your success.</p>
 								</div>
 							</div>
 						</div>
@@ -79,13 +79,13 @@
 								<button class="accordion-button  collapsed " type="button" data-bs-toggle="collapse"
 								        data-bs-target="#collapseOne63" aria-expanded=" false "
 								        aria-controls="collapseOne63">
-									What type of company is measured?
+                                        Can your company help improve my existing website or software?
 								</button>
 							</h2>
 							<div id="collapseOne63" class="accordion-collapse collapse  "
 							     aria-labelledby="headingOne63" data-bs-parent="#accordionExample">
 								<div class="accordion-body">
-									<p> It is a long established fact that a reader be distracted by the readable content of a page when looking a its layout. Many desktop publishing packages and web page editors now use Lorem Ipsum</p>
+									<p>Absolutely! We offer optimization services, including redesigns, performance improvements, and feature enhancements, to help you get the most out of your current systems.</p>
 								</div>
 							</div>
 						</div>

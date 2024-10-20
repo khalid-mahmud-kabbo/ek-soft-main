@@ -52,7 +52,7 @@
 									                        alt="shape"></div>
 									<h4><a href="#" class="primary-hover">{{ $item->title }}</a></h4>
 									<p class="service-description">
-                                        {!! clean(Str::limit(($item->description), 205)) !!}
+                                        {!! clean(Str::limit(($item->description), 140)) !!}
                                     </p>
 
 

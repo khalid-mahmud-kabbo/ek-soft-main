@@ -87,21 +87,46 @@ class GeneralSettingsController extends Controller
             if (isset($request->opening_time)) {
                 Setting::where('slug', 'opening_time')->update(['value' => $request->opening_time]);
             }
+            if (isset($request->footer_about)) {
+                Setting::where('slug', 'footer_about')->update(['value' => $request->footer_about]);
+            }
+            if (isset($request->footer_link_title_service_1)) {
+                Setting::where('slug', 'footer_link_title_service_1')->update(['value' => $request->footer_link_title_service_1]);
+            }
+            if (isset($request->footer_link_title_service_2)) {
+                Setting::where('slug', 'footer_link_title_service_2')->update(['value' => $request->footer_link_title_service_2]);
+            }
+            if (isset($request->footer_link_title_service_3)) {
+                Setting::where('slug', 'footer_link_title_service_3')->update(['value' => $request->footer_link_title_service_3]);
+            }
+            if (isset($request->footer_link_title_service_4)) {
+                Setting::where('slug', 'footer_link_title_service_4')->update(['value' => $request->footer_link_title_service_4]);
+            }
+            if (isset($request->footer_link_title_service_5)) {
+                Setting::where('slug', 'footer_link_title_service_5')->update(['value' => $request->footer_link_title_service_5]);
+            }
+            if (isset($request->footer_link_service_1)) {
+                Setting::where('slug', 'footer_link_service_1')->update(['value' => $request->footer_link_service_1]);
+            }
+            if (isset($request->footer_link_service_2)) {
+                Setting::where('slug', 'footer_link_service_2')->update(['value' => $request->footer_link_service_2]);
+            }
+            if (isset($request->footer_link_service_3)) {
+                Setting::where('slug', 'footer_link_service_3')->update(['value' => $request->footer_link_service_3]);
+            }
+            if (isset($request->footer_link_service_4)) {
+                Setting::where('slug', 'footer_link_service_4')->update(['value' => $request->footer_link_service_4]);
+            }
+            if (isset($request->footer_link_service_5)) {
+                Setting::where('slug', 'footer_link_service_5')->update(['value' => $request->footer_link_service_5]);
+            }
             if (isset($request->state)) {
                 Setting::where('slug', 'state')->update(['value' => $request->state]);
             }
             if (isset($request->country)) {
                 Setting::where('slug', 'country')->update(['value' => $request->country]);
             }
-            // if (isset($request->news_letter)) {
-            //     Setting::where('slug', 'news_letter')->update(['value' => $request->news_letter]);
-            // }
-            // if (isset($request->default_currency)) {
 
-            //     Setting::where('slug', 'default_currency')->update(['value' => $request->default_currency]);
-
-            //     Session::put('currency', $request->default_currency);
-            // }
             if (isset($request->default_language)) {
                 Setting::where('slug', 'default_language')->update(['value' => $request->default_language]);
             }
@@ -114,15 +139,6 @@ class GeneralSettingsController extends Controller
             if (isset($request->footer_title)) {
                 Setting::where('slug', 'footer_title')->update(['value' => $request->footer_title]);
             }
-            // if (isset($request->news_letter_title)) {
-            //     Setting::where('slug', 'news_letter_title')->update(['value' => $request->news_letter_title]);
-            // }
-            // if (isset($request->popupmessage)){
-            //     Setting::where('slug', 'popupmessage')->update(['value' => $request->popupmessage]);
-            // }
-            // if (isset($request->news_letter_status)) {
-            //     Setting::where('slug', 'news_letter_status')->update(['value' => $request->news_letter_status]);
-            // }
             if (isset($request->main_logo)) {
                 Setting::where('slug', 'main_logo')->update(['value' => fileUpload($request->main_logo, IMG_LOGO_PATH)]);
             }
@@ -139,18 +155,6 @@ class GeneralSettingsController extends Controller
                 $image->move(IMG_PRELOADER_PATH, $filename);
                 Setting::where('slug', 'preloader')->update(['value' => $filename]);
             }
-            // if (isset($request->news_letter_img)) {
-            //     Setting::where('slug', 'news_letter_img')->update(['value' => fileUpload($request->news_letter_img, IMG_FOOTER_PATH)]);
-            // }
-            // if (isset($request->popup_image)) {
-            //     Setting::where('slug', 'popup_image')->update(['value' => fileUpload($request->popup_image, IMG_ADVERTISE_PATH)]);
-            // }
-            // if (isset($request->popup_link)) {
-            //     Setting::where('slug', 'popup_link')->update(['value' => $request->popup_link]);
-            // }
-            // if (isset($request->menu_thumb)) {
-            //     Setting::where('slug', 'menu_thumb')->update(['value' => fileUpload($request->menu_thumb, IMG_ADVERTISE_PATH)]);
-            // }
             return redirect()->back()->with('success', __('Successfully Updated!'));
         } catch (\Exception $e) {
 

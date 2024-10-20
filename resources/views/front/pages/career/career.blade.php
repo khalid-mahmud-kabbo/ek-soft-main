@@ -1,5 +1,5 @@
 @extends('front.layouts.master')
-@section('title', isset($title) ? $title : 'Career')
+@section('title', 'Career | The Future is Right Here')
 @section('description', isset($description) ? $description : '')
 @section('keywords', isset($keywords) ? $keywords : '')
 @section('content')
