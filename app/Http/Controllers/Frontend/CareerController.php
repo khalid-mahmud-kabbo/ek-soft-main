@@ -10,7 +10,7 @@ class CareerController extends Controller
 {
     public function index()
     {
-        $seo = SeoSetting::where('slug', 'blog')->first();
+        $seo = SeoSetting::where('slug', 'career')->first();
         $data['title'] = $seo->title;
         $data['description'] = $seo->description;
         $data['keywords'] = $seo->keywords;

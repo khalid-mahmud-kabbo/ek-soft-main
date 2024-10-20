@@ -6,15 +6,15 @@ use App\Http\Controllers\Controller;
 use App\Models\SeoSetting;
 use Illuminate\Http\Request;
 
-class ServiceController extends Controller
+class PrivacyPolicyController extends Controller
 {
     public function index()
     {
-        $seo = SeoSetting::where('slug', 'service')->first();
+        $seo = SeoSetting::where('slug', 'privacy-policy')->first();
         $data['title'] = $seo->title;
         $data['description'] = $seo->description;
         $data['keywords'] = $seo->keywords;
-        return view('front.pages.service.service', $data);
+        return view('front.pages.privacypolicies.privacypolicies', $data);
     }
 
 }

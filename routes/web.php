@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\BlogController;
+use App\Http\Controllers\Frontend\PrivacyPolicyController;
+use App\Http\Controllers\Frontend\RefundPolicyController;
+use App\Http\Controllers\Frontend\TermsConditionController;
 use App\Http\Controllers\Frontend\ContactController;
 use App\Http\Controllers\Frontend\CareerController;
 use App\Http\Controllers\Frontend\ServiceController;
@@ -33,6 +36,18 @@ Route::group(['middleware' => ['is_user']], function () {
 
     Route::group(['prefix' => 'services'], function () {
         Route::get('/', [ServiceController::class, 'index'])->name('services');
+    });
+
+    Route::group(['prefix' => 'terms-conditions'], function () {
+        Route::get('/', [TermsConditionController::class, 'index'])->name('terms-conditions');
+    });
+
+    Route::group(['prefix' => 'refund-policy'], function () {
+        Route::get('/', [RefundPolicyController::class, 'index'])->name('refund-policy');
+    });
+
+    Route::group(['prefix' => 'privacy-policy'], function () {
+        Route::get('/', [PrivacyPolicyController::class, 'index'])->name('privacy-policy');
     });
 
 
