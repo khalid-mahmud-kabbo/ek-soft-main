@@ -84,6 +84,9 @@ class GeneralSettingsController extends Controller
             if (isset($request->address)) {
                 Setting::where('slug', 'address')->update(['value' => $request->address]);
             }
+            if (isset($request->opening_time)) {
+                Setting::where('slug', 'opening_time')->update(['value' => $request->opening_time]);
+            }
             if (isset($request->state)) {
                 Setting::where('slug', 'state')->update(['value' => $request->state]);
             }

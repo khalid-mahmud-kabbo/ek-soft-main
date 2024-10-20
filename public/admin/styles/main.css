@@ -168,7 +168,7 @@ img {
 }
 
 .main-content {
-  margin-left: 260px;
+  margin-left: 270px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -726,7 +726,7 @@ img {
   z-index: 9999;
   top: 0;
   left: 0;
-  width: 260px;
+  width: 270px;
   height: 100vh;
   background-color: #151327;
   -webkit-transition: 0.4s;

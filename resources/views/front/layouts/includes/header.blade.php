@@ -7,11 +7,11 @@
 			<div class="main-menu">
 				<nav>
 					<ul>
-													<li><a href="https://eksoftwares.com" target="_self">Home</a></li>
-													<li><a href="/service" target="_self">Service</a></li>
-													<li><a href="/about" target="_self">About</a></li>
-													<li><a href="/blog" target="_self">Blog</a></li>
-													<li><a href="/contact" target="_self">Career</a></li>
+													<li><a href="/" target="_self">Home</a></li>
+													<li><a href="{{ route('services') }}" target="_self">Service</a></li>
+													<li><a href="{{ route('about') }}" target="_self">About</a></li>
+													<li><a href="{{ route('blogs') }}" target="_self">Blog</a></li>
+													<li><a href="{{ route('career') }}" target="_self">Career</a></li>
 											</ul>
 				</nav>
 			</div>
@@ -19,7 +19,7 @@
 					<div class="about-three__left-item d-flex flex-wrap gap-2 align-items-center">
 
 						<div class="info">
-                            <button class="btn-one">Contact with Us</button>
+                            <a href="{{ route('contact') }}" class="btn-one">Contact with Us</a>
 						</div>
 					</div>
 

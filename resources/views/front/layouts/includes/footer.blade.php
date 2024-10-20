@@ -82,7 +82,7 @@
 							<h5>
 								Opening Hours:
 							</h5>
-							<p>Mon - Sat: 10.00 AM - 4.00 PM</p>
+							<p>{{ $allsettings['opening_time'] }}</p>
 						</div>
 					</li>
 					<li>

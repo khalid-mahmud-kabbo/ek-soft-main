@@ -68,6 +68,11 @@
                                                     value="{{ $allsettings['address'] }}" required="">
                                             </div>
                                             <div class="input__group mb-25">
+                                                <label for="title">{{ __('Opening Time') }}</label>
+                                                <input type="text" class="form-control" id="opening_time" name="opening_time"
+                                                    value="{{ $allsettings['opening_time'] }}" required="">
+                                            </div>
+                                            <div class="input__group mb-25">
                                                 <label for="title">{{ __('State') }}</label>
                                                 <input type="text" class="form-control" id="state" name="state"
                                                     value="{{ $allsettings['state'] }}" required="">
