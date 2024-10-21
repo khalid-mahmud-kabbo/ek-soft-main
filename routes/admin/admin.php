@@ -5,6 +5,9 @@ use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\Admin\WhoweareController;
 use App\Http\Controllers\Admin\WhychooseUsController;
+use App\Http\Controllers\Admin\TermsConditionsController;
+use App\Http\Controllers\Admin\RefundPolicyController;
+use App\Http\Controllers\Admin\PrivacyPolicyController;
 use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\CaseStudyController;
 use App\Http\Controllers\Admin\TestimonialController;
@@ -128,6 +131,25 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'is_admin', 'en.loca
         Route::get('/edit/{id}', [WhychooseUsController::class, 'whychooseusEdit'])->name('whychooseus.edit');
         Route::post('/update', [WhychooseUsController::class, 'whychooseusUpdate'])->name('whychooseus.update')->middleware('isDemo');
     });
+
+
+    Route::group(['prefix' => 'termscondition'], function () {
+        Route::get('/edit/{id}', [TermsConditionsController::class, 'termsconditionEdit'])->name('termscondition.edit');
+        Route::post('/update', [TermsConditionsController::class, 'termsconditionUpdate'])->name('termscondition.update')->middleware('isDemo');
+    });
+
+
+    Route::group(['prefix' => 'privacypolicy'], function () {
+        Route::get('/edit/{id}', [PrivacyPolicyController::class, 'privacypolicyEdit'])->name('privacypolicy.edit');
+        Route::post('/update', [PrivacyPolicyController::class, 'privacypolicyUpdate'])->name('privacypolicy.update')->middleware('isDemo');
+    });
+
+
+    Route::group(['prefix' => 'refundpolicy'], function () {
+        Route::get('/edit/{id}', [RefundPolicyController::class, 'refundpolicyEdit'])->name('refundpolicy.edit');
+        Route::post('/update', [RefundPolicyController::class, 'refundpolicyUpdate'])->name('refundpolicy.update')->middleware('isDemo');
+    });
+
 
     Route::group(['prefix' => 'about'], function () {
         Route::get('', [WhoweareController::class, 'about'])->name('about');

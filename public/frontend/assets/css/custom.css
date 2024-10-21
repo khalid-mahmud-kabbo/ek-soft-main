@@ -38,6 +38,10 @@ text-overflow: ellipsis;
     color: var(--primary-color);
 }
 
+.footer__copyright .active {
+    color: var(--primary-color);
+}
+
 
 .extra_for_new{
     width: 180px !important;

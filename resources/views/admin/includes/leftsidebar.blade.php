@@ -7,7 +7,7 @@
     </div>
     <div class="sidebar__brand">
         <a href="{{ route('admin.dashboard') }}">
-            <img src="{{ asset(IMG_LOGO_PATH . $allsettings['footer_logo']) }}" alt="icon">
+            <img class="side_bar_logo_master" src="{{ asset(IMG_LOGO_PATH . $allsettings['footer_logo']) }}" alt="icon">
         </a>
     </div>
     <ul id="sidebar-menu" class="sidebar__menu">
@@ -114,6 +114,27 @@
                         <a href="{{ route('admin.testimonial') }}">
                             <i class="fa fa-circle"></i>
                             <span>{{ __('Testimonials') }}</span>
+                        </a>
+                    </li>
+
+                    <li class="{{ isset($submenu) && $submenu == 'termscondition' ? 'mm-active' : '' }}">
+                        <a href="{{ route('admin.termscondition.edit', 1) }}">
+                            <i class="fa fa-circle"></i>
+                            <span>{{ __('Terms & Conditions') }}</span>
+                        </a>
+                    </li>
+
+                    <li class="{{ isset($submenu) && $submenu == 'privacypolicy' ? 'mm-active' : '' }}">
+                        <a href="{{ route('admin.privacypolicy.edit', 1) }}">
+                            <i class="fa fa-circle"></i>
+                            <span>{{ __('Privacy Policy') }}</span>
+                        </a>
+                    </li>
+
+                    <li class="{{ isset($submenu) && $submenu == 'refundpolicy' ? 'mm-active' : '' }}">
+                        <a href="{{ route('admin.refundpolicy.edit', 1) }}">
+                            <i class="fa fa-circle"></i>
+                            <span>{{ __('Refund Policy') }}</span>
                         </a>
                     </li>
 

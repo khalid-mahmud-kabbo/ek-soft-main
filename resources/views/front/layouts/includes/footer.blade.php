@@ -104,9 +104,9 @@
 				<p class="wow fadeInDown" data-wow-delay="00ms" data-wow-duration="1500ms">{{ $allsettings['footer_title'] }}</a></p>
 				<ul class="d-flex align-items-center gap-4 wow fadeInDown" data-wow-delay="200ms"
 				    data-wow-duration="1500ms">
-					<li><a href="{{ route('terms-conditions') }}">Terms &amp; Conditions</a></li>
-					<li><a href="{{ route('privacy-policy') }}">Privacy Policy</a></li>
-					<li><a href="{{ route('refund-policy') }}">Refund Policy</a></li>
+					<li><a href="{{ route('terms-conditions') }}" class="{{ Request::routeIs('terms-conditions') ? 'active' : '' }}">Terms &amp; Conditions</a></li>
+					<li><a href="{{ route('privacy-policy') }}" class="{{ Request::routeIs('privacy-policy') ? 'active' : '' }}">Privacy Policy</a></li>
+					<li><a href="{{ route('refund-policy') }}" class="{{ Request::routeIs('refund-policy') ? 'active' : '' }}">Refund Policy</a></li>
 				</ul>
 			</div>
 		</div>
