@@ -47,3 +47,13 @@ text-overflow: ellipsis;
     width: 180px !important;
     height: 62px !important;
 }
+
+
+.contact__left-item .social a {
+    color: var(--primary-color) !important;
+}
+
+
+.contact__form form input, .contact__form form textarea {
+    color: #fff !important;
+}

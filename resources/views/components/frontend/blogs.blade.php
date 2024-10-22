@@ -46,7 +46,7 @@
                     <div class="swiper-slide">
                         <div class="blog-two__list-item  mb-30   wow fadeInUp" data-wow-delay="100ms"
                         data-wow-duration="1500ms">
-                       <a href="{{route('blog.details',$blog->id)}}" class="blog__image d-block image">
+                       <a href="{{route('blog.details',$blog->blog_slug)}}" class="blog__image d-block image">
                            <img class="blog-square" src="{{asset(BlogImage().$blog->Small_Image)}}" alt="image">
 
                            <div class="blog-tag">
@@ -78,8 +78,8 @@
                                    @foreach($blog->tags as $Item)
                                    @foreach($Item->Tag as $n)
 
-                                   <a href="{{route('blog.details',$blog->blog_slug)}}">{{$n}}</a>
-
+                                   <p>{{$n}}</p>
+                                  
                                    @endforeach
                                 @endforeach
 
@@ -90,7 +90,7 @@
                                <div class="d-flex gap-2 align-items-center">
                                    <img class="blog-avatar" src="{{ asset('frontend/assets/images/profile.png') }}" alt="image">
                                    <div class="info">
-                                       <a href="#0" class="primary-color">By Author</a>
+                                       <p class="primary-color">By Author</p>
                                        <h5>Admin</h5>
                                    </div>
                                </div>

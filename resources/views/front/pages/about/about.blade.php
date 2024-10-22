@@ -18,10 +18,10 @@
 <img class="sway__animationX" src="{{ asset('frontend/assets/images/6vSu4fkkvCyLfBNRNH1T.png') }}" alt="shape">
 </div>
 <div class="container">
-<h2 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">	About
+<h2 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">	About Us
 </h2>
 <div class="breadcrumb-list wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInUp;">
-    <a href="/">Home</a><span><i class="fa-regular fa-angles-right mx-2"></i>	About
+    <a href="/">Home</a><span><i class="fa-regular fa-angles-right mx-2"></i>	About Us
 </span>
 </div>
 </div>

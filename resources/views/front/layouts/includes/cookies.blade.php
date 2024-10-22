@@ -4,7 +4,7 @@
 	</div>
 	<div class="info">
 		<p>
-			This website use cookies to help you have a superior and more relevant browsing experience on the website. <a href="https://gratech.coevs.com/terms-condition"> Read more...</a>
+			This website use cookies to help you have a superior and more relevant browsing experience on the website. <a href="{{ route('terms-conditions') }}"> Read more...</a>
 		</p>
 	</div>
 	<div class="buttons">

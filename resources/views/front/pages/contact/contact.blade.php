@@ -3,7 +3,6 @@
 @section('description', isset($description) ? $description : '')
 @section('keywords', isset($keywords) ? $keywords : '')
 @section('content')
-
 <section class="banner__inner-page bg-image pt-180 pb-180 bg-image" data-background="{{ asset('frontend/assets/images/QCm3zzbme5hta1zbNLJs.jpg') }}" style="background-image: url({{ asset('frontend/assets/images/QCm3zzbme5hta1zbNLJs.jpg') }});">
     <div class="shape2 wow slideInLeft" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: slideInLeft;">
     <img src="{{ asset('frontend/assets/images/pxzAm9rA4BuWjccbttrU.png') }}" alt="shape">
@@ -29,7 +28,6 @@
     <div class="col-lg-5">
         <div class="contact__left-item primary-bg">
             <h3 class="text-white mb-30">Contact Information</h3>
-            <p class="text-white">Nullam varius, erat quis iaculis dictum, eros urna varius eros, ut blandit felis odio in turpis. Quisque.</p>
             <ul class="mt-40 mb-40">
                 <li>
                     <i>
@@ -38,8 +36,8 @@
 <path d="M19.7461 28.1836C21.2 28.1836 22.3828 27.0008 22.3828 25.5469V22.0312C22.3828 21.6527 22.1408 21.3171 21.782 21.1978L16.5209 19.44C16.2634 19.3533 15.9819 19.3928 15.7553 19.5421L13.5186 21.033C11.1496 19.9035 8.33871 17.0925 7.20914 14.7236L8.7 12.4868C8.77415 12.3754 8.82189 12.2485 8.83958 12.1158C8.85728 11.9831 8.84447 11.8482 8.80213 11.7212L7.04432 6.46014C6.98611 6.28516 6.87428 6.13295 6.72469 6.02512C6.5751 5.91728 6.39534 5.85929 6.21094 5.85938H2.63672C1.18277 5.85938 0 7.02979 0 8.48373C0 18.61 9.6198 28.1836 19.7461 28.1836Z" fill="#3C72FC"></path>
 </svg>							</i>
                     <div>
-                        <span class="text-white">Call Us 7/24</span>
-                        <h3 class="mt-1"><a class="text-white" href="tel:+208-6666-0112">+208-6666-0112</a>
+                        <span class="text-white">Call Us</span>
+                        <h3 class="mt-1"><a class="text-white" href="tel:+208-6666-0112">{{ $allsettings['call_us'] }}</a>
                         </h3>
                     </div>
                 </li>
@@ -52,7 +50,7 @@
 </svg>							</i>
                     <div>
                         <span class="text-white">Make a Quote</span>
-                        <h3 class="mt-1"><a class="text-white" href="#">support@gratech.com</a>
+                        <h3 class="mt-1"><a class="text-white" href="#">{{ $allsettings['email'] }}</a>
                         </h3>
                     </div>
                 </li>
@@ -64,7 +62,7 @@
 </svg>							</i>
                     <div>
                         <span class="text-white">Location</span>
-                        <h3 class="mt-1"><a class="text-white" href="#">4517 Washington ave.</a>
+                        <h3 class="mt-1"><a class="text-white" href="#">{{ $allsettings['address'] }}</a>
                         </h3>
                     </div>
                 </li>
@@ -88,7 +86,8 @@
                     GET IN TOUCH
                 </h5>
                 <h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInUp;">Ready to Get Started?</h2>
-                <p class="wow fadeInUp mt-3" data-wow-delay="400ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 400ms; animation-name: fadeInUp;">varius,erat quis iaculis dictum, eros urna varius eros, ut blandit felis odio in turpis.Quisque rhoncus, eros in auctor ultrices,</p>
+                <p class="wow fadeInUp mt-3" data-wow-delay="400ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 400ms; animation-name: fadeInUp;">Have a project in mind or need assistance? We’re here to help!
+                    Get in touch with us today and let's bring your vision to life.</p>
             </div>
             <div class="contact__form">
                 <form action="https://gratech.coevs.com/contact" method="post">
@@ -118,7 +117,7 @@
 </div>
 </div>
 </section>
-<div class="contact__map">
+<div class="contact__map d-none">
 <iframe src="https://maps.google.com/maps?q=52.5069386,13.2599276&amp;hl=es;z=14&amp;output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 @endsection

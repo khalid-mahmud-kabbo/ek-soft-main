@@ -22,16 +22,20 @@
 				</a>
 				<p style="text-align: justify;">{{ $allsettings['footer_about'] }}</p>
 				<div class="social-icon">
-											<a target="_blank" class="social-media-link" href="{{ getSocialLink()->Facebook }}">
+											<a target="_blank" class="social-media-link" href="{{ $allsettings['Facebook'] }}">
                                         <i class="fab fa-facebook-f"></i></a>
 
 
-                                        <a target="_blank" class="social-media-link" href="{{ getSocialLink()->Twitter }}">
+                                        <a target="_blank" class="social-media-link" href="{{ $allsettings['Twitter'] }}">
                                             <i class="fab fa-twitter"></i></a>
 
 											<a target="_blank" class="social-media-link"
-                                        href="{{ getSocialLink()->Linkedin }}">
+                                        href="{{ $allsettings['Linkedin'] }}">
                                         <i class="fab fa-linkedin-in"></i></a>
+
+											<a target="_blank" class="social-media-link"
+                                        href="{{ $allsettings['Youtube'] }}">
+                                        <i class="fa-brands fa-youtube"></i></a>
 									</div>
 			</div>
 
