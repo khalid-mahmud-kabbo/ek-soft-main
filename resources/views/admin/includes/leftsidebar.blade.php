@@ -146,6 +146,13 @@
 
 
 
+            <li class="{{ isset($menu) && $menu == 'contactdetails' ? 'mm-active' : '' }}">
+                <a href="{{ route('admin.contactdetails') }}">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>{{ __('Contact Form Details') }}</span>
+                </a>
+            </li>
+
 
         @canany(['blog-list'])
             <li class="{{ isset($menu) && $menu == 'blog' ? 'mm-active' : '' }}">

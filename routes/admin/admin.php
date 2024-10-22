@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\Admin\WhoweareController;
 use App\Http\Controllers\Admin\WhychooseUsController;
+use App\Http\Controllers\Admin\ContactDetailsController;
 use App\Http\Controllers\Admin\TermsConditionsController;
 use App\Http\Controllers\Admin\RefundPolicyController;
 use App\Http\Controllers\Admin\PrivacyPolicyController;
@@ -124,6 +125,13 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'is_admin', 'en.loca
         Route::get('/active/{id}', [TestimonialController::class, 'testimonialActive'])->name('testimonial.active')->middleware('isDemo');
         Route::get('/inactive/{id}', [TestimonialController::class, 'testimonialInactive'])->name('testimonial.inactive')->middleware('isDemo');
         Route::get('/delete/{id}', [TestimonialController::class, 'testimonialDelete'])->name('testimonial.delete')->middleware('isDemo');
+    });
+
+
+    Route::group(['prefix' => 'contactdetails'], function () {
+        Route::get('', [ContactDetailsController::class, 'contactdetails'])->name('contactdetails');
+        Route::get('/details/{id}', [ContactDetailsController::class, 'contactdetailsView'])->name('contactdetails.details');
+        Route::get('/delete/{id}', [ContactDetailsController::class, 'contactdetailsDelete'])->name('contactdetails.delete')->middleware('isDemo');
     });
 
 
