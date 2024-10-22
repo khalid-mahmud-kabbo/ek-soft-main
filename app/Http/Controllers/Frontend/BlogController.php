@@ -12,18 +12,18 @@ class BlogController extends Controller
 {
     public function index()
     {
-        $data['blogs'] = Blog::with('tags')->latest()->paginate(6);
+        $data['blogs'] = Blog::with('tags')->latest();
         $seo = SeoSetting::where('slug', 'blog')->first();
         $data['title'] = $seo->title;
         $data['description'] = $seo->description;
         $data['keywords'] = $seo->keywords;
         return view('front.pages.blogs.blog', $data);
     }
-    public function blogDetails($id)
+    public function blogDetails($blog_slug)
     {
-        $blog = Blog::where('id', $id)->with('comments', 'author')->first();
+        $blog = Blog::where('blog_slug', $blog_slug)->with('comments', 'author')->first();
+        $data['blogs'] = Blog::orderBy('created_at', 'desc')->take(10)->get();
         $data['blog'] = $blog;
-        $data['comment'] = BlogComment::where('Blog_Id', $id)->count('id');
         $data['title'] = $blog->en_Title;
         $data['description'] = $blog->en_Title;
         $data['keywords'] = $blog->en_Title;

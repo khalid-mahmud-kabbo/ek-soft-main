@@ -78,14 +78,14 @@
                                    @foreach($blog->tags as $Item)
                                    @foreach($Item->Tag as $n)
 
-                                   <a href="{{route('blog.details',$blog->id)}}">{{$n}}</a>
+                                   <a href="{{route('blog.details',$blog->blog_slug)}}">{{$n}}</a>
 
                                    @endforeach
                                 @endforeach
 
                                </li>
                            </ul>
-                           <h3><a href="{{route('blog.details',$blog->id)}}" class="primary-hover">{{ $blog->en_Title }}</a></h3>
+                           <h3><a href="{{route('blog.details',$blog->blog_slug)}}" class="primary-hover">{{ $blog->en_Title }}</a></h3>
                            <div class="about__info mt-30">
                                <div class="d-flex gap-2 align-items-center">
                                    <img class="blog-avatar" src="{{ asset('frontend/assets/images/profile.png') }}" alt="image">

@@ -33,12 +33,20 @@
                                     <div class="col-md-12">
                                         <div class="form-vertical__item bg-style">
                                             <input type="hidden" name="id" value="{{ $edit->id }}">
+
                                             <div class="input__group mb-25">
                                                 <label for="exampleInputEmail1">{{ __('Blog Title') }}</label>
                                                 <input type="text" class="" id="en_blog_title" name="en_blog_title"
                                                     required="" value="{{ $edit->en_Title }}"
                                                     placeholder="{{ __('Title') }}">
                                             </div>
+
+                                            <div class="input__group mb-25">
+                                                <label for="exampleInputEmail1">{{ __('Blog Slug') }}</label>
+                                                <input type="text" class="" id="blog_slug" name="blog_slug"
+                                                    required="" value="{{ $edit->blog_slug }}">
+                                            </div>
+                                            
                                             <div class="input__group mb-25">
                                                 <label for="select2-example-tags">{{ __('Blog Tag') }}</label>
                                                 <select class="select2-multiple tag_one" name="tag[]" multiple="multiple"
@@ -122,5 +130,16 @@
             });
             $('.dropdown-toggle').dropdown();
         });
+
+
+        $('#en_blog_title').on('keyup', function () {
+        let $this = $(this);
+        let str = $this.val().toLowerCase().replace(/[0-9`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '-').replace(/ /g, '-');
+        $('#blog_slug').val(str);
+    })
+
+
+
+
     </script>
 @endpush

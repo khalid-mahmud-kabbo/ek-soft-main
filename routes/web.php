@@ -18,7 +18,7 @@ Route::group(['middleware' => ['is_user']], function () {
 
     Route::group(['prefix' => 'blogs'], function () {
         Route::get('/', [BlogController::class, 'index'])->name('blogs');
-        Route::get('/blog-details/{id}', [BlogController::class, 'blogDetails'])->name('blog.details');
+        Route::get('/blog-details/{blog_slug}', [BlogController::class, 'blogDetails'])->name('blog.details');
         Route::post('/blog-comment', [BlogCommentController::class, 'blogComment'])->name('user.blog.comment')->middleware(['isDemo']);
     });
 
@@ -36,6 +36,7 @@ Route::group(['middleware' => ['is_user']], function () {
 
     Route::group(['prefix' => 'services'], function () {
         Route::get('/', [ServiceController::class, 'index'])->name('services');
+        Route::get('/service-details/{service_slug}', [ServiceController::class, 'serviceDetails'])->name('service.details');
     });
 
     Route::group(['prefix' => 'terms-conditions'], function () {

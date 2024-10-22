@@ -41,6 +41,10 @@
                                                     value="{{ old('en_blog_title') }}" placeholder="{{ __('Title') }}">
                                             </div>
                                             <div class="input__group mb-25">
+                                                <label for="en_blog_title">{{ __('Blog Slug') }}</label>
+                                                <input type="text" id="blog_slug" name="blog_slug" required="">
+                                            </div>
+                                            <div class="input__group mb-25">
                                                 <label for="select2Multiple">{{ __('Blog Tag') }}</label>
                                                 <select class="select2-multiple tag_one" name="tag[]" multiple="multiple">
                                                     <option value="">{{ __('Select') }}</option>
@@ -118,5 +122,11 @@
             });
             $('.dropdown-toggle').dropdown();
         });
+
+        $('#en_blog_title').on('keyup', function () {
+        let $this = $(this);
+        let str = $this.val().toLowerCase().replace(/[0-9`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '-').replace(/ /g, '-');
+        $('#blog_slug').val(str);
+    })
     </script>
 @endpush

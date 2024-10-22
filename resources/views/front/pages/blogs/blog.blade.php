@@ -49,12 +49,12 @@
 
 
                 <div class="shape"><img src="{{ asset('frontend/assets/images/Drjgn3eGwtJfxce78yMO.png') }}" alt="shape"></div>
-                <h4><a href="{{route('blog.details',$item->id)}}" class="primary-hover">{{ $item->en_Title }}</a></h4>
+                <h4><a href="{{route('blog.details',$item->blog_slug)}}" class="primary-hover">{{ $item->en_Title }}</a></h4>
 
 
 
                 <p class="extra_for_new_desc">{!! clean(Str::limit(($item->en_Description_One), 90)) !!}</p>
-                <a class="read-more-btn" href="{{route('blog.details',$item->id)}}">Read More <i class="fa-regular fa-arrow-right-long"></i></a>
+                <a class="read-more-btn" href="{{route('blog.details',$item->blog_slug)}}">Read More <i class="fa-regular fa-arrow-right-long"></i></a>
             </div>
         </div>
     </div>

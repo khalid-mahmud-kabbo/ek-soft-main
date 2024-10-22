@@ -85,6 +85,7 @@ class BlogController extends Controller
             'Big_Image' => $big_image,
 
             'fr_Title' => $request->fr_blog_title,
+            'blog_slug' => $request->blog_slug,
             'fr_Description_One' => $request->fr_description_one,
             'fr_Description_Two' => $request->fr_description_two,
             'user_id' => Auth::id(),
@@ -136,6 +137,7 @@ class BlogController extends Controller
             'Big_Image' => $big_image,
 
             'fr_Title' => is_null($request->fr_blog_title) ? $update->fr_Title : $request->fr_blog_title,
+            'blog_slug' => is_null($request->blog_slug) ? $update->blog_slug : $request->blog_slug,
             'fr_Description_One' => is_null($request->fr_description_one) ? $update->fr_Description_One : $request->fr_description_one,
             'fr_Description_Two' => is_null($request->fr_description_two) ? $update->fr_Description_Two : $request->fr_description_two,
         ]);

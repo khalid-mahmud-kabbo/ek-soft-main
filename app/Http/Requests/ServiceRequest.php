@@ -29,6 +29,7 @@ class ServiceRequest extends FormRequest
             'icon_image'=>'required',
             'description'=>'required',
             'package'=>'required',
+            'service_slug'=>'required',
             'pricing'=>'required',
         ];
     }

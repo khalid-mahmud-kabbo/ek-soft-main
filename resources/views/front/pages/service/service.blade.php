@@ -29,17 +29,7 @@
 <div class="row g-4">
 
 
-
-
-
-    @php
-    use App\Models\Admin\Service;
-    $services = Service::get()->all();
-@endphp
-
 @foreach ($services as $item)
-
-
 
                             <div class="col-lg-4 col-md-6">
         <div class="service-two__item">
@@ -51,9 +41,9 @@
                     <img src="{{ asset(IconImage() . $item->IconImage) }}" alt="icon">
                 </div>
                 <div class="shape"><img src="{{ asset('frontend/assets/images/rtHLHwS47ikrvM8funrY.png') }}" alt="shape"></div>
-                <h4><a href="#" class="primary-hover">{{ $item->title }}</a></h4>
+                <h4><a href="{{route('service.details',$item->service_slug)}}" class="primary-hover">{{ $item->title }}</a></h4>
                 <p>{!! clean(Str::limit(($item->description), 140)) !!}</p>
-                <a class="read-more-btn" href="$">Read More <i class="fa-regular fa-arrow-right-long"></i></a>
+                <a class="read-more-btn" href="{{route('service.details',$item->service_slug)}}">Read More <i class="fa-regular fa-arrow-right-long"></i></a>
             </div>
         </div>
     </div>

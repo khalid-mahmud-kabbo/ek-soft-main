@@ -80,6 +80,7 @@ class ServiceController extends Controller
             'description' => $request->description,
             'package' => $request->package,
             'pricing' => $request->pricing,
+            'service_slug' => $request->service_slug,
             'ServiceImage' => $image,
             'IconImage' => $iconimage
         ]);
@@ -157,6 +158,7 @@ class ServiceController extends Controller
             'description' => is_null($request->description) ? $service->description : $request->description,
             'package' => is_null($request->package) ? $service->package : $request->package,
             'pricing' => is_null($request->pricing) ? $service->pricing : $request->pricing,
+            'service_slug' => is_null($request->service_slug) ? $service->service_slug : $request->service_slug,
             'ServiceImage' => $image,
             'IconImage' => $iconimage
         ]);

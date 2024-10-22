@@ -18,6 +18,7 @@ class Blog extends Model
         'fr_Description_One',
         'en_Description_Two',
         'fr_Description_Two',
+        'blog_slug',
         'user_id'
     ];
     protected $guarded = [];

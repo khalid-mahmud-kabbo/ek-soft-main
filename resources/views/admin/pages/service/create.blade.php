@@ -39,6 +39,12 @@
                                                 <input type="text" id="title" name="title" value="{{ old('title') }}" placeholder="Title" required>
                                             </div>
 
+
+                                            <div class="input__group mb-25 d-none">
+                                                <label>{{ __('Service Slug') }}</label>
+                                                <input type="text" id="service-slug" name="service_slug" value="{{ old('service_slug') }}">
+                                            </div>
+
                                             <!-- Slider Image -->
                                             <div class="input__group mb-25">
                                                 <label>{{ __('Service Image') }}</label>
@@ -101,5 +107,13 @@
             });
             $('.dropdown-toggle').dropdown();
         });
+
+        $('#title').on('keyup', function () {
+        let $this = $(this);
+        let str = $this.val().toLowerCase().replace(/[0-9`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '-').replace(/ /g, '-');
+        $('#service-slug').val(str);
+    })
+
+
     </script>
 @endpush

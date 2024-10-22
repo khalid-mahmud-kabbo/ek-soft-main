@@ -50,15 +50,11 @@
 									</div>
 									<div class="shape"><img src="{{ asset('frontend/assets/images/rtHLHwS47ikrvM8funrY.png') }}"
 									                        alt="shape"></div>
-									<h4><a href="#" class="primary-hover">{{ $item->title }}</a></h4>
+									<h4><a href="{{route('service.details',$item->service_slug)}}" class="primary-hover">{{ $item->title }}</a></h4>
 									<p class="service-description">
                                         {!! clean(Str::limit(($item->description), 140)) !!}
                                     </p>
-
-
-
-
-									<a class="read-more-btn" href="#">Read More<i
+									<a class="read-more-btn" href="{{route('service.details',$item->service_slug)}}">Read More<i
 											class="fa-regular fa-arrow-right-long"></i></a>
 								</div>
 							</div>
