@@ -20,7 +20,7 @@
 				<a href="/" class="logo mb-30">
 					<img src="{{ asset(IMG_LOGO_PATH . $allsettings['main_logo']) }}" alt="image">
 				</a>
-				<p>{{ $allsettings['footer_about'] }}</p>
+				<p style="text-align: justify;">{{ $allsettings['footer_about'] }}</p>
 				<div class="social-icon">
 											<a target="_blank" class="social-media-link" href="{{ getSocialLink()->Facebook }}">
                                         <i class="fab fa-facebook-f"></i></a>

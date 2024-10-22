@@ -18,5 +18,9 @@ class Whoweare extends Model
         'point_2',
         'point_3',
         'point_4',
+        'satisfied_clients',
+        'finished_projects',
+        'skilled_experts',
+        'years_of_experience',
     ];
 }

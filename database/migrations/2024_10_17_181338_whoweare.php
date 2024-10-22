@@ -23,6 +23,10 @@ class Whoweare extends Migration
             $table->string('point_2');
             $table->string('point_3');
             $table->string('point_4');
+            $table->string('satisfied_clients');
+            $table->string('finished_projects');
+            $table->string('skilled_experts');
+            $table->string('years_of_experience');
             $table->timestamps();
         });
     }

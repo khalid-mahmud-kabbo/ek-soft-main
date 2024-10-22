@@ -4,6 +4,9 @@
 @section('keywords', isset($keywords) ? $keywords : '')
 @section('content')
 
+
+@if($about)
+
 <section class="banner__inner-page bg-image pt-180 pb-180 bg-image" data-background="{{ asset('frontend/assets/images/QCm3zzbme5hta1zbNLJs.jpg') }}" style="background-image: url({{ asset('frontend/assets/images/QCm3zzbme5hta1zbNLJs.jpg') }});">
 <div class="shape2 wow slideInLeft" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: slideInLeft;">
 <img src="{{ asset('frontend/assets/images/pxzAm9rA4BuWjccbttrU.png') }}" alt="shape">
@@ -23,88 +26,97 @@
 </div>
 </div>
 </section>
-        <section class="about-two-area pt-120">
-<div class="about-two__shape">
-<img src="{{ asset('frontend/assets/images/VRUJYT10pzK1Ba6ZAadm.png') }}" alt="shape">
-</div>
-<div class="container">
-<div class="row g-4">
-    <div class="col-xl-6 wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInRight;">
-        <div class="about-two__left-item">
-            <div class="dots">
-                <img class="sway_Y__animation" src="{{ asset('frontend/assets/images/vjjksYs3OD22xjgJvSvL.png') }}" alt="shape">
-            </div>
-            <div class="shape-halper">
-                <img class="sway__animation" src="{{ asset('frontend/assets/images/XSr7XtTUTBWo4XCtgTgv.png') }}" alt="shape">
-            </div>
-            <div class="image big-image">
-                <img src="https://gratech.coevs.com/assets/general/images/NinGN5tMJNryGDGpv1ZM.jpg" alt="image">
-            </div>
-            <div class="image sm-image">
-                <img src="https://gratech.coevs.com/assets/general/images/Ds3WFgHFWx7itimvQHcI.png" alt="image">
-            </div>
-            <div class="circle-shape">
-                <img class="animation__rotate" src="https://gratech.coevs.com/assets/general/images/KioIYRQSg8I28X9QVomi.png" alt="shape">
-            </div>
-        </div>
-    </div>
-    <div class="col-xl-6">
-        <div class="section-header mb-40">
-            <h5 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
-                <img class="me-1" src="https://gratech.coevs.com/assets/general/images/6ANlZimaQlmDjBqhVmkA.png" alt="icon">
-                WHO WE ARE
-            </h5>
-            <h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInUp;">Ensuring Your Success Through Reliable IT Solutions </h2>
-            <p class="wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 400ms; animation-name: fadeInUp;">Aonsectetur adipiscing elit aenean scelerisque augue vitae consequat aisque eget congue velit in cursus sodales the turpis euismod quis sapien euismod is sapien the condimentum nec lorem nulla augue.</p>
-        </div>
-        <div class="about-two__right-item wow fadeInDown" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInDown;">
-            <ul>
-                <li><i class="fa-solid fa-check"></i>Technology Consultancy</li>
-                <li><i class="fa-solid fa-check"></i>We Provide best services</li>
-            </ul>
-            <ul>
-                <li><i class="fa-solid fa-check"></i>Maintenance And Support</li>
-                <li><i class="fa-solid fa-check"></i>Requirements Gathering</li>
-            </ul>
-        </div>
-        <div class="about__info mt-50 wow fadeInDown" data-wow-delay="400ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 400ms; animation-name: fadeInDown;">
-            <a href="#" class="btn-one">Explore More <i class="fa-regular fa-arrow-right-long"></i></a>
-            <img src="https://gratech.coevs.com/assets/general/images/bxc6ptmmoLSZMeojbANk.png" alt="singature">
-        </div>
-    </div>
-</div>
-</div>
-</section>			<section class="offer-area secondary-bg pt-120 pb-200">
+
+<section class="about-two-area pt-120">
+	<div class="about-two__shape">
+		<img src="{{ asset('frontend/assets/images/VRUJYT10pzK1Ba6ZAadm.png') }}" alt="shape">
+	</div>
+	<div class="container">
+		<div class="row g-4">
+			<div class="col-xl-6 wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
+				<div class="about-two__left-item">
+					<div class="dots">
+						<img class="sway_Y__animation" src="{{ asset('frontend/assets/images/vjjksYs3OD22xjgJvSvL.png') }}" alt="shape">
+					</div>
+					<div class="shape-halper">
+						<img class="sway__animation" src="{{ asset('frontend/assets/images/XSr7XtTUTBWo4XCtgTgv.png') }}"
+						     alt="shape">
+					</div>
+					<div class="image big-image">
+						<img src="{{ asset(AboutImage() . $about->AboutImage) }}" alt="image">
+					</div>
+					<div class="image sm-image">
+						<img src="{{ asset(AboutImage2() . $about->AboutSubImage) }}" alt="image">
+					</div>
+					<div class="circle-shape">
+						<img class="animation__rotate" src="{{ asset('frontend/assets/images/KioIYRQSg8I28X9QVomi.png') }}"
+						     alt="shape">
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-6">
+				<div class="section-header mb-40">
+					<h5 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+						<img class="me-1" src="{{ asset('frontend/assets/images/6ANlZimaQlmDjBqhVmkA.png') }}" alt="icon">
+						WHO WE ARE
+					</h5>
+					<h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">{{ $about->title }}</h2>
+					<p class="wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">{{ $about->description }}</p>
+				</div>
+				<div class="about-two__right-item wow fadeInDown" data-wow-delay="200ms"
+				     data-wow-duration="1500ms">
+					<ul>
+						<li><i class="fa-solid fa-check"></i>{{ $about->point_1 }}</li>
+						<li><i class="fa-solid fa-check"></i>{{ $about->point_2 }}</li>
+					</ul>
+					<ul>
+						<li><i class="fa-solid fa-check"></i>{{ $about->point_3 }}</li>
+						<li><i class="fa-solid fa-check"></i>{{ $about->point_4 }}</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+<section class="offer-area secondary-bg pt-120 pb-200">
 <div class="offer__shadow wow fadeIn" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeIn;">
-<img src="https://gratech.coevs.com/assets/general/images/9XOjHQrBVZpehzZP1Dqx.png" alt="shadow">
+<img src="{{ asset('frontend/assets/images/9XOjHQrBVZpehzZP1Dqx.png') }}" alt="shadow">
 </div>
 <div class="offer__shape-left">
-<img class="wow fadeInUpBig" data-wow-delay="400ms" data-wow-duration="1500ms" src="https://gratech.coevs.com/assets/general/images/frcJyZBV6mi916YfgDSS.png" alt="shape" style="visibility: visible; animation-duration: 1500ms; animation-delay: 400ms; animation-name: fadeInUpBig;">
+<img class="wow fadeInUpBig" data-wow-delay="400ms" data-wow-duration="1500ms" src="{{ asset('frontend/assets/images/frcJyZBV6mi916YfgDSS.png') }}" alt="shape" style="visibility: visible; animation-duration: 1500ms; animation-delay: 400ms; animation-name: fadeInUpBig;">
 </div>
 <div class="offer__shape-right">
-<img class="wow fadeInDownBig" data-wow-delay="400ms" data-wow-duration="1500ms" src="https://gratech.coevs.com/assets/general/images/WRBtw8ujtjk4WjxLlKDn.png" alt="shape" style="visibility: visible; animation-duration: 1500ms; animation-delay: 400ms; animation-name: fadeInDownBig;">
+<img class="wow fadeInDownBig" data-wow-delay="400ms" data-wow-duration="1500ms" src="{{ asset('frontend/assets/images/WRBtw8ujtjk4WjxLlKDn.png') }}" alt="shape" style="visibility: visible; animation-duration: 1500ms; animation-delay: 400ms; animation-name: fadeInDownBig;">
 </div>
 <div class="container">
 <div class="d-flex gap-4 flex-wrap align-items-center justify-content-between mb-95">
     <div class="section-header">
         <h5 class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInLeft;">
-            <img class="me-1" src="https://gratech.coevs.com/assets/general/images/Rr8EWeBIeRqNUjuidvQx.png" alt="icon">
+            <img class="me-1" src="{{ asset('frontend/assets/images/Rr8EWeBIeRqNUjuidvQx.png') }}" alt="icon">
             OUR OFFERING
         </h5>
         <h2 class="text-white wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInLeft;">
             Enhance And Pioneer Using<br>Technology Trends
         </h2>
     </div>
-    <a href="#" class="btn-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInUp;">Explore More <i class="fa-regular fa-arrow-right-long"></i></a>
 </div>
 <div class="row g-4">
                                     <div class="col-lg-2 col-md-4 col-sm-6 wow bounceInUp" data-wow-delay="100ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 100ms; animation-name: bounceInUp;">
                 <div class="offer__item">
                     <div class="shape-top">
-                        <img src="https://gratech.coevs.com/assets/general/images/tm3ziMEzUg3jMN5SngvA.png" alt="shape">
+                        <img src="{{ asset('frontend/assets/images/VS1MMf2b4SmC5al0R50j.png') }}" alt="shape">
                     </div>
                     <div class="shape-bottom">
-                        <img src="https://gratech.coevs.com/assets/general/images/3N19Uv464mRak7Z2YDlz.png" alt="shape">
+                        <img src="{{ asset('frontend/assets/images/kq4tbOciNJOpIPvIEP8V.png') }}" alt="shape">
                     </div>
                     <div class="offer__icon">
                                                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -117,10 +129,10 @@
                                     <div class="col-lg-2 col-md-4 col-sm-6 wow bounceInUp" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: bounceInUp;">
                 <div class="offer__item">
                     <div class="shape-top">
-                        <img src="https://gratech.coevs.com/assets/general/images/E8wk6yj7YShbxb1i4M6M.png" alt="shape">
+                        <img src="{{ asset('frontend/assets/images/VS1MMf2b4SmC5al0R50j.png') }}" alt="shape">
                     </div>
                     <div class="shape-bottom">
-                        <img src="https://gratech.coevs.com/assets/general/images/n07PzEIPOgnpJYoJIv1c.png" alt="shape">
+                        <img src="{{ asset('frontend/assets/images/kq4tbOciNJOpIPvIEP8V.png') }}" alt="shape">
                     </div>
                     <div class="offer__icon">
                                                              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -141,10 +153,10 @@
                                     <div class="col-lg-2 col-md-4 col-sm-6 wow bounceInUp" data-wow-delay="300ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms; animation-name: bounceInUp;">
                 <div class="offer__item">
                     <div class="shape-top">
-                        <img src="https://gratech.coevs.com/assets/general/images/VS1MMf2b4SmC5al0R50j.png" alt="shape">
+                        <img src="{{ asset('frontend/assets/images/VS1MMf2b4SmC5al0R50j.png') }}" alt="shape">
                     </div>
                     <div class="shape-bottom">
-                        <img src="https://gratech.coevs.com/assets/general/images/kq4tbOciNJOpIPvIEP8V.png" alt="shape">
+                        <img src="{{ asset('frontend/assets/images/kq4tbOciNJOpIPvIEP8V.png') }}" alt="shape">
                     </div>
                     <div class="offer__icon">
                                                               <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -158,10 +170,10 @@
                                     <div class="col-lg-2 col-md-4 col-sm-6 wow bounceInUp" data-wow-delay="400ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 400ms; animation-name: bounceInUp;">
                 <div class="offer__item">
                     <div class="shape-top">
-                        <img src="https://gratech.coevs.com/assets/general/images/MlVijCQNiCKS2NGGEbeC.png" alt="shape">
+                        <img src="{{ asset('frontend/assets/images/VS1MMf2b4SmC5al0R50j.png') }}" alt="shape">
                     </div>
                     <div class="shape-bottom">
-                        <img src="https://gratech.coevs.com/assets/general/images/8EuV0x9GotNJLGKna1n4.png" alt="shape">
+                        <img src="{{ asset('frontend/assets/images/kq4tbOciNJOpIPvIEP8V.png') }}" alt="shape">
                     </div>
                     <div class="offer__icon">
                                                              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -175,10 +187,10 @@
                                     <div class="col-lg-2 col-md-4 col-sm-6 wow bounceInUp" data-wow-delay="500ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 500ms; animation-name: bounceInUp;">
                 <div class="offer__item">
                     <div class="shape-top">
-                        <img src="https://gratech.coevs.com/assets/general/images/GDRwAa4HJ7nPMaLQuZe6.png" alt="shape">
+                        <img src="{{ asset('frontend/assets/images/VS1MMf2b4SmC5al0R50j.png') }}" alt="shape">
                     </div>
                     <div class="shape-bottom">
-                        <img src="https://gratech.coevs.com/assets/general/images/oivwjSSreRoCTKoQx38m.png" alt="shape">
+                        <img src="{{ asset('frontend/assets/images/kq4tbOciNJOpIPvIEP8V.png') }}" alt="shape">
                     </div>
                     <div class="offer__icon">
                                                             <svg width="26" height="36" viewBox="0 0 26 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -195,10 +207,10 @@
                                     <div class="col-lg-2 col-md-4 col-sm-6 wow bounceInUp" data-wow-delay="600ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 600ms; animation-name: bounceInUp;">
                 <div class="offer__item">
                     <div class="shape-top">
-                        <img src="https://gratech.coevs.com/assets/general/images/wrbEITkS0KHWKzyzJOi2.png" alt="shape">
+                        <img src="{{ asset('frontend/assets/images/VS1MMf2b4SmC5al0R50j.png') }}" alt="shape">
                     </div>
                     <div class="shape-bottom">
-                        <img src="https://gratech.coevs.com/assets/general/images/Hd6drlU4S8GU0ybhNfNI.png" alt="shape">
+                        <img src="{{ asset('frontend/assets/images/kq4tbOciNJOpIPvIEP8V.png') }}" alt="shape">
                     </div>
                     <div class="offer__icon">
                                                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -219,42 +231,49 @@
             </div>
             </div>
 </div>
-</section>			<section class="counter-area">
+</section>
+
+
+
+<section class="counter-area">
 <div class="container">
 <div class="counter__wrp gradient-bg">
     <div class="counter__shape wow slideInRight" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: slideInRight;">
-        <img src="https://gratech.coevs.com/assets/general/images/n8yh3FA4QkUlPIlbY00T.png" alt="shape">
+        <img src="{{ asset('frontend/assets/images/n8yh3FA4QkUlPIlbY00T.png') }}" alt="shape">
     </div>
                                 <div class="counter__item wow bounceInUp" data-wow-delay="00ms" data-wow-duration="1000ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 0ms; animation-name: bounceInUp;">
-        <img src="https://gratech.coevs.com/assets/general/images/ETP5udJr7yH1P3J0fAr1.png" alt="icon">
+        <img src="{{ asset('frontend/assets/images/ETP5udJr7yH1P3J0fAr1.png') }}" alt="icon">
         <div class="content">
-            <h3><span class="count">6,561</span>+</h3>
+            <h3><span class="count">{{ $about->satisfied_clients }}</span>+</h3>
             <p class="text-white">Satisfied Clients</p>
         </div>
     </div>
                                 <div class="counter__item wow bounceInUp" data-wow-delay="00ms" data-wow-duration="1000ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 0ms; animation-name: bounceInUp;">
-        <img src="https://gratech.coevs.com/assets/general/images/8MUE9rfNP2etAZJ3WEEw.png" alt="icon">
+        <img src="{{ asset('frontend/assets/images/8MUE9rfNP2etAZJ3WEEw.png') }}" alt="icon">
         <div class="content">
-            <h3><span class="count">600</span>+</h3>
+            <h3><span class="count">{{ $about->finished_projects }}</span>+</h3>
             <p class="text-white">Finished Projects</p>
         </div>
     </div>
                                 <div class="counter__item wow bounceInUp" data-wow-delay="00ms" data-wow-duration="1000ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 0ms; animation-name: bounceInUp;">
-        <img src="https://gratech.coevs.com/assets/general/images/I2wgI8VIUcinhY4aMzPf.png" alt="icon">
+        <img src="{{ asset('frontend/assets/images/I2wgI8VIUcinhY4aMzPf.png') }}" alt="icon">
         <div class="content">
-            <h3><span class="count">250</span>+</h3>
+            <h3><span class="count">{{ $about->skilled_experts }}</span>+</h3>
             <p class="text-white">Skilled Experts</p>
         </div>
     </div>
                                 <div class="counter__item wow bounceInUp" data-wow-delay="00ms" data-wow-duration="1000ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 0ms; animation-name: bounceInUp;">
-        <img src="https://gratech.coevs.com/assets/general/images/ZXTeT8rvVoyRWhQginA0.png" alt="icon">
+        <img src="{{ asset('frontend/assets/images/ZXTeT8rvVoyRWhQginA0.png') }}" alt="icon">
         <div class="content">
-            <h3><span class="count">590</span>+</h3>
-            <p class="text-white">Media Posts</p>
+            <h3><span class="count">{{ $about->years_of_experience }}</span>+</h3>
+            <p class="text-white">Years of Experience</p>
         </div>
     </div>
-            </div>
+        </div>
 </div>
 </section>
+
+
+@endif
 
 @endsection

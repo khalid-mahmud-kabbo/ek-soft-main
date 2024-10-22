@@ -152,9 +152,6 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'is_admin', 'en.loca
 
 
     Route::group(['prefix' => 'about'], function () {
-        Route::get('', [WhoweareController::class, 'about'])->name('about');
-        Route::get('/create', [WhoweareController::class, 'aboutCreate'])->name('about.create');
-        Route::post('/create', [WhoweareController::class, 'aboutStore'])->name('about.store')->middleware('isDemo');
         Route::get('/edit/{id}', [WhoweareController::class, 'aboutEdit'])->name('about.edit');
         Route::post('/update', [WhoweareController::class, 'aboutUpdate'])->name('about.update')->middleware('isDemo');
     });

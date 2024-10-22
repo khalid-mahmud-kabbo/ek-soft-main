@@ -86,8 +86,29 @@
                                                     id="point_4" value="{{ $edit->point_4 }}">
                                             </div>
 
+                                            <div class="input__group mb-25">
+                                                <label>{{ __('Satisfied Clients') }}</label>
+                                                <input type="text" name="satisfied_clients"
+                                                    id="satisfied_clients" value="{{ $edit->satisfied_clients }}">
+                                            </div>
 
+                                            <div class="input__group mb-25">
+                                                <label>{{ __('Finished Projects') }}</label>
+                                                <input type="text" name="finished_projects"
+                                                    id="finished_projects" value="{{ $edit->finished_projects }}">
+                                            </div>
 
+                                            <div class="input__group mb-25">
+                                                <label>{{ __('Skilled Experts') }}</label>
+                                                <input type="text" name="skilled_experts"
+                                                    id="skilled_experts" value="{{ $edit->skilled_experts }}">
+                                            </div>
+
+                                            <div class="input__group mb-25">
+                                                <label>{{ __('Years of Experience') }}</label>
+                                                <input type="text" name="years_of_experience"
+                                                    id="years_of_experience" value="{{ $edit->years_of_experience }}">
+                                            </div>
 
                                             <div class="input__button">
                                                 <button type="submit" class="btn btn-blue">{{ __('Update')}}</button>
