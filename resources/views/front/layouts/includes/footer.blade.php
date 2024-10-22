@@ -58,7 +58,7 @@
 			<div class="footer__item item-sm wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
 				<h3 class="footer-title">Quick Link</h3>
 				<ul>
-											<li><a href="/blog" target="_self"><i class="fa-regular fa-angles-right me-1"></i> Home</a></li>
+											<li><a href="{{ route('front') }}" target="_self"><i class="fa-regular fa-angles-right me-1"></i> Home</a></li>
 											<li><a href="{{ route('services') }}" target="_self"><i class="fa-regular fa-angles-right me-1"></i> Service</a></li>
 											<li><a href="{{ route('about') }}" target="_self"><i class="fa-regular fa-angles-right me-1"></i> About</a></li>
 											<li><a href="{{ route('blogs') }}" target="_self"><i class="fa-regular fa-angles-right me-1"></i> Blog</a></li>

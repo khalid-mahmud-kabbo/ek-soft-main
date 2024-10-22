@@ -195,6 +195,31 @@
                                             </div>
 
 
+                                            <div class="input__group mb-25">
+                                                <label for="title">{{ __('Facebook') }}</label>
+                                                <input type="text" class="form-control" id="Facebook" name="Facebook"
+                                                    value="{{ $allsettings['Facebook'] }}" required="">
+                                            </div>
+
+                                            <div class="input__group mb-25">
+                                                <label for="title">{{ __('Twitter') }}</label>
+                                                <input type="text" class="form-control" id="Twitter" name="Twitter"
+                                                    value="{{ $allsettings['Twitter'] }}" required="">
+                                            </div>
+
+                                            <div class="input__group mb-25">
+                                                <label for="title">{{ __('Linkedin') }}</label>
+                                                <input type="text" class="form-control" id="Linkedin" name="Linkedin"
+                                                    value="{{ $allsettings['Linkedin'] }}" required="">
+                                            </div>
+
+                                            <div class="input__group mb-25">
+                                                <label for="title">{{ __('Youtube') }}</label>
+                                                <input type="text" class="form-control" id="Youtube" name="Youtube"
+                                                    value="{{ $allsettings['Youtube'] }}" required="">
+                                            </div>
+
+
                                             <div class="input__button">
                                                 <button type="submit" class="btn btn-blue">{{ __('Update') }}</button>
                                             </div>

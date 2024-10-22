@@ -28,6 +28,8 @@ Route::group(['middleware' => ['is_user']], function () {
 
     Route::group(['prefix' => 'contact'], function () {
         Route::get('/', [ContactController::class, 'index'])->name('contact');
+        Route::post('store', [ContactController::class, 'contactStore'])->name('contact.store');
+
     });
 
     Route::group(['prefix' => 'career'], function () {

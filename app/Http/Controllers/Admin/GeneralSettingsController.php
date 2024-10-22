@@ -90,6 +90,18 @@ class GeneralSettingsController extends Controller
             if (isset($request->footer_about)) {
                 Setting::where('slug', 'footer_about')->update(['value' => $request->footer_about]);
             }
+            if (isset($request->Facebook)) {
+                Setting::where('slug', 'Facebook')->update(['value' => $request->Facebook]);
+            }
+            if (isset($request->Twitter)) {
+                Setting::where('slug', 'Twitter')->update(['value' => $request->Twitter]);
+            }
+            if (isset($request->Linkedin)) {
+                Setting::where('slug', 'Linkedin')->update(['value' => $request->Linkedin]);
+            }
+            if (isset($request->Youtube)) {
+                Setting::where('slug', 'Youtube')->update(['value' => $request->Youtube]);
+            }
             if (isset($request->footer_link_title_service_1)) {
                 Setting::where('slug', 'footer_link_title_service_1')->update(['value' => $request->footer_link_title_service_1]);
             }

@@ -37,7 +37,7 @@
 </svg>							</i>
                     <div>
                         <span class="text-white">Call Us</span>
-                        <h3 class="mt-1"><a class="text-white" href="tel:+208-6666-0112">{{ $allsettings['call_us'] }}</a>
+                        <h3 class="mt-1"><a class="text-white" href="tel:{{ $allsettings['call_us'] }}">{{ $allsettings['call_us'] }}</a>
                         </h3>
                     </div>
                 </li>
@@ -50,7 +50,7 @@
 </svg>							</i>
                     <div>
                         <span class="text-white">Make a Quote</span>
-                        <h3 class="mt-1"><a class="text-white" href="#">{{ $allsettings['email'] }}</a>
+                        <h3 class="mt-1"><a class="text-white" href="mailto:{{ $allsettings['email'] }}">{{ $allsettings['email'] }}</a>
                         </h3>
                     </div>
                 </li>
@@ -71,10 +71,10 @@
                 Follow Social:
             </h4>
             <div class="social">
-                                    <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                                    <a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                                    <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                                    <a href="{{ $allsettings['Facebook'] }}" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="{{ $allsettings['Twitter'] }}" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="{{ $allsettings['Linkedin'] }}" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="{{ $allsettings['Youtube'] }}" target="_blank"><i class="fa-brands fa-youtube"></i></a>
                                 </div>
         </div>
     </div>
@@ -82,7 +82,7 @@
         <div class="contact__right-item">
             <div class="section-header mb-20">
                 <h5 class="wow fadeInUp pb-2" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
-                    <img class="me-1" src="https://gratech.coevs.com/assets/general/static/icon/section-title.png" alt="icon">
+                    <img class="me-1" src="{{asset('frontend/assets/images/section-title.png')}}" alt="icon">
                     GET IN TOUCH
                 </h5>
                 <h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInUp;">Ready to Get Started?</h2>
@@ -90,8 +90,9 @@
                     Get in touch with us today and let's bring your vision to life.</p>
             </div>
             <div class="contact__form">
-                <form action="https://gratech.coevs.com/contact" method="post">
-                    <input type="hidden" name="_token" value="ThLEl1n9zDtgHXXiIqwUhSLPfHSsMHGZ6HFrGLKw" autocomplete="off">							<div class="row">
+                <form method="POST" action="{{ route('contact.store') }}">
+                    @csrf
+                  	<div class="row">
                         <div class="col-6">
                             <label for="name">Your Name*</label>
                             <input id="name" name="name" class="bg-transparent bor" type="text" required="" placeholder="Your Name">
