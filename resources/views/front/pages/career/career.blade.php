@@ -27,22 +27,55 @@
             <section class="service-inner-area pt-120 pb-120">
     <div class="container">
     <div class="row g-4">
-                                          <div class="col-lg-4 col-md-6">
-            <div class="service-two__item">
-                <div class="image">
-                    <img class="component-blog-cover" src="https://gratech.coevs.com/assets/general/images/swYgg2FwGxyWLuOnILTS.jpg" alt="image">
-                </div>
-                <div class="service-two__content">
-                    <div class="icon">
-                        <img src="https://gratech.coevs.com/assets/general/images/016SKqrETI3F4FLPDxvf.png" alt="icon">
+
+        @foreach ($careers as $career)
+
+    <div class="col-md-6 blog-two__list-item mb-30 wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 100ms; animation-name: fadeInUp;">
+        <!-- If the deadline is not over, show clickable link; else, just show image -->
+        @if (!now()->greaterThan($career->deadline))
+            <a href="{{route('career.details',$career->career_slug)}}" class="blog__image d-block image">
+        @else
+            <div class="blog__image d-block image">
+        @endif
+            <img class="blog-square" src="{{asset(CareerImage().$career->CareerImage)}}" alt="image">
+            <div class="blog-tag">
+                <h3 class="text-white">{{ $career->created_at->format('d') }}</h3>
+                <span class="text-white">{{ $career->created_at->format('M') }}</span>
+                <span class="text-white">{{ $career->created_at->format('Y') }}</span>
+            </div>
+        @if (!now()->greaterThan($career->deadline))
+            </a>
+        @else
+            </div>
+        @endif
+
+        <div class="blog__content">
+            <!-- If deadline is not over, make the title clickable -->
+            <h3>
+                @if (!now()->greaterThan($career->deadline))
+                    <a href="{{route('career.details',$career->career_slug)}}" class="primary-hover">{{ $career->title }}</a>
+                @else
+                    <span>{{ $career->title }}</span>
+                @endif
+            </h3>
+
+            <div class="about__info mt-30">
+                <div class="d-flex gap-2 align-items-center">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <div class="info">
+                        <!-- If deadline is over, show 'Deadline Overed'; else, show deadline date with link -->
+                        @if (now()->greaterThan($career->deadline))
+                            <span class="primary-color">Deadline Overed</span>
+                        @else
+                            <a href="{{route('career.details',$career->career_slug)}}" class="primary-color">Deadline: {{ $career->deadline }}</a>
+                        @endif
                     </div>
-                    <div class="shape"><img src="https://gratech.coevs.com/assets/general/images/Drjgn3eGwtJfxce78yMO.png" alt="shape"></div>
-                    <h4><a href="https://gratech.coevs.com/details/46?section=service_grid" class="primary-hover">Database Security</a></h4>
-                    <p>The is ipsum dolor sit amet consectetur adipiscing elit. Fusce is eleifend porta...</p>
-                    <a class="read-more-btn" href="https://gratech.coevs.com/details/46?section=service_grid">Read More <i class="fa-regular fa-arrow-right-long"></i></a>
                 </div>
             </div>
         </div>
+    </div>
+
+@endforeach
 
 
                 </div>

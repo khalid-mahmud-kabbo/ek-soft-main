@@ -41,11 +41,16 @@
                                                 <input type="text" id="title" name="title" value="{{$edit->title}}">
                                             </div>
 
+                                            <div class="input__group mb-25 d-none">
+                                                <label>{{ __('Slug') }}</label>
+                                                <input type="text" id="casestudy_slug" name="casestudy_slug" value="{{$edit->casestudy_slug}}">
+                                            </div>
+
                                             <!-- Slider Image -->
                                             <div class="input__group mb-25">
                                                 <label>{{ __('Image') }}</label>
                                                 <input type="file" class="putImage2 mb-10" name="case_image" id="case_image">
-                                                <img src="{{ asset(CaseImage() . $edit->CaseImage) }}" id="target2" alt="Case Image Preview" />
+                                                <img src="{{ asset(CaseImage() . $edit->CaseImage) }}" width="200px" id="target2" alt="Case Image Preview" />
                                             </div>
 
 
@@ -86,6 +91,12 @@
             });
             $('.dropdown-toggle').dropdown();
         });
+
+        $('#title').on('keyup', function () {
+        let $this = $(this);
+        let str = $this.val().toLowerCase().replace(/[0-9`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '-').replace(/ /g, '-');
+        $('#casestudy_slug').val(str);
+    })
 
     </script>
 @endpush

@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class CaseStudyRequest extends FormRequest
+class CareerRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -25,10 +25,10 @@ class CaseStudyRequest extends FormRequest
     {
         return [
             'title'=>'required',
-            'casestudy_slug'=>'required',
-            'case_image'=>'required',
+            'career_slug'=>'required',
+            'Career_Image'=>'required',
             'description'=>'required',
-            'group'=>'required',
+            'deadline'=>'required',
         ];
     }
 }

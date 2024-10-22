@@ -15,6 +15,7 @@ use App\Http\Controllers\Frontend\HomeController;
 
 Route::group(['middleware' => ['is_user']], function () {
     Route::get('/', [HomeController::class, 'index'])->name('front');
+    Route::get('/case-details/{service_slug}', [HomeController::class, 'casestudyDetails'])->name('casestudy.details');
 
     Route::group(['prefix' => 'blogs'], function () {
         Route::get('/', [BlogController::class, 'index'])->name('blogs');
@@ -34,6 +35,7 @@ Route::group(['middleware' => ['is_user']], function () {
 
     Route::group(['prefix' => 'career'], function () {
         Route::get('/', [CareerController::class, 'index'])->name('career');
+        Route::get('/career-details/{career_slug}', [CareerController::class, 'careerDetails'])->name('career.details');
     });
 
     Route::group(['prefix' => 'services'], function () {

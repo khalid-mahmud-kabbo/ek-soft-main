@@ -55,4 +55,15 @@ class HomeController extends Controller
         }
     }
 
+
+    public function casestudyDetails($casestudy_slug)
+    {
+        $casestudy = CaseStudy::where('casestudy_slug', $casestudy_slug)->first();
+        $data['casestudy'] = $casestudy;
+        $data['title'] = $casestudy->title;
+        $data['description'] = $casestudy->title;
+        $data['keywords'] = $casestudy->title;
+        return view('front.pages.casestudy.details', $data);
+    }
+
 }

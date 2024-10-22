@@ -73,6 +73,7 @@ class CaseStudyController extends Controller
             'title' => $request->title,
             'description' => $request->description,
             'group' => $request->group,
+            'casestudy_slug' => $request->casestudy_slug,
             'CaseImage' => $image
         ]);
         if ($casestudy) {
@@ -138,7 +139,7 @@ class CaseStudyController extends Controller
             'title' => is_null($request->title) ? $casestudy->title : $request->title,
             'description' => is_null($request->description) ? $casestudy->description : $request->description,
             'group' => is_null($request->package) ? $casestudy->group : $request->group,
-            'pricing' => is_null($request->pricing) ? $casestudy->pricing : $request->pricing,
+            'casestudy_slug' => is_null($request->casestudy_slug) ? $casestudy->casestudy_slug : $request->casestudy_slug,
             'CaseImage' => $image
         ]);
         if ($update) {

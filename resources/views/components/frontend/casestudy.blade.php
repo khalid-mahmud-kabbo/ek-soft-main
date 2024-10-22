@@ -48,7 +48,7 @@
 								<span>{{ $item->group }}</span>
 								<h4><a href="#" class="text-white">{{ $item->title }}</a></h4>
 							</div>
-							<a href="#" class="case-two__btn">
+							<a href="{{ route('casestudy.details', $item->casestudy_slug) }}" class="case-two__btn">
 								<i class="fa-regular fa-arrow-right"></i>
 							</a>
 						</div>

@@ -181,6 +181,13 @@ if (!function_exists('ClientImage')) {
     }
 }
 
+if (!function_exists('CareerImage')) {
+    function CareerImage()
+    {
+        return 'uploaded_files/career/';
+    }
+}
+
 
 
 if (!function_exists('Brnad')) {

@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\Admin\WhoweareController;
 use App\Http\Controllers\Admin\WhychooseUsController;
 use App\Http\Controllers\Admin\ContactDetailsController;
+use App\Http\Controllers\Admin\CareerController;
 use App\Http\Controllers\Admin\TermsConditionsController;
 use App\Http\Controllers\Admin\RefundPolicyController;
 use App\Http\Controllers\Admin\PrivacyPolicyController;
@@ -89,6 +90,18 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'is_admin', 'en.loca
         Route::get('/active/{id}', [ServiceController::class, 'serviceActive'])->name('service.active')->middleware('isDemo');
         Route::get('/inactive/{id}', [ServiceController::class, 'serviceInactive'])->name('service.inactive')->middleware('isDemo');
         Route::get('/delete/{id}', [ServiceController::class, 'serviceDelete'])->name('service.delete')->middleware('isDemo');
+    });
+
+
+    Route::group(['prefix' => 'career'], function () {
+        Route::get('', [CareerController::class, 'career'])->name('career');
+        Route::get('/create', [CareerController::class, 'careerCreate'])->name('career.create');
+        Route::post('/create', [CareerController::class, 'careerStore'])->name('career.store')->middleware('isDemo');
+        Route::get('/edit/{id}', [CareerController::class, 'careerEdit'])->name('career.edit');
+        Route::post('/update', [CareerController::class, 'careerUpdate'])->name('career.update')->middleware('isDemo');
+        Route::get('/active/{id}', [CareerController::class, 'careerActive'])->name('career.active')->middleware('isDemo');
+        Route::get('/inactive/{id}', [CareerController::class, 'careerInactive'])->name('career.inactive')->middleware('isDemo');
+        Route::get('/delete/{id}', [CareerController::class, 'careerDelete'])->name('career.delete')->middleware('isDemo');
     });
 
 

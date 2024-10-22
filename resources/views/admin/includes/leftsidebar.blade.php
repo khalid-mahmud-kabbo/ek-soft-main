@@ -117,6 +117,13 @@
                         </a>
                     </li>
 
+                    <li class="{{ isset($submenu) && $submenu == 'career' ? 'mm-active' : '' }}">
+                        <a href="{{ route('admin.career') }}">
+                            <i class="fa fa-circle"></i>
+                            <span>{{ __('Careers') }}</span>
+                        </a>
+                    </li>
+
                     <li class="{{ isset($submenu) && $submenu == 'termscondition' ? 'mm-active' : '' }}">
                         <a href="{{ route('admin.termscondition.edit', 1) }}">
                             <i class="fa fa-circle"></i>
