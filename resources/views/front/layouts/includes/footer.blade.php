@@ -106,7 +106,7 @@
 			<div
 				class="d-flex gap-1 flex-wrap align-items-center justify-content-md-between justify-content-center">
 				<p class="wow fadeInDown" data-wow-delay="00ms" data-wow-duration="1500ms">{{ $allsettings['footer_title'] }}</a></p>
-				<ul class="d-flex align-items-center gap-4 wow fadeInDown" data-wow-delay="200ms"
+				<ul class="d-flex align-items-center gap-4 wow fadeInDown" id="footer-terms-short-links" data-wow-delay="200ms"
 				    data-wow-duration="1500ms">
 					<li><a href="{{ route('terms-conditions') }}" class="{{ Request::routeIs('terms-conditions') ? 'active' : '' }}">Terms &amp; Conditions</a></li>
 					<li><a href="{{ route('privacy-policy') }}" class="{{ Request::routeIs('privacy-policy') ? 'active' : '' }}">Privacy Policy</a></li>

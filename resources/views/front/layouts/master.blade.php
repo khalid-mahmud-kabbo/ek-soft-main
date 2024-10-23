@@ -21,6 +21,7 @@
 
     @include('front.layouts.includes.header')
     @include('front.layouts.includes.cookies')
+    @include('front.layouts.includes.mobilemenu')
 <main>
 
 @yield('content')

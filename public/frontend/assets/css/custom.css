@@ -22,6 +22,14 @@ body::-webkit-scrollbar-track {
 
 }
 
+@media (max-width: 991px) {
+
+    #footer-terms-short-links {
+        display: none !important;
+    }
+
+}
+
 
 .service-description{
     -webkit-line-clamp: 2;
